@@ -1,26 +1,27 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/teYJD0R3)
-# Título do Projeto
+# Gerenciador de Finanças Pessoais
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`1º semestre/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jovens adultos a gerenciarem suas finanças.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Álvaro Henrique Orfus Tavares
+* Eros Rodrigues Valois Alvaia
+* Gustavo Felix Braga
+* Janaina Esteves de Faria
+* Larissa Cardoso de Miranda Araujo
+* Leonardo Aquim de Queiroz
+* Luzianne Fernandes Fialho
 
 ## Orientador
 
-* Nome completo do professor
+* Marcos André Silveira Kutova
 
 # Documentação
 
