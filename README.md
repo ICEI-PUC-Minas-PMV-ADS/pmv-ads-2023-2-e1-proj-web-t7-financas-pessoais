@@ -5,7 +5,7 @@
 
 `Desenvolvimento de Aplicação Web Front-End`
 
-`1º semestre/2023`
+`1º semestre/2023 - Eixo 1`
 
 O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jovens adultos a gerenciarem suas finanças.
 
