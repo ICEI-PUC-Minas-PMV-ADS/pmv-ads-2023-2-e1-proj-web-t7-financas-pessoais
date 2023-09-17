@@ -21,6 +21,27 @@
 
 ## Histórias de Usuários
 
+<table>
+<tbody>
+<tr align=center>
+<th colspan="3"></th>
+</tr>
+<tr>
+<td width="150px"><b>EU COMO... `QUEM`</b></td>
+<td width="600px">Jovens brasileiros entre 18 e 24 anos que, ou carecem de experiência em gestão financeira e não possuem o hábito de controlar seus gastos e receitas ou que já fazem o controle de suas finanças manualmente, mas querem migrar para uma forma de controle digital.</td>
+</tr>
+<tr>
+<td><b>QUERO/PRECISO ... `O QUE`</b></td>
+<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitar endividamento.</td>
+</tr>
+<tr>
+<td><b>PARA ... `PORQUE`</b></td>
+<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitar endividamento.</td>
+</tr>
+</tbody>
+</table>
+
+
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
 | Eu, como jovem que | desejo registrar minhas   | para acompanhar como estou gas-  |
