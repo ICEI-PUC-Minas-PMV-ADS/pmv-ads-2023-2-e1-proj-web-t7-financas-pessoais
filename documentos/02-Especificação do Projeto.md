@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Jovens brasileiros entre 18 e 24 anos que, ou carecem de experiência em gestão financeira e não possuem o hábito de controlar seus gastos e receitas ou que já fazem o controle de suas finanças manualmente, mas querem migrar para uma forma de controle digital.</td>
+<td width="700px">Jovens brasileiros entre 18 e 24 anos que, ou carecem de experiência em gestão financeira e não possuem o hábito de controlar seus gastos e receitas ou que já fazem o controle de suas finanças manualmente, mas querem migrar para uma forma de controle digital.</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
@@ -25,8 +25,8 @@
 <tbody>
 <tr align=center>
 <td width="250px"><b>EU COMO... QUEM</b></td>
-<td width="400px"><b>QUERO/PRECISO ... O QUE</b></td>
-<td width="300px"><b>PARA ... PORQUE</b></td>
+<td width="350px"><b>QUERO/PRECISO ... O QUE</b></td>
+<td width="250px"><b>PARA ... PORQUE</b></td>
 </tr>
 <tr>
 <td>Eu, como jovem que quer controlar as finanças,</td>
@@ -66,13 +66,12 @@
 
 ### Requisitos Funcionais
 
-
 <table>
 <tbody>
 <tr align=center>
 <td width="100px"><b>ID</b></td>
-<td width="600px"><b>Descrição</b></td>
-<td width="150px"><b>Prioridade</b></td>
+<td width="650px"><b>Descrição</b></td>
+<td width="100px"><b>Prioridade</b></td>
 </tr>
 <tr>
 <td><b>RF-01</b></td>
@@ -107,32 +106,49 @@
 </tbody>
 </table>
 
-
-
 **Prioridade: Alta / Média / Baixa. 
+
 
 ### Requisitos não Funcionais
 
-|ID      |                     Descrição                          | Prioridade |
-|--------|--------------------------------------------------------|------------|
-| RNF-01 | A aplicação deve cumprir com as normas estabelecidas   | Alta       | 
-|        | pela LGPD, garantindo a privacidade e proteção dos da- |            |
-|        | dos pessoais dos usuários                              |            |
-|--------|--------------------------------------------------------|------------|
-| RNF-02 | A aplicação deve ter uma interface intuitiva e de fá-  | Alta       |
-|        | cil uso                                                |            |
-|--------|--------------------------------------------------------|------------|
-| RNF-03 | A aplicação deve ser responsiva, funcionando de forma  | Alta       |
-|        | eficaz em dispositivos móveis e desktops               |            |
-|--------|--------------------------------------------------------|------------|
-| RNF-04 | A aplicação deve ter tempos de resposta rápidos para   | Alta       |
-|        | manter uma experi~encia fluida                         |            |
-|--------|--------------------------------------------------------|------------|
-| RNF-05 | A solução deve ser desenvolvida utilizadno tecnologias | Média      |
-|        | atuais e de fácil manutenção                           |            |
-|--------|--------------------------------------------------------|------------|
-| RNF-06 | A aplicação deve ser compatível com os principais na-  | Alta       |
-|        | vegadores web                                          |            |
-
+<table>
+<tbody>
+<tr align=center>
+<td width="100px"><b>ID</b></td>
+<td width="650px"><b>Descrição</b></td>
+<td width="100px"><b>Prioridade</b></td>
+</tr>
+<tr>
+<td><b>RNF-01</b></td>
+<td>A aplicação deve cumprir com as normas estabelecidas pela LGPD, garantindo a privacidade e proteção dos dados pessoais dos usuários.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RNF-02</b></td>
+<td>A aplicação deve ter uma interface intuitiva e de fácil uso.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RNF-03</b></td>
+<td>A aplicação deve ser responsiva, funcionando de forma eficaz em dispositivos móveis e desktops.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RNF-04</b></td>
+<td>A aplicação deve ter tempos de resposta rápidos para manter uma experiência fluida.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RNF-05</b></td>
+<td>A solução deve ser desenvolvida utilizando tecnologias atuais e de fácil manutenção.</td>
+<td>Média</td>
+</tr>
+<tr>
+<td><b>RNF-06</b></td>
+<td>A aplicação deve ser compatível com os principais navegadores web.</td>
+<td>Alta</td>
+</tr>
+</tbody>
+</table>
 
 **Prioridade: Alta / Média / Baixa.
