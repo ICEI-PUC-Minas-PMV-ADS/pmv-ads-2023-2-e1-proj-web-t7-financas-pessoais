@@ -28,15 +28,13 @@
 </tr>
 <tr>
 <td width="150px"><b>EU COMO... `QUEM`</b></td>
-<td width="600px">Jovens brasileiros entre 18 e 24 anos que, ou carecem de experiência em gestão financeira e não possuem o hábito de controlar seus gastos e receitas ou que já fazem o controle de suas finanças manualmente, mas querem migrar para uma forma de controle digital.</td>
+<td width="400px"><b>QUERO/PRECISO ... `O QUE`</b></td>
+<td width="300px"><b>PARA ... `PORQUE`</b></td>
 </tr>
 <tr>
-<td><b>QUERO/PRECISO ... `O QUE`</b></td>
-<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitar endividamento.</td>
-</tr>
-<tr>
-<td><b>PARA ... `PORQUE`</b></td>
-<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitar endividamento.</td>
+<td>LINHA 1 A</td>
+<td>LINHA 1 B</td>
+<td>LINHA 1 C</td>
 </tr>
 </tbody>
 </table>
