@@ -23,18 +23,40 @@
 
 <table>
 <tbody>
-<tr align=center>
-<th colspan="3"></th>
-</tr>
 <tr>
-<td width="150px"><b>EU COMO... `QUEM`</b></td>
+<td width="250px"><b>EU COMO... `QUEM`</b></td>
 <td width="400px"><b>QUERO/PRECISO ... `O QUE`</b></td>
 <td width="300px"><b>PARA ... `PORQUE`</b></td>
 </tr>
 <tr>
-<td>LINHA 1 A</td>
-<td>LINHA 1 B</td>
-<td>LINHA 1 C</td>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>desejo registrar minhas transações financeiras, especificando o valor, a data e a categoria,</td>
+<td>para acompanhar como estou gastando meu dinheiro.</td>
+</tr>
+<tr>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>quero ter a capacidade de visualizar um histórico detalhado de todas as transações financeiras que registrei,</td>
+<td>para entender melhor como estou gerenciando minhas finanças.</td>
+</tr>
+<tr>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>gostaria que a aplicação categorizasse automaticamente minhas transações com base nos dados fornecidos,</td>
+<td>para ter uma visão mais clara de onde meu dinheiro está sendo gasto.</td>
+</tr>
+<tr>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>desejo visualizar meu saldo total atualizado, considerando todas as transações que registrei,</td>
+<td>para saber quanto dinheiro tenho disponível.</td>
+</tr>
+<tr>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>gostaria de definir metas financeiras na aplicação e acompanhar o progresso,</td>
+<td>para me manter no caminho certo para atingir meus objetivos.</td>
+</tr>
+<tr>
+<td>Eu, como jovem que quer controlar as finanças,</td>
+<td>quero gerar relatórios personalizados sobre minhas finanças,</td>
+<td>para ter uma visão detalhada de diferentes aspectos das minhas transações e categorias.</td>
 </tr>
 </tbody>
 </table>
