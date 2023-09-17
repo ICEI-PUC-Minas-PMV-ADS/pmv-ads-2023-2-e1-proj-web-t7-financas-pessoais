@@ -23,10 +23,10 @@
 
 <table>
 <tbody>
-<tr>
-<td width="250px"><b>EU COMO... `QUEM`</b></td>
-<td width="400px"><b>QUERO/PRECISO ... `O QUE`</b></td>
-<td width="300px"><b>PARA ... `PORQUE`</b></td>
+<tr align=center>
+<td width="250px"><b>EU COMO... QUEM</b></td>
+<td width="400px"><b>QUERO/PRECISO ... O QUE</b></td>
+<td width="300px"><b>PARA ... PORQUE</b></td>
 </tr>
 <tr>
 <td>Eu, como jovem que quer controlar as finanças,</td>
@@ -62,64 +62,51 @@
 </table>
 
 
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | desejo registrar minhas   | para acompanhar como estou gas-  |
-| quer controlar as  | transações financeiras,   | tando meu dinheiro               |
-| finanças,          | especificando o valor, a  |                                  |
-|                    | data e a categoria        |                                  |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | quero ter a capacidade de | para entender melhor como estou  |
-| quer controlar as  | visualizar um histórico   | gerenciando minhas finanças      |
-| finanças,          | detalhado de todas as     |                                  |
-|                    | transações financeiras    |                                  |
-|                    | que registrei             |                                  |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | gostaria que a aplicacao  | para ter uma visão mais clara de |
-| quer controlar as  | categorizasse automatica- | onde meu dinheiro está sendo     |
-| finanças,          | mente minhas transações   | gasto                            |
-|                    | com base nos dados forne- |                                  |
-|                    | cidos                     |                                  |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | desejo visualizar meu     | para saber quanto dinheiro tenho |
-| quer controlar as  | saldo total atualizado,   | disponível                       |
-| finanças,          | considerando todas as     |                                  |
-|                    | transações que registrei  |                                  |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | gostaria de definir metas | para me manter no caminho certo  |
-| quer controlar as  | financeiras na aplicação  | e atingir meus objetivos         |
-| finanças,          | e acompanhar o progresso  |                                  |
-|--------------------|---------------------------|----------------------------------|
-| Eu, como jovem que | quero gerar relatórios    | para ter uma visão detalhada de  |
-| quer controlar as  | personalizados sobre mi-  | diferentes aspectos das minhas   |
-| finanças,          | nhas finanças             | transações e categorias          |
-
-
 ## Requisitos do Projeto
 
 ### Requisitos Funcionais
 
 
+<table>
+<tbody>
+<tr align=center>
+<td width="100px"><b>ID</b></td>
+<td width="600px"><b>Descrição</b></td>
+<td width="150px"><b>Prioridade</b></td>
+</tr>
+<tr>
+<td><b>RF-01</b></td>
+<td>Os usuários devem poder adicionar suas transações financeiras, especificando valor e categoria.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RF-02</b></td>
+<td>A aplicação deve apresentar um histórico detalhado de todas as transações realizadas.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RF-03</b></td>
+<td>Os usuários devem poder categorizar automaticamente as transações com base nos dados fornecidos.</td>
+<td>Média</td>
+</tr>
+<tr>
+<td><b>RF-04</b></td>
+<td>Deve ser possível visualizar um saldo atualizado com base nas transações registradas.</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><b>RF-05</b></td>
+<td>Os usuários devem ter a opção de definir metas financeiras e acompanhar o progresso.</td>
+<td>Média</td>
+</tr>
+<tr>
+<td><b>RF-06</b></td>
+<td>A aplicação deve permitir aos usuários gerarem relatórios personalizados sobre suas finanças.</td>
+<td>Média</td>
+</tr>
+</tbody>
+</table>
 
-|ID     |                       Descrição                        | Prioridade |
-|-------|--------------------------------------------------------|------------|
-| RF-01 | Os usuários devem poder adicionar suas transações fi-  | Alta       | 
-|       | nanceiras, especificando valor e categoria             |            |
-|-------|--------------------------------------------------------|------------|
-| RF-02 | A aplicação deve apresentar um histórico detalhado de  | Alta       |
-|       | todas as transações realizadas                         |            |
-|-------|--------------------------------------------------------|------------|
-| RF-03 | Os usuários devem poder categorizar automaticamente as | Média      |
-|       | transações com base nos dados fornecidos               |            |
-|-------|--------------------------------------------------------|------------|
-| RF-04 | Deve ser possível visualizar um saldo bom base nas     | Alta       |
-|       | transações registradas                                 |            |
-|-------|--------------------------------------------------------|------------|
-| RF-05 | Os usuários devem ter a opção de definir metas finan-  | Média      |
-|       | ceiras e acompanhar o progresso                        |            |
-|-------|--------------------------------------------------------|------------|
-| RF-06 | A aplicação deve permitir aos usuários gerarem relató- | Média      |
-|       | rios personalizados sobre suas finanças                |            |
 
 
 **Prioridade: Alta / Média / Baixa. 
