@@ -13,7 +13,7 @@ O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jo
 
 * Álvaro Henrique Orfus Tavares
 * Eros Rodrigues Valois Alvaia
-* Gustavo Felix Braga
+* Gustavo Felix Braga!!!
 * Janaina Esteves de Faria
 * Larissa Cardoso de Miranda Araujo
 * Leonardo Aquim de Queiroz
