@@ -63,17 +63,17 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td><a href="http://....">http://....</a></td>
+    <td><a href="http://...."> - </a></td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://....">http://....</a></td>
+    <td><a href="http://...."> - </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td><a href="http://....">http://....</a></td>
+    <td><a href="http://...."> - </a></td>
   </tr>
 </table>
 
