@@ -51,27 +51,27 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Repositório de código fonte</td>
     <td>GitHub</td>
-    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais">Finanças Pessoais</a></td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais" target="_blank">Finanças Pessoais</a></td>
   </tr>
   <tr>
     <td>Documentos do projeto</td>
     <td>GitHub</td>
-    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/tree/main/documentos">Documentos</a></td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/tree/main/documentos" target="_blank">Documentos</a></td>
   </tr>
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="http://...." target="_blank"> - </a></td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="http://...." target="_blank"> - </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="http://...." target="_blank"> - </a></td>
   </tr>
 </table>
 
