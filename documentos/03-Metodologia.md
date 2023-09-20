@@ -17,9 +17,9 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro da plataforma Github. Nosso quadro contém os seguintes elementos:
 
 - Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
-- To Do: representa o Sprint Backlog atual em que estamos trabalhando.
+- To Do: representa o Backlog atual em que estamos trabalhando.
 - In Progress: é o local para onde uma tarefa é movida assim que é iniciada.
-- Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário. Não há mais edições ou revisões necessárias; estão agendadas e prontas para a ação.
+- Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário.
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
@@ -40,9 +40,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
   
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
-
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abaixo, juntamente com seus respectivos propósitos:
 
 <table>
   <tr>
@@ -76,6 +74,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
     <td><a href="http://...."> - </a></td>
   </tr>
 </table>
+
+Além disso, para a comunicação diária e organização, a equipe utiliza o WhatsApp e o Discord. O ambiente de desenvolvimento preferencial é o VSCode, onde a equipe colabora e trabalha no código fonte do projeto. Essas ferramentas e ambientes contribuem para a eficácia do processo de desenvolvimento e para a gestão eficiente do projeto, seguindo a metodologia SCRUM.
 
 ### Estratégia de Organização de Codificação 
 
