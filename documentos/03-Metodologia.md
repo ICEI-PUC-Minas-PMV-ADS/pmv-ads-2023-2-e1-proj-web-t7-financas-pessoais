@@ -19,6 +19,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 - Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
 - To Do: representa o Backlog atual em que estamos trabalhando.
 - In Progress: é o local para onde uma tarefa é movida assim que é iniciada.
+- Impedment: representa um item que tem um impedimento.
 - Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário.
 
 ### Etiquetas
