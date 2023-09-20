@@ -14,7 +14,7 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 - Scrum Master: Luzianne Fernandes Fialho
 - Product Owner: Janaina Esteves de Faria
-- Equipe de Desenvolvimento: Álvaro Henrique O. Tavares, Eros Rodrigues Valois Alvaia, Gustavo Felix Braga, Janaina Esteves de Faria, Larissa C. de Miranda Araujo, Leonardo Aquim de Queiroz, Luzianne Fernandes Fialho
+- Equipe de Desenvolvimento: Álvaro Henrique Orfus Tavares, Eros Rodrigues Valois Alvaia, Gustavo Felix Braga, Janaina Esteves de Faria, Larissa C. de Miranda Araujo, Leonardo Aquim de Queiroz, Luzianne Fernandes Fialho
 - Equipe de Design: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
 
 ### Processo
