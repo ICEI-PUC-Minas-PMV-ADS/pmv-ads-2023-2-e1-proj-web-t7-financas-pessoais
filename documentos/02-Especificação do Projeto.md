@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td>Eu, como jovem que quer controlar as finanças,</td>
-<td>gostaria que a aplicação categorizasse automaticamente minhas transações com base nos dados fornecidos,</td>
+<td>gostaria que a aplicação categorizasse minhas transações com base nos dados fornecidos,</td>
 <td>para ter uma visão mais clara de onde meu dinheiro está sendo gasto.</td>
 </tr>
 <tr>
