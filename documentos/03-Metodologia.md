@@ -67,7 +67,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/657/views/1"> Kanban </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
