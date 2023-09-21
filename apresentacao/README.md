@@ -3,6 +3,12 @@
 ## Conjunto de Slides
 
 ![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide1.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide2.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide3.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide4.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide5.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide6.PNG "Capa Slide")
+![Capa Slide](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide7.PNG "Capa Slide")
 
 [Adicione pdf de apresentação.]
 
