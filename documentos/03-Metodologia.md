@@ -19,6 +19,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 - Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
 - To Do: representa o Backlog atual em que estamos trabalhando.
 - In Progress: é o local para onde uma tarefa é movida assim que é iniciada.
+- Impedment: representa um item que tem um impedimento.
 - Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário.
 
 ### Etiquetas
@@ -61,21 +62,29 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td><a href="http://...."> - </a></td>
+    <td> - </td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/657/views/1"> Kanban </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td><a href="http://...."> - </a></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Ambiente de desenvolvimento</td>
+    <td>VSCode</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Comunicação diária</td>
+    <td>Discord e WhatsApp</td>
+    <td> - </td>
   </tr>
 </table>
-
-Além disso, para a comunicação diária e organização, a equipe utiliza o WhatsApp e o Discord. O ambiente de desenvolvimento preferencial é o VSCode, onde a equipe colabora e trabalha no código fonte do projeto. Essas ferramentas e ambientes contribuem para a eficácia do processo de desenvolvimento e para a gestão eficiente do projeto, seguindo a metodologia SCRUM.
 
 ### Estratégia de Organização de Codificação 
 
