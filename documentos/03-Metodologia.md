@@ -62,7 +62,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td><a href="http://...." target="_blank"> - </a></td>
+    <td> - </td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
@@ -72,11 +72,19 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td><a href="http://...." target="_blank"> - </a></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Ambiente de desenvolvimento</td>
+    <td>VSCode</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Comunicação diária</td>
+    <td>Discord e WhatsApp</td>
+    <td> - </td>
   </tr>
 </table>
-
-Além disso, para a comunicação diária e organização, a equipe utiliza o WhatsApp e o Discord. O ambiente de desenvolvimento preferencial é o VSCode, onde a equipe colabora e trabalha no código fonte do projeto. Essas ferramentas e ambientes contribuem para a eficácia do processo de desenvolvimento e para a gestão eficiente do projeto, seguindo a metodologia SCRUM.
 
 ### Estratégia de Organização de Codificação 
 
