@@ -2,7 +2,7 @@
 
 ## Conjunto de Slides
 
-![Capa Slide](/imgs/Slide1.PNG "Capa Slide")
+![Capa Slide]([/imgs/Slide1.PNG](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/Alvaro/apresentacao/imgs/Slide1.PNG) "Capa Slide")
 
 [Adicione pdf de apresentação.]
 
