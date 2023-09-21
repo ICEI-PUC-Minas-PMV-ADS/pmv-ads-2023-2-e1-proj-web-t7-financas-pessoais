@@ -19,6 +19,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 - Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
 - To Do: representa o Backlog atual em que estamos trabalhando.
 - In Progress: é o local para onde uma tarefa é movida assim que é iniciada.
+- Impedment: representa um item que tem um impedimento.
 - Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário.
 
 ### Etiquetas
@@ -66,7 +67,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://...." target="_blank"> - </a></td>
+    <td><a href="https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/657/views/1"> Kanban </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
@@ -80,3 +81,5 @@ Além disso, para a comunicação diária e organização, a equipe utiliza o Wh
 ### Estratégia de Organização de Codificação 
 
 Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+Teste Eros
+
