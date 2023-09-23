@@ -3,9 +3,12 @@
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+O aplicativo de Finanças Pessoais possui um Userflow de fácil compreensão.
+- Após efetuar o login o aplicativo direciona diretamente para a página inical, onde serão exibidas as informações de todas as contas cadastradas, com entradas e saídas do mês, assim como o saldo atual geral.
+- Ao acessar a tela de relatórios o usuário poderá emitir relatórios para análise de suas finanças, filtrando por período, categoria, banco e/ou conta, etc.
+- Na tela de transações o usuário terá acesso à ferramenta de inclusão de movimentações, incluindo todas receitas e despesas.
 
-[Adicione aqui o diagrama de fluxo de usuário da sua aplicação.] 
+![Userflow](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/userflow.jpeg "Userflow")
 
 > **Links Úteis**:
 > - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
