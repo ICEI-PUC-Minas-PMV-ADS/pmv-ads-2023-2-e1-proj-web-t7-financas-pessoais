@@ -40,7 +40,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 </ul>
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/labels.jpeg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/labels.png"
     <figcaption>Figura 1 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
 
