@@ -33,15 +33,15 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 <ul>
   <li>Bug (Erro no código)</li>
   <li>Desenvolvimento (Development)</li>
+  <li>Design (Design)</li>
   <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
+  <li>Metodologia (Methodology)</li>
   <li>Testes (Tests)</li>
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/labels.jpeg"
+    <figcaption>Figura 1 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
 
 
