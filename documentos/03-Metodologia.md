@@ -10,8 +10,13 @@ A metodologia ágil adotada para a elaboração deste projeto foi o SCRUM. Confo
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 - Scrum Master: Luzianne Fernandes Fialho
 - Product Owner: Janaina Esteves de Faria
-- Equipe de Desenvolvimento: Álvaro Henrique Orfus Tavares, Eros Rodrigues Valois Alvaia, Gustavo Felix Braga, Janaina Esteves de Faria, Larissa Cardoso de Miranda Araujo, Leonardo Aquim de Queiroz, Luzianne Fernandes Fialho
-- Equipe de Design: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
+- Analista de Requisitos: Gustavo Felix Braga
+- Design UI/UX: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
+- Desenvolvimento: Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
+- QA/Testes: Leonardo Aquim de Queiroz
+- Github: Álvaro Henrique Orfus Tavares
+- Documentação: (?)
+
 
 ### Processo
 Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro da plataforma Github. Nosso quadro contém os seguintes elementos:
@@ -38,7 +43,37 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
   <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
-  
+
+
+### Sprints
+
+#### Sprint 1
+##### Planejamento Etapa 1 - Documentação de contexto
+
+- Fizemos uma reunião on-line via Discord onde debatemos sobre o desenvolvimento da documentação de contexto do software. Aqui planejamoss e fizemos a divisão de algumas tarefas iniciais para iniciar o projeto.
+- Após o prazo determinado a equipe se reuniu novamente onde apresentamos as partes desenvolvidas por cada um e todo material foi editado em conjunto durante a reunião. Assim chegamos ao documento final em sua primeira versão.
+- Após a primeira avaliação em aula feita pelo Professor Marcos Kutova, fizemos nova reunião para atualizarmos a documentação conforme orientado.
+
+> [Aqui iremos colocar alguns prints destas reuniões]
+
+##### Planejamento Etapa 1 - Requisitos
+
+- Nesta fase nós debatemos via Whatsapp e Discord sobre como seria o visual do aplicativo, também todos seus requisitos principais, tanto funcionais quanto não funcionais.
+- Consideradas todas opções então novamente as tarefas foram dividas para que cada um pudesse fazer parte do processo de criação do documento.
+- Ao apresentar todo material em grupo, assim como na documentação de contexto, trabalhamos todos em uma reunião on-line para ajustar os textos e então concluímos esta versão inicial da parte de requisitos, que foi apresentada em aula com o professor.
+- Neste momento a documentação foi apresentada também em Slide conforme planejado pela Etapa 1. Após a aula e orientações do professor, fizemos correções desta Etapa e todos membros da equipe avaliaram e aprovaram. E em seguida ainda dentro do prazo todo material foi anexado ao Canvas para avaliação e pontuação do professor Marcos Kutova.
+
+> [Aqui iremos colocar alguns prints destas reuniões]
+
+#### Sprint 2
+##### Planejamento Etapa 2
+
+- xxx.
+- xxx.
+
+> [Aqui iremos colocar alguns prints destas reuniões]
+
+
 ### Ferramentas
 
 Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abaixo, juntamente com seus respectivos propósitos:
@@ -62,24 +97,31 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td><a href="http://...."> - </a></td>
+    <td> - </td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
     <td>GitHub Projects</td>
-    <td><a href="http://...."> - </a></td>
+    <td><a href="https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/657/views/1"> Kanban </a></td>
   </tr>
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td><a href="http://...."> - </a></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Ambiente de desenvolvimento</td>
+    <td>VSCode</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Comunicação diária</td>
+    <td>Discord e WhatsApp</td>
+    <td> - </td>
   </tr>
 </table>
-
-Além disso, para a comunicação diária e organização, a equipe utiliza o WhatsApp e o Discord. O ambiente de desenvolvimento preferencial é o VSCode, onde a equipe colabora e trabalha no código fonte do projeto. Essas ferramentas e ambientes contribuem para a eficácia do processo de desenvolvimento e para a gestão eficiente do projeto, seguindo a metodologia SCRUM.
 
 ### Estratégia de Organização de Codificação 
 
 Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
-Teste Eros
 
