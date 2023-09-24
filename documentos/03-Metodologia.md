@@ -51,7 +51,7 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 Na Sprint 1, desenvolvemos as atividades da Etapa 1, tais como a definição do problema a ser abordado pelo nosso projeto e a criação da "Documentação de Contexto" e da "Especificação do Projeto". Estruturamos também a proposta da solução com detalhes e estabelecemos os requisitos funcionais e não funcionais da aplicação.
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 1.jpg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 1.png"
     <figcaption>Figura 2 - Sprint 1</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Na Sprint 1, desenvolvemos as atividades da Etapa 1, tais como a definição do 
 Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desenvolvidos na Etapa 1. Definimos os papéis e as ferramentas de desenvolvimento durante esta sprint, além de elaborarmos os Wireframes e o fluxo de usuário conforme os requisitos da "Especificação do Projeto" entregue na Etapa 1.
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 2.jpg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 2.png"
     <figcaption>Figura 3 - Sprint 2</figcaption>
 </figure>
 
