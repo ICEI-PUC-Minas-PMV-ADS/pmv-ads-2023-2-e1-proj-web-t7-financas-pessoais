@@ -13,12 +13,11 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Analista de Requisitos: Gustavo Felix Braga
 - Design UI/UX: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
 - Desenvolvimento: Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
-- QA/Testes: Leonardo Aquim de Queiroz
+- QA: Leonardo Aquim de Queiroz
 - Github: Álvaro Henrique Orfus Tavares
-- Documentação: (?)
-
 
 ### Processo
+
 Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro da plataforma Github. Nosso quadro contém os seguintes elementos:
 
 - Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
@@ -48,30 +47,22 @@ Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro d
 ### Sprints
 
 #### Sprint 1
-##### Planejamento Etapa 1 - Documentação de contexto
 
-- Fizemos uma reunião on-line via Discord onde debatemos sobre o desenvolvimento da documentação de contexto do software. Aqui planejamoss e fizemos a divisão de algumas tarefas iniciais para iniciar o projeto.
-- Após o prazo determinado a equipe se reuniu novamente onde apresentamos as partes desenvolvidas por cada um e todo material foi editado em conjunto durante a reunião. Assim chegamos ao documento final em sua primeira versão.
-- Após a primeira avaliação em aula feita pelo Professor Marcos Kutova, fizemos nova reunião para atualizarmos a documentação conforme orientado.
+Na Sprint 1, desenvolvemos as atividades da Etapa 1, tais como a definição do problema a ser abordado pelo nosso projeto e a criação da "Documentação de Contexto" e da "Especificação do Projeto". Estruturamos também a proposta da solução com detalhes e estabelecemos os requisitos funcionais e não funcionais da aplicação.
 
-> [Aqui iremos colocar alguns prints destas reuniões]
-
-##### Planejamento Etapa 1 - Requisitos
-
-- Nesta fase nós debatemos via Whatsapp e Discord sobre como seria o visual do aplicativo, também todos seus requisitos principais, tanto funcionais quanto não funcionais.
-- Consideradas todas opções então novamente as tarefas foram dividas para que cada um pudesse fazer parte do processo de criação do documento.
-- Ao apresentar todo material em grupo, assim como na documentação de contexto, trabalhamos todos em uma reunião on-line para ajustar os textos e então concluímos esta versão inicial da parte de requisitos, que foi apresentada em aula com o professor.
-- Neste momento a documentação foi apresentada também em Slide conforme planejado pela Etapa 1. Após a aula e orientações do professor, fizemos correções desta Etapa e todos membros da equipe avaliaram e aprovaram. E em seguida ainda dentro do prazo todo material foi anexado ao Canvas para avaliação e pontuação do professor Marcos Kutova.
-
-> [Aqui iremos colocar alguns prints destas reuniões]
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 1.jpg"
+    <figcaption>Figura 2 - Sprint 1</figcaption>
+</figure>
 
 #### Sprint 2
-##### Planejamento Etapa 2
 
-- xxx.
-- xxx.
+Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desenvolvidos na Etapa 1. Definimos os papéis e as ferramentas de desenvolvimento durante esta sprint, além de elaborarmos os Wireframes e o fluxo de usuário conforme os requisitos da "Especificação do Projeto" entregue na Etapa 1.
 
-> [Aqui iremos colocar alguns prints destas reuniões]
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/milestones/Etapa 2.jpg"
+    <figcaption>Figura 3 - Sprint 2</figcaption>
+</figure>
 
 
 ### Ferramentas
