@@ -7,7 +7,7 @@
 > Dashboard sendo a página Home do sistema, por ela temos uma prévia da situação financeira do usuário.
 > ![Dashboard](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/02dashboard.png "Dashboard")
 
-> Tela de preparação para inclusão de lançamentos o usuário possui acesso também às últimas incluções.
+> Tela de preparação para inclusão de lançamentos o usuário possui acesso também as últimas inclusões.
 > ![Tela Lançamentos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/03home-lancamentos.png "Tela Lançamentos")
 
 > Modal de inclusão de novos lançamentos.
