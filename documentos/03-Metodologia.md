@@ -88,7 +88,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td> - </td>
+    <td><a href="https://www.figma.com/file/GguxrRbtHnMXhjxgyOvqpl/Wireframe---PucMoney?type=design&node-id=1%3A1206&mode=design&t=Z9lrfM434JCrM0dv-1"> Wireframe - PucMoney </td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
