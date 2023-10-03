@@ -60,7 +60,7 @@ Na Sprint 1, desenvolvemos as atividades da Etapa 1, tais como a definição do 
 Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desenvolvidos na Etapa 1. Definimos os papéis e as ferramentas de desenvolvimento durante esta sprint, além de elaborarmos os Wireframes e o fluxo de usuário conforme os requisitos da "Especificação do Projeto" entregue na Etapa 1.
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/Etapa 2.png"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/Etapa%202.png"
     <figcaption>Figura 3 - Sprint 2</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Projeto de Interface</td>
     <td>Figma</td>
-    <td> - </td>
+    <td><a href="https://www.figma.com/file/GguxrRbtHnMXhjxgyOvqpl/Wireframe---PucMoney?type=design&node-id=1%3A1206&mode=design&t=Z9lrfM434JCrM0dv-1"> Wireframe - PucMoney </td>
   </tr>
   <tr>
     <td>Gerenciamento do Projeto</td>
