@@ -1,3 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e2e4e0;
+    color: #212529;
+}
+
+/* LOGIN */
+
+/* botão tela de login */
+#btn-login {
+    width: 200px;
+    height: 55px;
+    font-size: 20px;    
+}
+
+.input-login {
+    height: 55px;
+}
+
+.label-login {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* imagem login */
+#img-login {
+    height: 350px;
+    width: 350px;
+}
+
+/* footer */
+#line-footer {
+    border-top: 1px solid #a0a0a0;
+    padding-top: 25px;
+}
+
 .logo {
     margin-top: 20px;
     height: 5rem;
@@ -54,3 +93,4 @@
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
 }
+
