@@ -9,7 +9,7 @@ body {
 
 /* LOGIN */
 
-/* botão tela de login */
+/* botão login */
 #btn-login {
     width: 200px;
     height: 55px;
@@ -28,13 +28,21 @@ body {
 /* imagem login */
 #img-login {
     height: 350px;
-    width: 350px;
+    width: 350px;    
 }
 
-/* footer */
+/* footer login*/
 #line-footer {
     border-top: 1px solid #a0a0a0;
-    padding-top: 25px;
+    padding-top: 25px;    
+}
+
+@media (max-width: 768px) {
+    /* imagem login */
+    #img-login {
+        height: 250px;
+        width: 250px;        
+    }
 }
 
 .logo {
