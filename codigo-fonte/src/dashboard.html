@@ -23,28 +23,35 @@
     <!--Importa a sidebar-->
     <!-- <div id="menu-container"></div>      -->
     <!--Seu código da dashboard fica aqui-->
-    <div class="container">
+    <nav class="nav-bar mb-4">
         <div class="row text-center" id="row-welcome">
             <p class="p-4">Bem vindo, Fulano de Tal!</p>
         </div>
-        <div class="row mt-4 mb-3">
-            <p class="text-start mt-4 ms-4 ms-md-5 ps-md-4" id="text-p-dashboard">Dashboard</p>
+    </nav>
+
+    <div class="container d-flex justify-content-start align-items-center">
+        <div class="row m-4">
+            <p id="text-p-dashboard">Dashboard</p>
         </div>
-        <div class="row justify-content-center p-4 mx-3 pt-5" id="card-valor">
-            <div class="col-11 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+    </div>
+
+    <div class="container px-5">
+        <div class="row d-flex justify-content-center align-items-center py-5" id="card-valor">
+            <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
                 <p class="text-start m-0 text-dashboard">Saldo</p>
                 <p class="text-start" id="saldo">R$15.000,00</p>
             </div>
-            <div class="col-11 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+            <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
                 <p class="text-start m-0 text-dashboard">Receita</p>
                 <p class="text-start" id="receita">R$15.000,00</p>
             </div>
-            <div class="col-11 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+            <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
                 <p class="text-start m-0 text-dashboard">Despesas</p>
                 <p class="text-start" id="despesa">R$15.000,00</p>
             </div>
         </div>
     </div>
+
     <!-- scripts -->
     <script src="script.js"></script>
 </body>
