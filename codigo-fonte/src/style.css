@@ -74,3 +74,73 @@ fieldset {
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
 }
+/*Configurações tela de Login */
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-logo {
+   display: block;
+   max-width:500px;
+   max-height:350px;
+   width: auto;
+   height: auto;
+   margin: auto;
+   margin-top: 0;
+}
+
+.form-mail {
+    background-color: #FFF;
+	width: 15%;
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	position: block;
+    padding: 10px;
+    font-size: medium;
+    border-color: black;
+    border-radius: 30px;
+    
+    
+     
+}
+.form-password {
+    background-color: #FFF;
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	position: block;
+    padding: 1px;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    
+}
+input[type=text], input[type=number] {
+	width: 250px;
+    height: 30px;
+}
+.btn-submit {
+	margin: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 80px;
+    height: 30px;
+    background-color: #618068;  
+    color: #FFF;
+	border: 2px solid transparent;
+    border-radius: 40px;  
+    
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.div-footer {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-top: 220px ;
+
+}
