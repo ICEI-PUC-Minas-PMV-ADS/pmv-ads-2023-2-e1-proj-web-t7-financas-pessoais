@@ -2,21 +2,19 @@ function carregarMenu() {
     const menuContainer = document.getElementById('menu-container');
     const menuUrl = 'menu.html';
 
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                menuContainer.innerHTML = xhr.responseText;
-            } else {
-                console.error('Erro ao carregar o menu.');
+    fetch(menuUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar o menu.');
             }
-        }
-    };
-    xhr.open('GET', menuUrl, true);
-    xhr.send();
+            return response.text();
+        })
+        .then(menuHtml => {
+            menuContainer.innerHTML = menuHtml;
+        })
+        .catch(error => {
+            console.error('Erro ao carregar o menu:', error);
+        });
 }
 
 carregarMenu();
-
-
-//funções da tela de relatórios
