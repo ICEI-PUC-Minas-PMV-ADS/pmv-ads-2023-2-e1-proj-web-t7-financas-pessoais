@@ -1,0 +1,76 @@
+.logo {
+    margin-top: 20px;
+    height: 5rem;
+    width: auto;
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+.container-fluid {
+    margin-left: -6px;
+    width: auto;    
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.menu-container {
+    color: white;
+}
+
+.menu-container .nav-link {
+    color: white;
+}
+
+.menu-container .nav-link:hover {
+    color: lightgrey;
+}
+
+.menu-container .fa {
+    color: white;
+}
+
+.menu-container .nav-pills .nav-item a span {    
+    font-size: 20px;
+    font-weight: 400;    
+}
+
+.nav-item {
+    padding-top: 0.06rem;
+    padding-bottom: 0.06rem;
+}
+
+.nav-pills li a:hover {
+    background-color: rgba(245, 245, 245, 0.582);
+}
+
+.sidebar-menu {
+    background-color: #212529;
+}
+
+.user-dropdown-menu {
+    position: relative;
+}
+
+.user-dropdown-menu button {
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.user-dropdown-menu button:hover {
+    background-color: rgba(245, 245, 245, 0.582);
+}

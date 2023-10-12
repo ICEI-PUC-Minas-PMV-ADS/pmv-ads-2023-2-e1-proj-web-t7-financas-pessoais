@@ -1,30 +1,30 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
-
 ## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+A metodologia ágil adotada para a elaboração deste projeto foi o SCRUM. Conforme mencionado por Amaral, Fleury e Isoni (2019, p. 68), o SCRUM oferece vantagens como: uma visão clara dos resultados a serem entregues, estabelecimento de ritmo e disciplina para a execução, definição precisa dos papéis e responsabilidades dos membros da equipe (Scrum Owner, Scrum Master e Time), capacitação dos membros da equipe para enfrentar os desafios, compartilhamento e distribuição do conhecimento de maneira colaborativa, e criação de um ambiente propício para críticas às ideias, não às pessoas.
 
 ### Divisão de Papéis
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 - Scrum Master: Luzianne Fernandes Fialho
 - Product Owner: Janaina Esteves de Faria
-- Equipe de Desenvolvimento: Álvaro Henrique O. Tavares, Eros Rodrigues Valois Alvaia, Gustavo Felix Braga, Janaina Esteves de Faria, Larissa C. de Miranda Araujo, Leonardo Aquim de Queiroz, Luzianne Fernandes Fialho
-- Equipe de Design: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
+- Analista de Requisitos: Gustavo Felix Braga
+- Design UI/UX: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
+- Desenvolvimento: Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
+- QA: Leonardo Aquim de Queiroz
+- Github: Álvaro Henrique Orfus Tavares
 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+Para a aplicação do método ágil, decidimos utilizar o quadro Kanban dentro da plataforma Github. Nosso quadro contém os seguintes elementos:
 
+- Backlog: onde as tarefas a serem trabalhadas são inseridas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem também ser incluídas nesta lista.
+- To Do: representa o Backlog atual em que estamos trabalhando.
+- In Progress: é o local para onde uma tarefa é movida assim que é iniciada.
+- Impedment: representa um item que tem um impedimento.
+- Done: é onde as tarefas que passaram pelos testes e controle de qualidade são colocadas e estão prontas para ser entregues ao usuário.
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
@@ -32,32 +32,87 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 <ul>
   <li>Bug (Erro no código)</li>
   <li>Desenvolvimento (Development)</li>
+  <li>Design (Design)</li>
   <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
+  <li>Metodologia (Methodology)</li>
   <li>Testes (Tests)</li>
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/labels.png"
+    <figcaption>Figura 1 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
-  
+
+
+### Sprints
+
+#### Sprint 1
+
+Na Sprint 1, desenvolvemos as atividades da Etapa 1, tais como a definição do problema a ser abordado pelo nosso projeto e a criação da "Documentação de Contexto" e da "Especificação do Projeto". Estruturamos também a proposta da solução com detalhes e estabelecemos os requisitos funcionais e não funcionais da aplicação.
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/Etapa 1.png"
+    <figcaption>Figura 2 - Sprint 1</figcaption>
+</figure>
+
+#### Sprint 2
+
+Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desenvolvidos na Etapa 1. Definimos os papéis e as ferramentas de desenvolvimento durante esta sprint, além de elaborarmos os Wireframes e o fluxo de usuário conforme os requisitos da "Especificação do Projeto" entregue na Etapa 1.
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/Etapa%202.png"
+    <figcaption>Figura 3 - Sprint 2</figcaption>
+</figure>
+
+
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abaixo, juntamente com seus respectivos propósitos:
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
-| AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
-|-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
-
+<table>
+  <tr>
+    <th>AMBIENTE</th>
+    <th>PLATAFORMA</th>
+    <th>LINK DE ACESSO</th>
+  </tr>
+  <tr>
+    <td>Repositório de código fonte</td>
+    <td>GitHub</td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais" target="_blank">Finanças Pessoais</a></td>
+  </tr>
+  <tr>
+    <td>Documentos do projeto</td>
+    <td>GitHub</td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/tree/main/documentos" target="_blank">Documentos</a></td>
+  </tr>
+  <tr>
+    <td>Projeto de Interface</td>
+    <td>Figma</td>
+    <td><a href="https://www.figma.com/file/GguxrRbtHnMXhjxgyOvqpl/Wireframe---PucMoney?type=design&node-id=1%3A1206&mode=design&t=Z9lrfM434JCrM0dv-1"> Wireframe - PucMoney </td>
+  </tr>
+  <tr>
+    <td>Gerenciamento do Projeto</td>
+    <td>GitHub Projects</td>
+    <td><a href="https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/657/views/1"> Kanban </a></td>
+  </tr>
+  <tr>
+    <td>Hospedagem</td>
+    <td>GitHub Pages</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Ambiente de desenvolvimento</td>
+    <td>VSCode</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Comunicação diária</td>
+    <td>Discord e WhatsApp</td>
+    <td> - </td>
+  </tr>
+</table>
 
 ### Estratégia de Organização de Codificação 
 
 Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+
