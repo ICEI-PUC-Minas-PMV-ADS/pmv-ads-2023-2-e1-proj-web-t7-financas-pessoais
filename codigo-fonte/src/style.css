@@ -54,6 +54,26 @@ body {
     margin-bottom: 20px;
 }
 
+body {
+    margin: 0;
+}
+
+.container-fluid {
+    margin-left: -6px;
+    width: auto;    
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .menu-container {
     color: white;
 }
