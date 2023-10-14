@@ -74,6 +74,10 @@ fieldset {
     border-radius: 5px;
 }
 
+#menu-container {
+    float: left;
+}
+
 .menu-container {
     color: white;
 }
