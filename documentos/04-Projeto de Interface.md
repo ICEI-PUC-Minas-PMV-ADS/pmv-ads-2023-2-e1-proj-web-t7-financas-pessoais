@@ -1,7 +1,7 @@
 # Projeto de Interface
 
 > Tela de Login para entrada no sistema PucMoney.
-> ![Dashboard](./img/01login.jpg)
+> ![Login](./img/01login.jpg)
 
 > Dashboard sendo a página Home do sistema, por ela temos uma prévia da situação financeira do usuário.
 > ![Dashboard](.img/02dashboard.jpg)
