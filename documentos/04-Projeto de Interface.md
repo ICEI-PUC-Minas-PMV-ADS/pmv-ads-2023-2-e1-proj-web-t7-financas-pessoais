@@ -1,7 +1,7 @@
 # Projeto de Interface
 
 > Tela de Login para entrada no sistema PucMoney.
-> ![Login](img/01login.jpg)
+> ![Login](img/01login.jpg?raw=true)
 
 > Dashboard sendo a página Home do sistema, por ela temos uma prévia da situação financeira do usuário.
 > ![Dashboard](img/02dashboard.jpg)
@@ -23,6 +23,6 @@
 
 ## User Flow
 
-![Userflow](img/userflow-pucmoney.png "Userflow")
+![Userflow](img/userflow-pucmoney.png)
 
 ## Protótipo baixa fidelidade
