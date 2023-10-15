@@ -19,6 +19,7 @@ function carregarMenu() {
 
 carregarMenu();
 
+// DASHBOARD
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -57,3 +58,4 @@ new Chart(ctx, {
         }
     }
 });
+
