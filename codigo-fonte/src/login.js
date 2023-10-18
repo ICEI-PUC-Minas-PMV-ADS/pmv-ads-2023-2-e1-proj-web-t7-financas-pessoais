@@ -10,12 +10,16 @@ function entrar() {
         if (usuario.email === email && usuario.password === senha) {            
             usuarioEncontrado = true;            
             // return location.href = "dashboard.html";            
-            return setTimeout(function() {window.location.href = "dashboard.html";}, 1000);            
+            if(!i_email.validity.valueMissing && !i_senha.validity.valueMissing) {
+                btn_login.type = "button";
+                return setTimeout(function() {location.href = "dashboard.html";}, 1000);            
+            }
         }
     });   
     
-    if (!usuarioEncontrado) {        
-        Swal.fire('Dados inválidos!')
+    if (!usuarioEncontrado && !i_email.validity.valueMissing && !i_senha.validity.valueMissing) {        
+        btn_login.type = "button";
+        Swal.fire('Dados inválidos!');
     }    
 }
 
