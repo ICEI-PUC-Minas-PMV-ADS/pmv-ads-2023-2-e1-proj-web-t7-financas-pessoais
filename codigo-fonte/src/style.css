@@ -19,12 +19,15 @@ body {
 .content {
     flex: 1;
     padding: 20px;
+    width: 50%;
 }
 
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
+    margin-bottom: 15px;
+    min-height: 150px;
 }
 
 .menu-container {
@@ -73,4 +76,53 @@ fieldset {
 
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
+}
+
+.col-md-6 {
+    width: 33%;
+}
+
+.pull-right {
+    margin-top: 20px;
+    width: 8%;
+    float: right;
+}
+
+.radio-right-margin {
+    margin-right: 30px;
+    font-size:large;
+}
+
+.radio-left-margin {
+    margin-left: 30px;
+}
+
+input[type="date" i] {   
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    font-size:large;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 40px;
+}
+
+select, textarea {
+    text-align: center;
+    font-size:large;
+    width: 50%;
+    height: 40px;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+
+.btn-md {
+    width: 10%;
+}
+
+.btn-secondary, .btn-primary {
+    margin-bottom: 20px;
 }
