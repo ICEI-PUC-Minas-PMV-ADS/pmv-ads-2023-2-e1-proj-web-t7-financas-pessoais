@@ -37,6 +37,19 @@ body {
     padding-top: 25px;    
 }
 
+/* modal login */
+
+#i_cadastro {
+    text-decoration: none;
+    color: #28a745; 
+    transition: color 0.3s;
+}
+
+#i_cadastro:hover {
+    color: #064b16;
+    text-decoration: underline; 
+}
+
 @media (max-width: 768px) {
     /* imagem login */
     #img-login {

@@ -1,17 +1,4 @@
 // LOGIN
-let usuarios = [
-    {
-        email: 'usuario1@gmail.com',
-        senha: '1'
-    },
-    {
-        email: 'usuario2@gmail.com',
-        senha: '2'
-    }
-]
-
-localStorage.setItem('usuarios', JSON.stringify(usuarios));
-
 function entrar() {
     let email = i_email.value;
     let senha = i_senha.value;
@@ -20,15 +7,35 @@ function entrar() {
     let usuarioEncontrado = false;    
 
     usuarios.forEach(usuario => {
-        if (usuario.email === email && usuario.senha === senha) {            
+        if (usuario.email === email && usuario.password === senha) {            
             usuarioEncontrado = true;            
-            return location.href = "dashboard.html";            
+            // return location.href = "dashboard.html";            
+            return setTimeout(function() {window.location.href = "dashboard.html";}, 1000);            
         }
     });   
     
-    if (!usuarioEncontrado) {
-        alert('Dados inválidos!');
-    }
+    if (!usuarioEncontrado) {        
+        Swal.fire('Dados inválidos!')
+    }    
 }
 
 btn_login.onclick = entrar;
+
+// Cadastro
+function cadastrar() {
+    let nameModal = modal_name.value;
+    let emailModal = modal_email.value;
+    let passwordModal = modal_password.value;
+    
+    let cadastro = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    cadastro.push({
+        name: nameModal,
+        email: emailModal,
+        password: passwordModal
+    });
+
+    localStorage.setItem('usuarios', JSON.stringify(cadastro));
+}
+
+modal_btn.onclick = cadastrar;
