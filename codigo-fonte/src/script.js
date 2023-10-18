@@ -59,3 +59,9 @@ new Chart(ctx, {
     }
 });
 
+
+let welcome = document.getElementById("i_welcome");
+
+let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || [];
+
+welcome.textContent = "Bem vindo, " + usuarioAtivo.name + "!";

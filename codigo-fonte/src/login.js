@@ -9,9 +9,18 @@ function entrar() {
     usuarios.forEach(usuario => {
         if (usuario.email === email && usuario.password === senha) {            
             usuarioEncontrado = true;            
-            // return location.href = "dashboard.html";            
-            if(!i_email.validity.valueMissing && !i_senha.validity.valueMissing) {
+            
+            if(!i_email.validity.valueMissing && !i_senha.validity.valueMissing) {                
+                let usuarioAtivo = {
+                    name: usuario.name,
+                    email: usuario.email,
+                    password: usuario.password
+                }
+
+                localStorage.setItem('usuarioAtivo', JSON.stringify(usuarioAtivo));
+
                 btn_login.type = "button";
+                
                 return setTimeout(function() {location.href = "dashboard.html";}, 1000);            
             }
         }
