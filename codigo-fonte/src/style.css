@@ -58,7 +58,8 @@ fieldset {
 }
 
 .sidebar-menu {
-    background-color: #212529;
+    /*background-color: #212529;*/
+    background-color: #618068;
 }
 
 .user-dropdown-menu {
@@ -83,6 +84,7 @@ h1 {
 }
 .img-logo {
    display: block;
+   align-items: center;
    max-width:500px;
    max-height:350px;
    width: auto;
@@ -92,6 +94,7 @@ h1 {
 }
 
 .form-mail {
+    align-items: center;
     background-color: #FFF;
 	width: 15%;
     height: auto;
@@ -100,13 +103,16 @@ h1 {
 	position: block;
     padding: 10px;
     font-size: medium;
+    font-weight: 400;
     border-color: black;
     border-radius: 30px;
+    
     
     
      
 }
 .form-password {
+    align-items: center;
     background-color: #FFF;
 	width: 15%;
 	margin-left: auto;
@@ -119,10 +125,12 @@ h1 {
     
 }
 input[type=text], input[type=number] {
+    align-items: center;
 	width: 250px;
     height: 30px;
 }
 .btn-submit {
+    align-items: center;
 	margin: auto;
     margin-left: auto;
     margin-right: auto; 
@@ -131,16 +139,57 @@ input[type=text], input[type=number] {
     background-color: #618068;  
     color: #FFF;
 	border: 2px solid transparent;
-    border-radius: 40px;  
+    border-radius: 3%;  
     
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 .div-footer {
+    
     width: auto;
     height: auto;
     text-align: center;
     padding-top: 220px ;
 
+}
+.cabecalho_relatorio {
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    
+    
+    
+    
+}
+.container_filtros {
+    position: relative;
+    padding: 70px 25px 25px 25px;
+    font-size: 20px;
+    align-items: center;
+    border: 2px solid #618068; 
+    border-radius: 1px;  
+    border-width: 10%;
+    
+     
+   
+}
+.box-input{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: auto; 
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 3%; 
+    
+}
+
+.btn-submit {
+    align-items: flex;
+    width: 12%;
+    height: 6%;
+    border: 2px solid transparent;
+    text-align: center;
+    display: block;
+
+    
 }

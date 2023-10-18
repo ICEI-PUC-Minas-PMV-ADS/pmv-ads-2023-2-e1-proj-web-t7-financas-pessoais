@@ -7,15 +7,40 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <div id="menu-container"></div>    
+  <body>
+    <div class="container-fluid d-flex">
+      <div id="menu-container"></div>
+        <div class="content">
+          <!-- Todo o código da sua tela vem aqui -->
+          <header class=" cabecalho_relatorio">
+            <h2>Relatórios</h2>
+          </header>
+          <section class="container_filtros">
+            <p>Período</p>
+            <label for="purchase_date"> <span class="required-field"></span></label>
+            <input type="date" id="purchase_date" name="purchase_date" class="block" required>
+            <label for="purchase_date"><span class="required-field"></span></label>
+            <input type="date" id="purchase_date" name="purchase_date" class="block" required>
+            <div class="box-input">
+              <p class="teste">Categoria</p>
+              <label class="categoria_filtro" for="categoria"><span class="required-field"></span></label>
+              <select class="categoria" id="categoria" name="categoria" required>
+                  <option value="">Selecione...</option>
+                  <option value="Supermercado">Supermercado</option>
+                  <option value="Combustivel">Combustivel</option>
+              </select>
+              
+              <input type="submit" class="btn-submit" value="Gerar Relatório">
+            </div>
 
-    <!--Seu código da tela de relatórios fica aqui-->
+          </section>
+        </div>
+    </div>
 
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+      <!-- scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
 </body>
 
 </html>
