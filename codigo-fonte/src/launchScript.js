@@ -16,7 +16,8 @@ const iconsList = {
     'Avião': 'fa-plane',
     'Coração': 'fa-heart',
     'Dinheiro': 'fa-dollar-sign',
-    'Cartão': 'fa-wallet'
+    'Cartão': 'fa-wallet',
+    'Pets': 'fa-paw'
 };
 
 populateCategoryTable(categories);
@@ -80,7 +81,7 @@ function formatDate(date) {
 function populateTable(data) {
     const tableBody = document.querySelector('#launchTable tbody');
     tableBody.innerHTML = '';
-
+        
     data.forEach(item => {
         const row = tableBody.insertRow();
 
