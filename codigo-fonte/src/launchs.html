@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lançamentos</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -29,13 +30,8 @@
                     </div>
                     <div class="col-md-6">
                         <legend>Categoria</legend>
-                        <select name="categories" id="categories">
-                            <option value="">Selecione uma categoria</option>
-                            <option value="all">Todas</option>
-                            <option value="food">Alimentação</option>
-                            <option value="travels">Viagens</option>
-                            <option value="car">Carro</option>
-                            <option value="education">Educação</option>
+                        <select name="categories" id="categoriesFilter">
+                            <option value="">Selecione uma categoria</option>                            
                         </select>
                     </div>
                     <div class="col-md-6">
@@ -60,14 +56,14 @@
             <br>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-secondary pull-right btn-md" type="button"><i class="fa fa-pen-to-square"></i>  Novo Lançamento</button>
-                    <button class="btn btn-primary pull-right marginRight" type="button"><i class="fa fa-file-lines"></i>  Categorias</button>
+                    <button class="btn btn-secondary pull-right btn-md" id="NewLaunch" type="button" onclick="showLaunchModal()"><i class="fa fa-pen-to-square"></i>  Novo</button>
+                    <button class="btn btn-primary pull-right marginRight" type="button" onclick="showCategoryModal()"><i class="fa fa-file-lines"></i>  Categorias</button>
                 </div>
                 <br>
                 <br>
             </div>
             <div class="row">                
-                <table class="table table-striped  table-hover">
+                <table class="table table-striped  table-hover" id="launchTable">
                     <thead>
                         <tr>
                           <th scope="col">Data</th>
@@ -77,117 +73,136 @@
                           <th scope="col">Valor</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td>13/10/2023</td> 
-                          <td>Lanche</td> 
-                          <td>Alimentação</td>
-                          <td>Saída</td>
-                          <td>R$15,00</td>                        
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Salário</td>
-                            <td>Salário</td>
-                            <td>Entrada</td>
-                            <td>R$6.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Conta de água</td>
-                            <td>Despesas da casa</td>
-                            <td>Saída</td>
-                            <td>R$130,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Internet</td>
-                            <td>Despesas da casa</td>
-                            <td>Saída</td>
-                            <td>R$99,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Netflix</td>
-                            <td>Entretenimento</td>
-                            <td>Saída</td>
-                            <td>R$39,90</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Mensalidade da Academia</td>
-                            <td>Saúde</td>
-                            <td>Saída</td>
-                            <td>R$99,90</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Pizza</td>
-                            <td>Alimentação</td>
-                            <td>Saída</td>
-                            <td>R$65,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Padaria</td>
-                            <td>Alimentação</td>
-                            <td>Saída</td>
-                            <td>R$30,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Petshop</td>
-                            <td>Pets</td>
-                            <td>Saída</td>
-                            <td>R$121,00</td>
-                        </tr>
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Farmácia</td>
-                            <td>Saúde</td>
-                            <td>Saída</td>
-                            <td>R$386,00</td>
-                        </tr> 
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Cinema</td>
-                            <td>Entretenimento</td>
-                            <td>Saída</td>
-                            <td>R$80,00</td>
-                        </tr> 
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Supermercado</td>
-                            <td>Alimentação</td>
-                            <td>Saída</td>
-                            <td>R$600,00</td>
-                        </tr> 
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Feira</td>
-                            <td>Alimentação</td>
-                            <td>Saída</td>
-                            <td>R$150,00</td>
-                        </tr> 
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Açougue</td>
-                            <td>Alimentação</td>
-                            <td>Saída</td>
-                            <td>R$330,00</td>
-                        </tr> 
-                        <tr>
-                            <td>13/10/2023</td>
-                            <td>Posto de Gasolina</td>
-                            <td>Carro</td>
-                            <td>Saída</td>
-                            <td>R$271,00</td>
-                        </tr> 
+                      <tbody>                                              
                       </tbody>
                 </table>
             </div>
             <div class="row">                
-                <footer style="text-align: center;">PucMoney - Todos os direitos Reservados - 2023</footer>
+                <footer>PucMoney - Todos os direitos Reservados - 2023</footer>
+            </div>
+
+            <!-- Modal de lançamentos-->
+            <div class="modal fade" id="launchModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="modalLabel">Novo Lançamento</h5>
+                       <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">                         
+                         X
+                       </button>
+                     </div>
+                     <div class="modal-body">
+                       <form id="form">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label for="value">Valor</label>
+                                <input type="number" class="form-control" id="value" required>
+
+                                <div class="launchDateClass">
+                                    <label for="launchDate">Data</label>
+                                    <input type="date" class="form-control" id="launchDate" required>
+                                </div>
+                            </div>
+                         </div> 
+                         <div class="form-group">
+                           <label for="selectCategories">Categoria</label>
+                           <select class="form-control" id="selectCategories" required>
+                             <option value="">Selecione uma categoria</option>                             
+                           </select>
+                         </div>                                                 
+                         <div class="form-group">
+                           <label for="description">Descrição</label>
+                           <textarea class="form-control" id="description" rows="4" required></textarea>
+                         </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="radio" id="revenues" name="category" value="revenues" checked="checked">
+                                    <label class="radio-right-margin" for="revenues">Receitas</label>
+                                    <input type="radio" id="expenses" name="category" value="expenses">
+                                    <label for="expenses">Despesas</label> 
+
+                                    <div class="form-check form-switch switches">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Efetivado?</label>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                       </form>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa fa-close"></i>  Fechar</button>
+                       <button type="button" class="btn btn-primary" id="submit"><i class="fa fa-save"></i>  Salvar</button>
+                     </div>
+                   </div>
+                </div>
+            </div>
+
+            <!-- Modal de Categorias -->
+            <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="categoryModalLabel">Categorias</h5>
+                            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+                             X
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-primary" onclick="showNewCategoryModal()">
+                                <i class="fa fa-pen-to-square"></i> Novo
+                            </button>
+    
+                            <table class="table mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Ícone</th>
+                                        <th>Nome</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="categoryTableBody">                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- Modal para Cadastrar Nova Categoria -->
+            <div class="modal fade" id="newCategoryModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="newCategoryModalLabel">Cadastrar Nova Categoria</h5>
+                            <type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+                                X
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form">
+                                <div class="form-group">
+                                    <label for="categoryName">Nome</label>
+                                    <input type="text" class="form-control" id="categoryName" placeholder="Nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="iconDropdown">Ícone</label>
+                                    <select class="form-control" id="iconDropdown" onchange="selectIconFromDropdown()">
+                                        <option value="" disabled selected>Selecione um ícone</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>Ícone Selecionado:</label>
+                                    <i id="selectedIcon"></i>
+                                </div>                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa fa-close"></i>  Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="saveCategory()">Salvar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>   
@@ -196,6 +211,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="launchScript.js"></script>
 </body>
 
 </html>

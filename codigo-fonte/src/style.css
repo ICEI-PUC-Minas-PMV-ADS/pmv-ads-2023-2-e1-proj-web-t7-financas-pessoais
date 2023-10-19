@@ -1,6 +1,6 @@
 .logo {
     margin-top: 20px;
-    height: 5rem;
+    height: 7rem;
     width: auto;
     display: block;
     margin-left: 30px;
@@ -17,9 +17,20 @@ body {
 }
 
 .content {
-    flex: 1;
     padding: 20px;
-    width: 50%;
+    margin-left: 210px;
+    width: calc(100% - 220px);
+    background-color: rgb(256, 256, 256);
+}
+
+.sidebar-menu {
+    background-color: rgb(51, 51, 102);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    padding-top: 20px;
 }
 
 fieldset {
@@ -31,11 +42,11 @@ fieldset {
 }
 
 .menu-container {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link:hover {
@@ -43,7 +54,7 @@ fieldset {
 }
 
 .menu-container .fa {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-pills .nav-item a span {    
@@ -60,18 +71,14 @@ fieldset {
     background-color: rgba(245, 245, 245, 0.582);
 }
 
-.sidebar-menu {
-    background-color: #212529;
-}
-
 .user-dropdown-menu {
     position: relative;
 }
 
 .user-dropdown-menu button {
-    background-color: transparent;
-    color: white;
-    transition: background-color 0.3s ease;
+    background-color: rgb(51, 50, 102);
+    color: rgb(256, 256, 256);
+    background-color: rgb(51, 50, 102) ease;
 }
 
 .user-dropdown-menu button:hover {
@@ -100,9 +107,9 @@ fieldset {
 input[type="date" i] {   
     align-items: center;
     text-align: center;
-    display: inline-flex;
+    display: inline-block;
     font-size:large;
-    margin-right: 20px;
+    margin-left: 10px;
     margin-bottom: 20px;
     width: 35%;
     height: 40px;
@@ -123,6 +130,88 @@ select, textarea {
     width: 10%;
 }
 
-.btn-secondary, .btn-primary {
+.btn-secondary {
     margin-bottom: 20px;
+    background-color: #715C8C;
+}
+.btn-primary {
+    margin-bottom: 20px;
+    background-color: rgb(51, 50, 102);
+}
+
+.btn-primary:hover {
+    background-color: rgb(89, 85, 158);
+}
+
+.btn-secondary:hover {
+    background-color: #838BC2;
+}
+
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.switches {
+    display: inline-block;
+    float: right;
+}
+
+.launchDate {
+    display: inline-block;
+    float: right;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+input[type="number" i] {
+    margin-left: 10px;
+    width: 35%;
+}
+
+.input-left-margin {
+    margin-left: 100px;
+}
+
+.launchDateClass {
+    float: right;
+}
+#launchDate {
+    width: auto;
+}
+
+label {
+    display: inline-block; 
+}
+
+.modal-header {
+    background-color: rgb(51, 51, 102);
+    color: rgb(256, 256, 256); 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.table>thead {
+    background-color: rgb(55, 50, 102);
+    color: rgb(256, 256, 256); 
+}
+
+.green-text {
+    color: rgb(22, 187, 22) !important;
+    font-weight: 500;
+}
+
+.red-text {
+    color: rgb(204, 5, 5) !important;
+    font-weight: 500;
 }
