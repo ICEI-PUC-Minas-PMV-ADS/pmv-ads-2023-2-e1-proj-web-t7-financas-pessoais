@@ -1,4 +1,3 @@
-//Script da tela de lançamentos
 const categories = JSON.parse(localStorage.getItem('categories')) || [];
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', saveData);
@@ -21,26 +20,44 @@ const iconsList = {
 };
 
 populateCategoryTable(categories);
+setDefaultDateValues();
 populateCategorySelect('selectCategories', categories);
 populateCategorySelect('categoriesFilter', categories);
 populateTable(savedData);
 
-function showLaunchModal(){
+function clearLaunchModalFields() {
+    document.getElementById('value').value = '';
+    document.getElementById('launchDate').value = '';
+    document.getElementById('selectCategories').value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('revenues').checked = true;
+    document.getElementById('expenses').checked = false;
+    document.getElementById('flexSwitchCheckDefault').checked = false;
+}
+
+function showLaunchModal() {
+    clearLaunchModalFields();
     $("#launchModal").modal('show');
 }
+
 function showCategoryModal(){
     $("#categoryModal").modal('show');
 }
 
-function showNewCategoryModal() {
+function clearCategoryModalFields() {
     document.getElementById('categoryName').value = '';
-    document.getElementById('selectedIcon').value = '';
+    let icon = document.getElementById('selectedIcon');
+    icon.className = '';
     let iconDropdown = document.getElementById('iconDropdown');
-    iconDropdown.innerHTML = '<option value="" disabled selected>Selecione um ícone</option>';    
+    iconDropdown.innerHTML = '<option value="" disabled selected>Selecione um ícone</option>';
+}
 
+function showNewCategoryModal() {
+    clearCategoryModalFields();
     populateIconDropdown();
     $('#newCategoryModal').modal('show');
 }
+
 
 function saveData() {    
     $("#launchModal").modal('hide');
@@ -73,25 +90,88 @@ function getIconForCategory(categoryName) {
     return category ? category.icon : 'fa-bars'; 
 }
 
+function clearFilters() {
+    location.reload();
+}
+
+function filterLaunchs() {
+    debugger;
+    const startDate = new Date(document.getElementById('startDate').value);
+    const endDate = new Date(document.getElementById('endDate').value);
+    const category = document.getElementById('categoriesFilter').value;
+    const launchType = getSelectedLaunchType();
+
+    const allLaunchs = JSON.parse(localStorage.getItem('savedData')) || [];
+
+    const filteredLaunchs = allLaunchs.filter(data => {
+        const launchDate = new Date(data.launchDate);
+        const isRevenues = data.isRevenues;
+        const isExpenses = data.isExpenses;
+
+        const isDateInRange = launchDate >= startDate || launchDate <= endDate;
+        const isCategoryMatch = category === '' || data.category === category;
+
+        if (launchType === 'allCategories') {
+            return isDateInRange && isCategoryMatch;
+        } else if (launchType === 'entries') {
+            return isDateInRange && isCategoryMatch && isRevenues;
+        } else if (launchType === 'exits') {
+            return isDateInRange && isCategoryMatch && isExpenses;
+        }
+    });
+
+    populateTable(filteredLaunchs);
+}
+
+
+function getSelectedLaunchType() {
+    let allCategoriesRadio = document.getElementById('allCategories');
+    let entriesRadio = document.getElementById('entries');
+    let exitsRadio = document.getElementById('exits');
+
+    if (allCategoriesRadio.checked) {
+        return 'allCategories';
+    } else if (entriesRadio.checked) {
+        return 'entries';
+    } else if (exitsRadio.checked) {
+        return 'exits';
+    }
+}
+
 function formatDate(date) {
     const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
     return new Date(date).toLocaleDateString(undefined, options);
 }
 
 function populateTable(data) {
-    const tableBody = document.querySelector('#launchTable tbody');
-    tableBody.innerHTML = '';
-        
-    data.forEach(item => {
-        const row = tableBody.insertRow();
+    data.sort((a, b) => new Date(b.launchDate) - new Date(a.launchDate));
+    const table = $('#launchTable').DataTable();
+    
+    if (table) {
+        table.destroy();
+    }
+    
+    table.clear();
 
-        row.innerHTML = `
-            <td>${formatDate(item.launchDate)}</td>
-            <td>${item.description}</td>
-            <td><i class="fas ${item.icon}"></i> ${item.category}</td>
-            <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
-            <td class="${item.isRevenues ? 'green-text' : 'red-text'}">R$ ${item.value}</td>
-        `;
+    data.forEach(item => {
+        
+        const formattedValue = formatCurrency(item);        
+        table.row.add([
+            formatDate(item.launchDate),
+            item.description,
+            `<i class="fas ${item.icon}"></i> ${item.category}`,
+            item.isRevenues ? 'Receitas' : 'Despesas',
+            `<span class="${item.isRevenues ? 'green-text' : 'red-text'}">${formattedValue}</span>`
+        ]);
+    });
+    
+    table.draw();
+    dataTableOptions();
+}
+function formatCurrency(item) {
+    return parseFloat(item.value).toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
     });
 }
 
@@ -150,7 +230,7 @@ function populateCategoryTable(data) {
 function populateCategorySelect(selectElementId, categories) {
     const selectElement = document.getElementById(selectElementId);
 
-    selectElement.innerHTML = '<option value="">Selecione uma categoria</option>';
+    selectElement.innerHTML = '<option value="">Todas</option>';
     for (const category of categories) {
         const option = document.createElement('option');
         option.value = category.name;
@@ -160,5 +240,47 @@ function populateCategorySelect(selectElementId, categories) {
     }
 }
 
+function setDefaultDateValues() {
+    let endDateInput = document.getElementById('endDate');
+    let startDateInput = document.getElementById('startDate');
 
+    let currentDate = new Date();
+    let startDate = new Date(currentDate);
+    startDate.setDate(currentDate.getDate() - 45);
+
+    endDateInput.value = currentDate.toISOString().substr(0, 10);
+    startDateInput.value = startDate.toISOString().substr(0, 10);
+}
+
+function dataTableOptions() {
+    $.extend($.fn.dataTable.defaults, {
+        language: {
+            "sEmptyTable": "Nenhum registro encontrado",
+            "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
+            "sInfoFiltered": "(Filtrados de _MAX_ registros)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ".",
+            "sLengthMenu": "_MENU_ resultados por página",
+            "sLoadingRecords": "Carregando...",
+            "sProcessing": "Processando...",
+            "sZeroRecords": "Nenhum registro encontrado",
+            "sSearch": "Pesquisar",
+            "oPaginate": {
+                "sNext": "Próximo",
+                "sPrevious": "Anterior",
+                "sFirst": "Primeiro",
+                "sLast": "Último"
+            },
+            "oAria": {
+                "sSortAscending": ": Ordenar colunas de forma ascendente",
+                "sSortDescending": ": Ordenar colunas de forma descendente"
+            }
+        }
+    });
+
+    $('#launchTable').DataTable({
+        "order": []
+    });
+}
 

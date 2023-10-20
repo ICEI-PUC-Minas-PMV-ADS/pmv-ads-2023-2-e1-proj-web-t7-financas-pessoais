@@ -215,3 +215,15 @@ footer {
     color: rgb(204, 5, 5) !important;
     font-weight: 500;
 }
+
+#launchTable_length > label, .dataTables_length > label {
+    display: inline-flex;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+#launchTable_length select {
+    margin-right: 10px;
+}
+
+
