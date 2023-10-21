@@ -79,25 +79,28 @@ fieldset {
 /* estilização tela login Alvaro */
 
 .login {
-  margin-top: 50px;
   justify-content: center;
   text-align: center;
   background-color: rgba(245, 245, 245, 0.582);
 }
 
-.input-group {
-    width: 320px;
-}
+/* utilizar se quiser aumentar o tamanho da caixa de e-mail e senha 
+  .input-group {
+  width: 480px;
+} */
 
 .loginfuncoes {
+  font-size: small;
+  color: #aaa;
   display: inline-block;
+  margin-top: -70px;
   margin-inline: 25px;
 }
 
-#footer {
+footer {
   font-size: 75%;
   color: white;
-
   text-shadow: 1px 1px rgb(100, 100, 100);
-  margin-top: 50px;
+  margin-top: 25px;
 }
+
