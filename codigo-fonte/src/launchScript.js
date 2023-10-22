@@ -58,7 +58,6 @@ function showNewCategoryModal() {
     $('#newCategoryModal').modal('show');
 }
 
-
 function saveData() {    
     $("#launchModal").modal('hide');
     const category = document.getElementById('selectCategories').value;
@@ -95,7 +94,6 @@ function clearFilters() {
 }
 
 function filterLaunchs() {
-    debugger;
     const startDate = new Date(document.getElementById('startDate').value);
     const endDate = new Date(document.getElementById('endDate').value);
     const category = document.getElementById('categoriesFilter').value;
@@ -108,7 +106,7 @@ function filterLaunchs() {
         const isRevenues = data.isRevenues;
         const isExpenses = data.isExpenses;
 
-        const isDateInRange = launchDate >= startDate || launchDate <= endDate;
+        const isDateInRange = launchDate >= startDate && launchDate <= endDate;
         const isCategoryMatch = category === '' || data.category === category;
 
         if (launchType === 'allCategories') {
@@ -122,7 +120,6 @@ function filterLaunchs() {
 
     populateTable(filteredLaunchs);
 }
-
 
 function getSelectedLaunchType() {
     let allCategoriesRadio = document.getElementById('allCategories');
@@ -145,29 +142,30 @@ function formatDate(date) {
 
 function populateTable(data) {
     data.sort((a, b) => new Date(b.launchDate) - new Date(a.launchDate));
-    const table = $('#launchTable').DataTable();
-    
-    if (table) {
-        table.destroy();
-    }
-    
-    table.clear();
+    const tableBody = document.querySelector('#launchTable tbody');
+    tableBody.innerHTML = '';
 
-    data.forEach(item => {
-        
-        const formattedValue = formatCurrency(item);        
-        table.row.add([
-            formatDate(item.launchDate),
-            item.description,
-            `<i class="fas ${item.icon}"></i> ${item.category}`,
-            item.isRevenues ? 'Receitas' : 'Despesas',
-            `<span class="${item.isRevenues ? 'green-text' : 'red-text'}">${formattedValue}</span>`
-        ]);
-    });
-    
-    table.draw();
-    dataTableOptions();
+    if (data.length === 0) {
+        const emptyRow = tableBody.insertRow();
+        const cell = emptyRow.insertCell(0);
+        cell.colSpan = 5;
+        cell.textContent = 'Não há lançamentos no período';
+    } else {
+        data.forEach(item => {
+            const formattedValue = formatCurrency(item);
+            const row = tableBody.insertRow();
+
+            row.innerHTML = `
+                <td>${formatDate(item.launchDate)}</td>
+                <td>${item.description}</td>
+                <td><i class="fas ${item.icon}"></i> ${item.category}</td>
+                <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
+                <td class="${item.isRevenues ? 'green-text' : 'red-text'}"> ${formattedValue}</td>
+            `;
+        });
+    }
 }
+
 function formatCurrency(item) {
     return parseFloat(item.value).toLocaleString('pt-BR', {
         style: 'currency',
@@ -202,9 +200,6 @@ function saveCategory() {
     categories.push({ name: categoryName, icon: selectedIcon });
     
     localStorage.setItem('categories', JSON.stringify(categories));
-
-    console.log('Nome da categoria:', categoryName);
-    console.log('Ícone selecionado:', selectedIcon);
     
     $('#newCategoryModal').modal('hide');
     
@@ -250,37 +245,5 @@ function setDefaultDateValues() {
 
     endDateInput.value = currentDate.toISOString().substr(0, 10);
     startDateInput.value = startDate.toISOString().substr(0, 10);
-}
-
-function dataTableOptions() {
-    $.extend($.fn.dataTable.defaults, {
-        language: {
-            "sEmptyTable": "Nenhum registro encontrado",
-            "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-            "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
-            "sInfoFiltered": "(Filtrados de _MAX_ registros)",
-            "sInfoPostFix": "",
-            "sInfoThousands": ".",
-            "sLengthMenu": "_MENU_ resultados por página",
-            "sLoadingRecords": "Carregando...",
-            "sProcessing": "Processando...",
-            "sZeroRecords": "Nenhum registro encontrado",
-            "sSearch": "Pesquisar",
-            "oPaginate": {
-                "sNext": "Próximo",
-                "sPrevious": "Anterior",
-                "sFirst": "Primeiro",
-                "sLast": "Último"
-            },
-            "oAria": {
-                "sSortAscending": ": Ordenar colunas de forma ascendente",
-                "sSortDescending": ": Ordenar colunas de forma descendente"
-            }
-        }
-    });
-
-    $('#launchTable').DataTable({
-        "order": []
-    });
 }
 

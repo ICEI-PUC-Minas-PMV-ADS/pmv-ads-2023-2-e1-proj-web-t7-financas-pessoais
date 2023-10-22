@@ -37,7 +37,8 @@ fieldset {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     min-height: 150px;
 }
 
@@ -97,7 +98,7 @@ fieldset {
 
 .radio-right-margin {
     margin-right: 30px;
-    font-size:large;
+    font-size: 20px;
 }
 
 .radio-left-margin {
@@ -108,26 +109,25 @@ input[type="date" i] {
     align-items: center;
     text-align: center;
     display: inline-block;
-    font-size:large;
-    margin-left: 10px;
+    font-size: 19px;
     margin-bottom: 20px;
     width: 35%;
     height: 40px;
 }
 
+.inputDate-right-margin {
+    margin-right: 10px;
+}
+
 select, textarea {
     text-align: center;
-    font-size:large;
+    font-size: 19px;
     width: 50%;
     height: 40px;
 }
 
 .marginRight {
     margin-right: 10px;
-}
-
-.btn-md {
-    width: 10%;
 }
 
 .btn-secondary {
@@ -193,9 +193,7 @@ label {
     color: rgb(256, 256, 256); 
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
+footer {    
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -216,14 +214,21 @@ footer {
     font-weight: 500;
 }
 
-#launchTable_length > label, .dataTables_length > label {
-    display: inline-flex;
-    text-wrap: nowrap;
-    align-items: center;
+body {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 19px
 }
 
-#launchTable_length select {
-    margin-right: 10px;
+h3 {
+    font-weight: 500;
 }
 
+legend {
+    font-size: 22px;
+    font-weight: 500;
+}
 
+#categoryChart {
+    margin-bottom: 20px;
+}
