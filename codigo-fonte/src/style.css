@@ -101,6 +101,103 @@ footer {
   font-size: 75%;
   color: white;
   text-shadow: 1px 1px rgb(100, 100, 100);
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
+/* estilização dashboard */
+
+.saldos-dashboard {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  vertical-align: top;
+  border: 1px dotted cornflowerblue;
+  border-radius: 8px;
+}
+
+.valores-dash {
+  display: inline-flex;
+  justify-content: center;
+  width: 25%;
+  margin-top: 12px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px #212529;
+}
+
+#saldo {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+}
+
+#receitas {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: darkgreen;
+  /* background-color: darkgreen; */
+}
+
+#despesas {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: tomato;
+  /* background-color: tomato; */
+}
+
+.charts-values {
+  display: inline;
+}
+
+.report-border {
+  border: dotted 1px #555;
+}
+
+.report-title {
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
+.report-filter {
+  display: inline-block;
+  width: 10%;
+  font-size: small;
+  margin: 10px;
+}
+
+#date-report {
+  width: 20%;
+}
+
+#report-done {
+  width: 15%;
+  margin: 10px;
+}
+
+.report-actions {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.report-actions > button {
+  width: 150px;
+  margin: 10px;
+  margin-top: -15px;
+  font-size: small;
+}
+
+td {
+  text-align: center;
+  font-size: small;
+}
+
+.td-in {
+  color: darkgreen;
+}
+
+.td-out {
+  color: tomato;
+}
