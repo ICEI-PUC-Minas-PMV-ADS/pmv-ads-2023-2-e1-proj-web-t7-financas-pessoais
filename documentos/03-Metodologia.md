@@ -64,6 +64,9 @@ Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desen
     <figcaption>Figura 3 - Sprint 2</figcaption>
 </figure>
 
+#### Sprint 3
+
+Na Sprint 3, iniciamos o desenvolvimento das telas no VsCode. Implementamos funcionalidades básicas nas telas de login, dashboard, lançamentos e relatórios.
 
 ### Ferramentas
 
