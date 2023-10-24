@@ -1,25 +1,249 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lançamentos</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <div class="container-fluid d-flex">
         <div id="menu-container"></div>
         <div class="content">
-           <!-- Todo o código da sua tela vem aqui -->
+            <!-- Todo o código da sua tela vem aqui -->
 
-           <p>Lançamentos</p>
+            <div class="report-border">
+                <div class="report-title">Lançamentos:</div>
+
+                <div class="report-filters">
+                    <div class="report-filter" id="date-report">
+                        Data Inicial <input type="date" />
+                    </div>
+                    <div class="report-filter" id="date-report">
+                        Data Final <input type="date" />
+                    </div>
+                    <div class="report-filter" id="report-cat">
+                        <form>
+                            <select name="categoria" required="required">
+                                <option value="">Categoria</option>
+                                <option value="all">Todas</option>
+                                <option value="pet">Pet</option>
+                                <option value="veiculos">Veículo</option>
+                                <option value="alimentacao">Alimentação</option>
+                                <option value="presentes">Presentes</option>
+                                <option value="supermercado">Supermercado</option>
+                                <option value="receitas">Salário/Proventos</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <br />
+                    <div class="report-filter">
+                        Receitas <input type="radio" id="radio1" name="radio-filter" />
+                    </div>
+                    <div class="report-filter">
+                        Despesas <input type="radio" id="radio2" name="radio-filter" />
+                    </div>
+                    <div class="report-filter">
+                        Todos <input type="radio" id="radio3" name="radio-filter" />
+                    </div>
+                </div>
+                <div class="report-actions">
+                    <button type="button" class="btn btn-success">
+                        <i class="fa fa-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+            <br />
+
+            <div class="report-actions">
+                <button type="button" class="btn btn-secondary" a class="dropdown-item" href="#" id="openModalBtn">
+                    <i class="fa fa-file-lines"></i><span class="ms-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalNewCat">
+                        Categorias</span>
+                </button>
+                <button type="button" class="btn btn-secondary" a class="dropdown-item" href="#" id="openModalBtn">
+                    <i class="fa fa-pen-to-square"></i><span class="ms-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalNewLaunch">
+                        Lançamentos</span>
+                </button>
+            </div>
+
+            <div class="modal fade" id="exampleModalNewCat" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                Categorias
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" class="modalFormat">
+                            <div class="editCateg">
+
+                                <div><i class="fas fa-dog"></i><span class="catFormat">Pet</span><i
+                                        class="fa fa-pen"></i></div>
+                                <div><i class="fa fa-coffee"></i><span class="catFormat">Alimentação</span><i
+                                        class="fa fa-pen"></i></div>
+                                <div><i class="fas fa-car"></i><span class="catFormat">Veículo</span><i
+                                        class="fa fa-pen"></i></div>
+                                <div><i class="fas fa-gift"></i><span class="catFormat">Presentes</span><i
+                                        class="fa fa-pen"></i></div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                Salvar e Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModalNewLaunch" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                Novo Lançamento
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" class="modalFormat">
+                            <div class="includeNewLaunch">
+
+                                <div class="dataNewLaunch">
+                                    <form>
+                                        <select name="categoria" required="required" class="formLaunch">
+                                            <option value="">Categoria</option>
+                                            <option value="all">Todas</option>
+                                            <option value="pet">Pet</option>
+                                            <option value="veiculos">Veículo</option>
+                                            <option value="alimentacao">Alimentação</option>
+                                            <option value="presentes">Presentes</option>
+                                            <option value="supermercado">Supermercado</option>
+                                            <option value="receitas">Salário/Proventos</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <p></p>
+                                <div class="dataNewLaunch" class="dateLaunch">Data <input type="date"></div>
+                                <p></p>
+                                <div class="dataNewLaunch" class="descLaunch"><input type="text"
+                                        placeholder="Descrição"></div>
+                                <p></p>
+                                <div class="dataNewLaunch" class="valueLaunch"><input type="number" placeholder="Valor">
+                                </div>
+                                <p></p>
+                                <div class="dataNewLaunch">
+                                    <div class="report-filter">Receitas<input type="radio" id="radio1"
+                                            name="radio-filter" />
+                                    </div>
+                                    <div class="report-filter">Despesas<input type="radio" id="radio2"
+                                            name="radio-filter" />
+                                    </div>
+                                    <p></p>
+                                    <div class="dataNewLaunch" class="check">Efetivado <input type="checkbox"></div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Cancelar
+                            </button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr align="center" class="tb-title">
+                            <td width="250px"><b>Data</b></td>
+                            <td width="350px"><b>Descrição</b></td>
+                            <td width="250px"><b>Categoria</b></td>
+                            <td width="250px"><b>Valor</b></td>
+                        </tr>
+                        <tr>
+                            <td>22/10/2023</td>
+                            <td>Petlove</td>
+                            <td>Pet</td>
+                            <td class="td-out">R$ 55,00</td>
+                        </tr>
+                        <tr class="tb-bg">
+                            <td>22/10/2023</td>
+                            <td>Bônus Produtividade</td>
+                            <td>Salário/Proventos</td>
+                            <td class="td-in">R$ 600,00</td>
+                        </tr>
+                        <tr>
+                            <td>20/10/2023</td>
+                            <td>Posto Lava Bem</td>
+                            <td>Veículo</td>
+                            <td class="td-out">R$ 180,00</td>
+                        </tr>
+                        <tr class="tb-bg">
+                            <td>19/10/2023</td>
+                            <td>iFood</td>
+                            <td>Alimentação</td>
+                            <td class="td-out">R$ 77,80</td>
+                        </tr>
+                        <tr>
+                            <td>12/10/2023</td>
+                            <td>KidPlay</td>
+                            <td>Presentes</td>
+                            <td class="td-out">R$ 152,00</td>
+                        </tr>
+                        <tr class="tb-bg">
+                            <td>06/10/2023</td>
+                            <td>Supermercado Logo Alí</td>
+                            <td>Supermercado</td>
+                            <td class="td-out">R$ 70,00</td>
+                        </tr>
+                        <tr>
+                            <td>06/10/2023</td>
+                            <td>Salário</td>
+                            <td>Salário/Proventos</td>
+                            <td class="td-in">R$ 4.250,00</td>
+                        </tr>
+                        <tr class="tb-bg">
+                            <td>02/10/2023</td>
+                            <td>Supermercado BH</td>
+                            <td>Supermercado</td>
+                            <td class="td-out">R$ 185,20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-    
+
     <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
