@@ -13,25 +13,33 @@
         <div class="content">
           <!-- Todo o código da sua tela vem aqui -->
           <header class=" cabecalho_relatorio">
-            <h2>Relatórios</h2>
+            <h1>Relatórios</h2>
           </header>
           <section class="container_filtros">
+            <h2 class="filtro__titulo">Filtros</h2>
             <p>Período</p>
             <label for="purchase_date"> <span class="required-field"></span></label>
             <input type="date" id="purchase_date" name="purchase_date" class="block" required>
             <label for="purchase_date"><span class="required-field"></span></label>
             <input type="date" id="purchase_date" name="purchase_date" class="block" required>
             <div class="box-input">
-              <p class="teste">Categoria</p>
-              <label class="categoria_filtro" for="categoria"><span class="required-field"></span></label>
+              <p class="container__categoria">Categoria</p>
+              <label class="container__categoria-filtro" for="categoria"><span class="required-field"></span></label>
               <select class="categoria" id="categoria" name="categoria" required>
                   <option value="">Selecione...</option>
                   <option value="Supermercado">Supermercado</option>
                   <option value="Combustivel">Combustivel</option>
               </select>
               
-              <input type="submit" class="btn-submit" value="Gerar Relatório">
             </div>
+            
+            <input type="checkbox" class="checkbox" id="leather_seat" name="optional[]" value="leather_seat">
+            <label  class="label__Receita" for="leather_seat">Receitas</label>
+            <input type="checkbox" class="checkbox" id="leather_seat" name="optional[]" value="leather_seat">
+            <label class="label__Despesa" for="leather_seat">Despesas</label>
+            <input type="submit" class="btn-relatorio" value="Gerar Relatório">
+            
+            
 
           </section>
         </div>
