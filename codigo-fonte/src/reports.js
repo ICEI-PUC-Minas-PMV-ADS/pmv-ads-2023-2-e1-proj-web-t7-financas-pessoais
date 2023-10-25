@@ -61,7 +61,8 @@ function populateTable(data) {
     });
 }
 
-async function generateReport() {
+async function generateReport() {  
+    
     const startDate = document.getElementById('startDate').value;
     const endDate = document.getElementById('endDate').value;
     const categoryFilter = document.getElementById('selectCategories').value;
@@ -75,7 +76,7 @@ async function generateReport() {
     
     createChart('categoryChart', categoryData.labels, categoryData.data, 'Lançamentos do período', reportHeader);
     
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     generatePDF(reportHeader, categoryData);
 }
@@ -91,6 +92,9 @@ function getCategoryData(startDate, endDate, categoryFilter) {
         );
     });
 
+    populateTable(filteredData);
+    filteredData.sort((a, b) => parseFloat(b.value) - parseFloat(a.value));
+    
     const categoryTotals = {};
     let totalValue = 0;
 
@@ -112,7 +116,7 @@ async function createChart(chartId, labels, data, title, header) {
     const canvas = document.getElementById(chartId);
 
     const config = {
-        type: 'doughnut',
+        type: 'bar',
         data: {
             labels,
             datasets: [
@@ -174,5 +178,70 @@ async function generatePDF(reportHeader) {
     const tableCanvas = await html2canvas(document.getElementById('launchTable'));
     pdf.addImage(tableCanvas, 'PNG', 10, 150, 190, 0);
 
-    pdf.save('relatorio.pdf');
+    pdf.save('Resumo financeiro.pdf');
+}
+
+function generateXLS() {    
+    const startDate = new Date(document.getElementById('startDate').value);
+    const endDate = new Date(document.getElementById('endDate').value);
+    const category = document.getElementById('selectCategories').value;
+    const launchType = getSelectedLaunchType();
+
+    const allLaunchs = JSON.parse(localStorage.getItem('savedData')) || [];
+
+    const filteredLaunchs = allLaunchs.filter(data => {
+        const launchDate = new Date(data.launchDate);
+        const isRevenues = data.isRevenues;
+        const isExpenses = data.isExpenses;
+
+        const isDateInRange = launchDate >= startDate && launchDate <= endDate;
+        const isCategoryMatch = category === '' || data.category === category;
+
+        if (launchType === 'allCategories') {
+            return isDateInRange && isCategoryMatch;
+        } else if (launchType === 'entries') {
+            return isDateInRange && isCategoryMatch && isRevenues;
+        } else if (launchType === 'exits') {
+            return isDateInRange && isCategoryMatch && isExpenses;
+        }
+    });
+
+    const data = [];
+    const headers = ["Data do lançamento", "Categoria", "Valor", "Tipo"];
+
+    data.push(headers);
+
+    filteredLaunchs.forEach(item => {
+        let launchType = item.isRevenues ? "Receitas" : "Despesas";
+        let formattedValue = formatCurrency(item);
+        const rowData = [
+            formatDate(item.launchDate),
+            item.category,
+            formattedValue,
+            launchType
+        ];
+        data.push(rowData);
+    });
+    
+    const wb = XLSX.utils.book_new();    
+    
+    const ws = XLSX.utils.aoa_to_sheet(data);    
+    
+    XLSX.utils.book_append_sheet(wb, ws, "Relatório Financeiro");    
+    
+    XLSX.writeFile(wb, "Relatório Financeiro.xlsx");
+}
+
+function getSelectedLaunchType() {
+    let allCategoriesRadio = document.getElementById('allCategories');
+    let entriesRadio = document.getElementById('entries');
+    let exitsRadio = document.getElementById('exits');
+
+    if (allCategoriesRadio.checked) {
+        return 'allCategories';
+    } else if (entriesRadio.checked) {
+        return 'entries';
+    } else if (exitsRadio.checked) {
+        return 'exits';
+    }
 }
