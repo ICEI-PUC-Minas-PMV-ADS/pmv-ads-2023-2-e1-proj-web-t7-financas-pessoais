@@ -68,6 +68,27 @@ Na Sprint 2, criamos o repositório no GitHub e o alimentamos com os itens desen
 
 Na Sprint 3, iniciamos o desenvolvimento das telas no VsCode. Implementamos funcionalidades básicas nas telas de login, dashboard, lançamentos e relatórios.
 
+Nesta etapa o grupo encontrou muitas dificuldades com relação à colaboração de todos membros.
+O trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo e Luzianne.
+Foi orientado aos membros do grupo que escolhessem uma tela que se sentissem mais à vontade para desenvolver a interface. Desde a distribuição de tarefas, os alunos Luzianne e Gustavo se colocaram à disposição aos demais para ajudar e tirar dúvidas, pois já possuem experiência com desenvolvimento. O aluno Leonardo também iniciou o desenvolvimento de uma das telas, no entanto, até a data desta documentação (25/10/2023) as tarefas apresentadas no grupo como "concluídos" da parte de cada pessoa, foram somente Alvaro, Gustavo e Luzianne.
+
+À seguir algumas telas do desenvolvimento da interface.
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-1.png"
+    <figcaption>Figura 1 - Sprint 3</figcaption>
+</figure>
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-2.jpeg"
+    <figcaption>Figura 2 - Sprint 3</figcaption>
+</figure>
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-3.jpeg"
+    <figcaption>Figura 3 - Sprint 3</figcaption>
+</figure>
+
 ### Ferramentas
 
 Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abaixo, juntamente com seus respectivos propósitos:
@@ -106,7 +127,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Ambiente de desenvolvimento</td>
     <td>VSCode</td>
-    <td> - </td>
+    <td><a href="https://code.visualstudio.com"> VSCode </a></td>
   </tr>
   <tr>
     <td>Comunicação diária</td>
