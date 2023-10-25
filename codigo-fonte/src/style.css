@@ -8,6 +8,22 @@ body {
 }
 
 /* LOGIN */
+.logo-container {
+    background-color: #0d1401d5;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* botão login */
 #btn_login {
@@ -31,14 +47,8 @@ body {
     width: 350px;    
 }
 
-/* footer login*/
-#line-footer {
-    border-top: 1px solid #a0a0a0;
-    padding-top: 25px;    
-}
 
 /* modal login */
-
 #i_cadastro {
     text-decoration: none;
     color: #28a745; 
@@ -50,13 +60,50 @@ body {
     text-decoration: underline; 
 }
 
+@media (max-height: 450px) {
+    #img-login {
+        height: 250px;
+        width: 250px;        
+    }   
+}
+
 @media (max-width: 768px) {
     /* imagem login */
     #img-login {
         height: 250px;
         width: 250px;        
     }
+
+    .logo-container,
+    .login-container {
+        height: 500px; 
+        text-align: center;
+    }
 }
+
+
+@media (max-width: 900px) {
+    #container-welcome {
+        margin-top: 75px; 
+    }
+    
+    .dashboard_container{
+        padding: 0px; 
+    }
+
+    .card_container {
+        padding-right: 20px;
+        padding-left: 25px;
+    }
+}
+
+@media (min-width: 900px) {
+    .dashboard_container{
+        padding-left: 210px; 
+    }
+}
+
+
 
 .logo {
     margin-top: 20px;
@@ -88,7 +135,7 @@ fieldset {
 }
 
 #menu-container {
-    float: left;
+    position: fixed;
 }
 
 .menu-container {
@@ -152,22 +199,22 @@ fieldset {
     border-radius: 20px;   
 }
 
-#row-welcome {
+#container-welcome {    
     background-color: #cfcfcf;
     font-size: 20px; 
 }
 
-#saldo {
+#i_saldo {
     font-size: 20px;
     font-weight: bold;    
 }
 
-#receita {
+#i_receita {
     font-size: 20px;
     font-weight: bold;    
 }
 
-#despesa {
+#i_despesa {
     font-size: 20px;
     font-weight: bold;    
 }
@@ -199,7 +246,7 @@ fieldset {
     border-top: 1px solid #a0a0a0;    
 }
 
-#grafico {
-    height: 450px;
-    width: 450px;    
+#line-footer {
+    border-top: 1px solid #a0a0a0;
+    padding-top: 25px;    
 }
