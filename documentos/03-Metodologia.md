@@ -70,7 +70,7 @@ Na Sprint 3, iniciamos o desenvolvimento das telas no VsCode. Implementamos func
 
 Nesta etapa o grupo encontrou muitas dificuldades com relação à colaboração de todos membros.
 O trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo e Luzianne.
-Foi orientado aos membros do grupo que escolhessem uma tela que se sentissem mais à vontade para desenvolver a interface. Desde a distribuição de tarefas, os alunos Luzianne e Gustavo se colocaram à disposição aos demais para ajudar e tirar dúvidas, pois já possuem experiência com desenvolvimento. No entanto, até a data desta documentação (25/10/2023) somente Alvaro participou no desenvolvimento junto aos alunos Gustavo e Luzianne.
+Foi orientado aos membros do grupo que escolhessem uma tela que se sentissem mais à vontade para desenvolver a interface. Desde a distribuição de tarefas, os alunos Luzianne e Gustavo se colocaram à disposição aos demais para ajudar e tirar dúvidas, pois já possuem experiência com desenvolvimento. O aluno Leonardo também iniciou o desenvolvimento de uma das telas, no entanto, até a data desta documentação (25/10/2023) as tarefas apresentadas no grupo como "concluídos" da parte de cada pessoa, foram somente Alvaro, Gustavo e Luzianne.
 
 À seguir algumas telas do desenvolvimento da interface.
 
