@@ -80,7 +80,7 @@ Foi orientado aos membros do grupo que escolhessem uma tela que se sentissem mai
 </figure>
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-2.jpeg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-2.png"
     <figcaption>Figura 2 - Sprint 3</figcaption>
 </figure>
 
