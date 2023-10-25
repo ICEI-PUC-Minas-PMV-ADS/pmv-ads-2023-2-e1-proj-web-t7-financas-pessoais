@@ -152,6 +152,7 @@ footer {
 
 .report-border {
   border: dotted 1px #555;
+  border-radius: 8px;
 }
 
 .report-title {
