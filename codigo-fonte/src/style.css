@@ -106,10 +106,6 @@ h1 {
     font-weight: 400;
     border-color: black;
     border-radius: 30px;
-    
-    
-    
-     
 }
 .form-password {
     align-items: center;
@@ -129,16 +125,7 @@ input[type=text], input[type=number] {
 	width: 250px;
     height: 30px;
 }
-.btn-relatorio {
-    align-items: center;
-	width: 80px;
-    height: 30px;
-    background-color: #618068;  
-    color: #FFF;
-	border: 2px solid transparent;
-    border-radius: 3%;  
-    
-}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -190,22 +177,19 @@ body {
     padding-bottom: 0;
     font-size: 20px;
 }
-.checkbox {
-   border-radius: 2px solid #000000;
-    
-
-}
-.label__receita {
-    margin-right: 10%;     
-}
 .btn-relatorio {
     align-items: center;
+    background-color: #618068;  
+    color: #FFF;
     width: 12%;
-    height: 6%;
+    height: 5%;
     border: 2px solid transparent;
+    border-radius: 3%;
     text-align: center;
-    margin-left: 85%;
-    
-   
-    
+    margin-left: 85%;   
+    background-image: url(../src/img/relatorio-financeiro.png) no repeat ;
+}
+.report-filter {
+   border-radius: 2px solid #000000;
+   margin: 2% 1% 1% 1%;
 }
