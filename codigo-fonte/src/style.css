@@ -232,3 +232,27 @@ legend {
 #categoryChart {
     margin-bottom: 20px;
 }
+
+.align-right {
+    text-align: right;
+}
+
+.valor-col {
+    width: 10%;
+}
+
+.date-col {
+    width: 10%;
+}
+
+.description-col {
+    width: 35%;
+}
+
+.launch-col {
+    width: 20%;
+}
+
+.category-col {
+    width: 25%;
+}

@@ -56,7 +56,7 @@ function populateTable(data) {
             <td>${item.description}</td>
             <td><i class="fas ${item.icon}"></i> ${item.category}</td>
             <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
-            <td class="${item.isRevenues ? 'green-text' : 'red-text'}"> ${formattedValue}</td>
+            <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
         `;
     });
 }
