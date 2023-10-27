@@ -76,7 +76,7 @@ fieldset {
   background-color: rgba(245, 245, 245, 0.582);
 }
 
-/* estilização tela login Alvaro */
+/* Início estilização tela login Alvaro */
 
 .login {
   justify-content: center;
@@ -104,7 +104,10 @@ footer {
   margin-top: 50px;
 }
 
-/* estilização dashboard */
+/* Fim estilização tela login Alvaro */
+
+
+/* Início estilização dashboard */
 
 .saldos-dashboard {
   display: inline-block;
@@ -214,3 +217,5 @@ td {
   margin-right: 50px;
 }
 
+
+/* Fim estilização dashboard */
