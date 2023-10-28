@@ -107,7 +107,7 @@ body {
 
 .logo {
     margin-top: 20px;
-    height: 5rem;
+    height: 7rem;
     width: auto;
     display: block;
     margin-left: 30px;
@@ -124,14 +124,29 @@ body {
 }
 
 .content {
-    flex: 1;
     padding: 20px;
+    margin-left: 210px;
+    width: calc(100% - 220px);
+    background-color: rgb(256, 256, 256);
+}
+
+.sidebar-menu {
+    background-color: rgb(51, 51, 102);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    padding-top: 20px;
 }
 
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    min-height: 150px;
 }
 
 #menu-container {
@@ -139,11 +154,11 @@ fieldset {
 }
 
 .menu-container {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link:hover {
@@ -151,7 +166,7 @@ fieldset {
 }
 
 .menu-container .fa {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-pills .nav-item a span {    
@@ -168,24 +183,190 @@ fieldset {
     background-color: rgba(245, 245, 245, 0.582);
 }
 
-.sidebar-menu {
-    background-color: #212529;
-}
-
 .user-dropdown-menu {
     position: relative;
 }
 
 .user-dropdown-menu button {
-    background-color: transparent;
-    color: white;
-    transition: background-color 0.3s ease;
+    background-color: rgb(51, 50, 102);
+    color: rgb(256, 256, 256);
+    background-color: rgb(51, 50, 102);
 }
 
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
 }
 
+.col-md-6 {
+    width: 33%;
+}
+
+.pull-right {
+    margin-top: 20px;
+    width: 8%;
+    float: right;
+}
+
+.radio-right-margin {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.radio-left-margin {
+    margin-left: 30px;
+}
+
+input[type="date" i] {   
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 40px;
+}
+
+.inputDate-right-margin {
+    margin-right: 10px;
+}
+
+select, textarea {
+    text-align: center;
+    font-size: 19px;
+    width: 50%;
+    height: 40px;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    margin-bottom: 20px;
+    background-color: #715C8C;
+}
+.btn-primary {
+    margin-bottom: 20px;
+    background-color: rgb(51, 50, 102);
+}
+
+.btn-primary:hover {
+    background-color: rgb(89, 85, 158);
+}
+
+.btn-secondary:hover {
+    background-color: #838BC2;
+}
+
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.switches {
+    display: inline-block;
+    float: right;
+}
+
+.launchDate {
+    display: inline-block;
+    float: right;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+input[type="number" i] {
+    margin-left: 10px;
+    width: 35%;
+}
+
+.input-left-margin {
+    margin-left: 100px;
+}
+
+.launchDateClass {
+    float: right;
+}
+#launchDate {
+    width: auto;
+}
+
+label {
+    display: inline-block; 
+}
+
+.modal-header {
+    background-color: rgb(51, 51, 102);
+    color: rgb(256, 256, 256); 
+}
+
+footer {    
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.table>thead {
+    background-color: rgb(51, 51, 102);
+    color: rgb(256, 256, 256); 
+}
+
+.green-text {
+    color: rgb(22, 187, 22) !important;
+    font-weight: 500;
+}
+
+.red-text {
+    color: rgb(204, 5, 5) !important;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 19px
+}
+
+h3 {
+    font-weight: 500;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#categoryChart {
+    margin-bottom: 20px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.valor-col {
+    width: 10%;
+}
+
+.date-col {
+    width: 10%;
+}
+
+.description-col {
+    width: 35%;
+}
+
+.launch-col {
+    width: 20%;
+}
+
+.category-col {
+    width: 25%;
+}
 /* DASHBOARD */
 
 .dashboard {
