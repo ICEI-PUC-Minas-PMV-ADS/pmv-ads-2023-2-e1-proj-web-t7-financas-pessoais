@@ -115,12 +115,13 @@ body {
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  font-family: sans-serif; /* padrão fonte sem serifa - Alvaro */
 }
 
 .container-fluid {
-    margin-left: -6px;
-    width: auto;    
+  margin-left: -6px;
+  width: auto;
 }
 
 .content {
@@ -162,29 +163,29 @@ fieldset {
 }
 
 .menu-container .nav-link:hover {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .menu-container .fa {
     color: rgb(256, 256, 256);
 }
 
-.menu-container .nav-pills .nav-item a span {    
-    font-size: 20px;
-    font-weight: 400;    
+.menu-container .nav-pills .nav-item a span {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .nav-item {
-    padding-top: 0.06rem;
-    padding-bottom: 0.06rem;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
 }
 
 .nav-pills li a:hover {
-    background-color: rgba(245, 245, 245, 0.582);
+  background-color: rgba(245, 245, 245, 0.582);
 }
 
 .user-dropdown-menu {
-    position: relative;
+  position: relative;
 }
 
 .user-dropdown-menu button {
@@ -194,7 +195,7 @@ fieldset {
 }
 
 .user-dropdown-menu button:hover {
-    background-color: rgba(245, 245, 245, 0.582);
+  background-color: rgba(245, 245, 245, 0.582);
 }
 
 .col-md-6 {
