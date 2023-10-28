@@ -11,6 +11,10 @@ function carregarMenu() {
     })
     .then((menuHtml) => {
       menuContainer.innerHTML = menuHtml;
+
+      let userName = document.getElementById("userName");
+      let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || [];
+      userName.textContent = usuarioAtivo.name;
     })
     .catch((error) => {
       console.error("Erro ao carregar o menu:", error);
@@ -19,7 +23,6 @@ function carregarMenu() {
 
 carregarMenu();
 
-// Função para verificar o tamanho da tela e adicionar a nav mobile
 function verificarTamanhoDaTela() {
     
     let larguraDaJanela = window.innerWidth;

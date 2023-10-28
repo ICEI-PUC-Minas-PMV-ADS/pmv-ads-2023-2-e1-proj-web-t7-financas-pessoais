@@ -1,16 +1,16 @@
 // LOGIN
 function entrar() {
-    let email = i_email.value;
-    let senha = i_senha.value;
+    let email = document.getElementById('email').value;
+    let senha = document.getElementById('password').value;
 
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    let usuarioEncontrado = false;    
+    let usuarioEncontrado = false;
 
     usuarios.forEach(usuario => {
-        if (usuario.email === email && usuario.password === senha) {            
-            usuarioEncontrado = true;            
-            
-            if(!i_email.validity.valueMissing && !i_senha.validity.valueMissing) {                
+        if (usuario.email === email && usuario.password === senha) {
+            usuarioEncontrado = true;
+
+            if (email !== '' && senha !== '') {
                 let usuarioAtivo = {
                     name: usuario.name,
                     email: usuario.email,
@@ -19,20 +19,28 @@ function entrar() {
 
                 localStorage.setItem('usuarioAtivo', JSON.stringify(usuarioAtivo));
 
-                btn_login.type = "button";
-                
-                return setTimeout(function() {location.href = "dashboard.html";}, 1000);            
+                return setTimeout(function () {
+                    location.href = "dashboard.html";
+                }, 1000);
             }
         }
-    });   
-    
-    if (!usuarioEncontrado && !i_email.validity.valueMissing && !i_senha.validity.valueMissing) {        
-        btn_login.type = "button";
+    });
+
+    if (!usuarioEncontrado && email !== '' && senha !== '') {
         Swal.fire('Dados inválidos!');
-    }    
+    }
 }
 
-btn_login.onclick = entrar;
+function togglePasswordVisibility(element) {
+    const passwordField = element.previousElementSibling;
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        element.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+        passwordField.type = "password";
+        element.innerHTML = '<i class="fas fa-eye"></i>';
+    }
+}
 
 // Cadastro
 function cadastrar() {
@@ -51,4 +59,42 @@ function cadastrar() {
     localStorage.setItem('usuarios', JSON.stringify(cadastro));
 }
 
-modal_btn.onclick = cadastrar;
+function abrirModalCadastro() {
+    document.getElementById('modal_email').value = '';
+    document.getElementById('modal_password').value = '';
+    
+    var cadastroModal = new bootstrap.Modal(document.getElementById('cadastroModal'));
+    cadastroModal.show();
+}
+
+document.getElementById('cadastrar-link').addEventListener('click', abrirModalCadastro);
+
+function abrirModalRedefinirSenha() {
+    document.getElementById('esqueci_email').value = '';
+    document.getElementById('nova_senha').value = '';
+    $("#esqueciSenhaModal").modal('show');   
+}
+
+document.getElementById('esqueci-senha-link').addEventListener('click', abrirModalRedefinirSenha);
+
+// Redefinir a senha do usuário
+function redefinirSenha() {
+    debugger;
+    $("#esqueciSenhaModal").modal('hide');
+
+    let esqueciEmail = document.getElementById('esqueci_email').value;
+    let novaSenha = document.getElementById('nova_senha').value;
+
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].email === esqueciEmail) {            
+            usuarios[i].password = novaSenha;
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));            
+            return;
+        }
+    }
+    
+    Swal.fire('E-mail não encontrado. Por favor, verifique o e-mail inserido.');
+}
+

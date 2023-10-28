@@ -41,10 +41,10 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: chaves, //['Casa', 'Carro', 'Viagem', 'Faculdade'],
+        labels: chaves,
         datasets: [{            
-            data: valores, //[40, 35, 25, 20]
-            backgroundColor: cores,//['rgb(255, 99, 132)','rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(745, 115, 56)',],
+            data: valores,
+            backgroundColor: cores,
             hoverOffset: 4
         }]
     },
