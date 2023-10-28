@@ -131,3 +131,13 @@ footer {
     font-weight: 500;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {    
+    input {
+        width: 100%;
+    }
+    
+    .btn-primary {
+        margin-left: 0;
+    }
+}
