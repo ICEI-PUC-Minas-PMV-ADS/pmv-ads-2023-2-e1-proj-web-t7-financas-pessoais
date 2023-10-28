@@ -334,3 +334,108 @@ legend {
 #openSettingsModalLink {
     cursor: pointer;
 }
+
+#menuMobile {
+    display: none;
+}
+
+.menu-mobile-container {
+    background-color: #333366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-mobile-container .mobileLogo {
+    display: block;
+    text-align: left;
+}
+
+.menu-mobile-container .mobileLogo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.menu-mobile-container .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    color: #333366;
+    font-size: 24px;
+}
+
+.menu-mobile-container .navbar-toggler-dropdown .dropdown-menu {
+    background-color: #333366;
+}
+
+.menu-mobile-container .navbar-toggler-dropdown .dropdown-menu a {
+    color: #ffffff;
+}
+
+.menu-mobile-container .offcanvas-title {
+    color: #333366;
+}
+
+.menu-mobile-container .nav-link {
+    color: #333366;
+}
+
+.menu-mobile-container .btn-close {
+    color: #333366;
+    font-size: 24px;
+}
+
+.menu-mobile-container .nav-item {
+    padding: 0.2rem 0;
+    color: #333366;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        width: 80%;
+    }
+    .sidebar-menu {
+        display: none;
+    }
+    .dashboard-container {
+        height: auto;
+    }
+    .show-details {
+        height: auto;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .dataTable {
+        font-size: 16px;
+    }
+
+    .radio-right-margin {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .marginRight {
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu {
+      display: none;
+    }
+  
+    #menuMobile {
+      display: block;
+    }
+}
