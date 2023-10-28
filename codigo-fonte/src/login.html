@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -5,14 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS PUC Money -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <!-- scripts -->
+    <script src="login.js" defer></script>    
 </head>
 
 <body>
-
-    <!--Seu código da tela de login fica aqui-->
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 logo-container order-2 order-md-1">
+                <div class="row text-center">
+                    <div class="col-12 mb-5">
+                        <img id="img-login" src="../../documentos/img/logo/Logo_escura.png" alt="">
+                    </div>
+                    <div class="col-12 mt-5 mt-md-1 mt-lg-5">
+                        <p>PucMoney 2023 | Todos os direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 login-container order-1 order-md-2">
+                <div class="col-11 col-md-9">
+                    <div class="col-12">
+                        <form class="col-12 col-md-12">
+                            <div class="mt-5 mb-5 mb-md-3 mb-lg-5">
+                                <label for="i_email" class="form-label label-login">E-mail</label>
+                                <input type="email" class="form-control input-login" id="i_email"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="mb-5 mb-md-1 mb-lg-5">
+                                <label for="i_senha" class="form-label label-login">Senha</label>
+                                <input type="password" class="form-control input-login" id="i_senha"
+                                    placeholder="Digite sua senha" required>
+                            </div>
+                            <div class="mt-5 mt-md-4 mt-lg-5 mb-5 mb-md-1 mb-lg-5 d-flex justify-content-center justify-content-md-end">
+                                <button type="submit" class="btn btn-success" id="btn_login">Entrar</button>
+                            </div>                    
+                        </form>
+                    </div>
+                    <div class="col-auto offset-mb-8 mb-5 d-flex justify-content-center justify-content-md-end">
+                        <a id="i_cadastro" href="" class="d-flex justify-content-md-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Cadastre-se
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastro</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="modal_name" class="col-form-label">Nome:</label>
+                                          <input type="text" class="form-control" id="modal_name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="modal_email" class="col-form-label">E-mail:</label>
+                                            <input type="email" class="form-control" id="modal_email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="modal_password" class="col-form-label">Senha:</label>
+                                            <input type="password" class="form-control" id="modal_password" required>
+                                        </div>
+                                        <div class="mt-5 modal-footer">                        
+                                            <button type="submit" class="btn btn-success" id="modal_btn">Cadastrar</button>
+                                        </div>
+                                    </form>
+                                </div>                        
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>
-
-</html>
