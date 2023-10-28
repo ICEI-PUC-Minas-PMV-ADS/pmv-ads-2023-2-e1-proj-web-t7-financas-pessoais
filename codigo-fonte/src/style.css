@@ -1,3 +1,14 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e2e4e0;
+    color: #212529;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo {
     margin-top: 20px;
     height: 7rem;
@@ -7,13 +18,9 @@
     margin-bottom: 20px;
 }
 
-body {
-    margin: 0;
-}
-
 .container-fluid {
-    margin-left: -6px;
-    width: auto;    
+  margin-left: -6px;
+  width: auto;
 }
 
 .content {
@@ -42,6 +49,10 @@ fieldset {
     min-height: 150px;
 }
 
+#menu-container {
+    position: fixed;
+}
+
 .menu-container {
     color: rgb(256, 256, 256);
 }
@@ -51,29 +62,29 @@ fieldset {
 }
 
 .menu-container .nav-link:hover {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .menu-container .fa {
     color: rgb(256, 256, 256);
 }
 
-.menu-container .nav-pills .nav-item a span {    
-    font-size: 20px;
-    font-weight: 400;    
+.menu-container .nav-pills .nav-item a span {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .nav-item {
-    padding-top: 0.06rem;
-    padding-bottom: 0.06rem;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
 }
 
 .nav-pills li a:hover {
-    background-color: rgba(245, 245, 245, 0.582);
+  background-color: rgba(245, 245, 245, 0.582);
 }
 
 .user-dropdown-menu {
-    position: relative;
+  position: relative;
 }
 
 .user-dropdown-menu button {
@@ -83,7 +94,7 @@ fieldset {
 }
 
 .user-dropdown-menu button:hover {
-    background-color: rgba(245, 245, 245, 0.582);
+  background-color: rgba(245, 245, 245, 0.582);
 }
 
 .col-md-6 {
@@ -105,7 +116,7 @@ fieldset {
     margin-left: 30px;
 }
 
-input[type="date" i] {   
+.inputDate {
     align-items: center;
     text-align: center;
     display: inline-block;
@@ -134,6 +145,7 @@ select, textarea {
     margin-bottom: 20px;
     background-color: #715C8C;
 }
+
 .btn-primary {
     margin-bottom: 20px;
     background-color: rgb(51, 50, 102);
@@ -146,7 +158,6 @@ select, textarea {
 .btn-secondary:hover {
     background-color: #838BC2;
 }
-
 
 .form-group {
     margin-top: 20px;
@@ -180,6 +191,7 @@ input[type="number" i] {
 .launchDateClass {
     float: right;
 }
+
 #launchDate {
     width: auto;
 }
@@ -255,4 +267,70 @@ legend {
 
 .category-col {
     width: 25%;
+}
+
+/* DASHBOARD */
+.dashboard {
+    border: 1px solid #a0a0a0; 
+    height: 100px; 
+}
+
+.dashboard-container {
+    height: 92vh;
+}
+
+#card-valor {
+    border: 1px solid #a0a0a0;   
+    border-radius: 20px;   
+}
+
+#container-welcome {    
+    background-color: #cfcfcf;
+    font-size: 20px; 
+}
+
+#i_saldo {
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+#i_receita {
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+#i_despesa {
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.text-dashboard {
+    font-weight: bold;
+}
+
+#text-p-dashboard {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.show-details {
+    background-color: #cfcfcf;
+    height: 400px;   
+    border-radius: 20px;  
+}
+
+.text-show {
+    font-size: 25px;
+}
+
+.text-details {
+    font-size: 20px;
+}
+
+.line-details {
+    border-top: 1px solid #a0a0a0;    
+}
+
+#openSettingsModalLink {
+    cursor: pointer;
 }
