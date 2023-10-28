@@ -18,3 +18,19 @@ function carregarMenu() {
 }
 
 carregarMenu();
+
+// Função para verificar o tamanho da tela e adicionar a nav mobile
+function verificarTamanhoDaTela() {
+    
+    let larguraDaJanela = window.innerWidth;
+    
+    if (larguraDaJanela <= 900) { 
+        carregarMenu('menuMobile.html');        
+    } else {
+        carregarMenu();        
+    } 
+}
+
+window.addEventListener('resize', verificarTamanhoDaTela);
+
+verificarTamanhoDaTela();

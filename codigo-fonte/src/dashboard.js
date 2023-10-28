@@ -74,23 +74,7 @@ let welcome = document.getElementById("i_welcome");
 
 let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || [];
 
-welcome.textContent = "Bem vindo, " + usuarioAtivo.name + "!";
-
-// Função para verificar o tamanho da tela e adicionar a nav mobile
-function verificarTamanhoDaTela() {
-    
-    let larguraDaJanela = window.innerWidth;
-    
-    if (larguraDaJanela <= 900) { 
-        carregarMenu('menuMobile.html');        
-    } else {
-        carregarMenu();        
-    } 
-}
-
-window.addEventListener('resize', verificarTamanhoDaTela);
-
-verificarTamanhoDaTela();
+welcome.textContent = "Bem-vindo, " + usuarioAtivo.name + "!";
 
 //Dados dashboard
 let teste = {
