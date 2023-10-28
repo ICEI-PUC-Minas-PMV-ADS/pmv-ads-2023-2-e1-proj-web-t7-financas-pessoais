@@ -11,6 +11,10 @@ function carregarMenu() {
     })
     .then((menuHtml) => {
       menuContainer.innerHTML = menuHtml;
+
+      let userName = document.getElementById("userName");
+      let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || [];
+      userName.textContent = usuarioAtivo.name;
     })
     .catch((error) => {
       console.error("Erro ao carregar o menu:", error);
@@ -18,3 +22,18 @@ function carregarMenu() {
 }
 
 carregarMenu();
+
+function verificarTamanhoDaTela() {
+    
+    let larguraDaJanela = window.innerWidth;
+    
+    if (larguraDaJanela <= 900) { 
+        carregarMenu('menuMobile.html');        
+    } else {
+        carregarMenu();        
+    } 
+}
+
+window.addEventListener('resize', verificarTamanhoDaTela);
+
+verificarTamanhoDaTela();
