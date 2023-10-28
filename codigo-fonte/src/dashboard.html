@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
@@ -29,87 +30,80 @@
             <div class="container-fluid dashboard_container">
                 <div class="container-fluid" id="container-welcome">
                     <div class="row text-center">
-                        <p id="i_welcome" class="p-4">Bem vindo, Fulano de Tal!</p>            
-                    </div>
-                </div> 
-                <div class="container card_container">
-                    <div class="row mt-5">
-                        <p id="text-p-dashboard">Dashboard</p>
-                    </div>
-                </div>
-            
-                <div class="container card_container">
-                    <div class="row d-flex justify-content-center py-4" id="card-valor">
-                        <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
-                            <p class="text-start m-0 text-dashboard">Saldo</p>
-                            <p class="text-start text-primary" id="i_saldo">R$15.000,00</p>
-                        </div>
-                        <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
-                            <p class="text-start m-0 text-dashboard">Receita</p>
-                            <p class="text-start text-success" id="i_receita">R$15.000,00</p>
-                        </div>
-                        <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
-                            <p class="text-start m-0 text-dashboard">Despesas</p>
-                            <p class="text-start text-danger" id="i_despesa">R$15.000,00</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="container card_container">
-                    <div class="row d-flex justify-content-between mt-4 align-items-center">
-                        <div class="col-lg-6 my-3 col-md-6 show-details">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="text-show mt-4 ms-2">Despesas por categoria</p>
-                                </div>
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-9 col-md-12 mt-lg-0 mt-5">                                
-                                        <canvas id="myChart"></canvas>                                
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 my-3 col-md-5 show-details">
-                            <div class="row px-lg-3">
-                                <div class="col-12">
-                                    <p class="text-show mt-4 mb-4 ms-2">Balanço mensal</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="text-details mt-4 ms-2">Receitas</p>
-                                    <p class="text-details text-success ms-2" id="bm_receita">R$15.000,00</p>
-                                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg-success" style="width: 100%"></div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <p class="text-details mt-4 ms-2">Despesas</p>
-                                    <p class="text-details text-danger ms-2" id="bm_despesa">R$15.000,00</p>
-                                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg-danger" style="width: 50%">50%</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="line-details text-details mt-5 ms-2 pt-4">Balanço</p>
-                                    <p class="text-details text-primary ms-2" id="bm_balanco">R$15.000,00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Footer -->
-                <footer class=" d-flex justify-content-center mt-5 dashboard_container" id="line-footer">
-                    <p class="text-body-secondary">PucMoney 2023 | Todos os direitos reservados</p>
-                </footer>
+                <p id="i_welcome" class="p-4">Bem vindo, Fulano de Tal!</p>            
+            </div>
+        </div> 
+        <div class="container card_container">
+            <div class="row mt-5">
+                <p id="text-p-dashboard">Dashboard</p>
             </div>
         </div>
-        <div>
-          <div class="charts-values" id="pie-chart">Gráfico</div>
-          <div class="charts-values" id="values">Saldo</div>
+    
+        <div class="container card_container">
+            <div class="row d-flex justify-content-center py-4" id="card-valor">
+                <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+                    <p class="text-start m-0 text-dashboard">Saldo</p>
+                    <p class="text-start text-primary" id="i_saldo">R$15.000,00</p>
+                </div>
+                <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+                    <p class="text-start m-0 text-dashboard">Receita</p>
+                    <p class="text-start text-success" id="i_receita">R$15.000,00</p>
+                </div>
+                <div class="col-9 col-md-3 dashboard my-2 mx-md-4 ps-3 pt-3">
+                    <p class="text-start m-0 text-dashboard">Despesas</p>
+                    <p class="text-start text-danger" id="i_despesa">R$15.000,00</p>
+                </div>
+            </div>
         </div>
-      </div>
+    
+        <div class="container card_container">
+            <div class="row d-flex justify-content-between mt-4 align-items-center">
+                <div class="col-lg-6 my-3 col-md-6 show-details">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-show mt-4 ms-2">Despesas por categoria</p>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-9 col-md-12 mt-lg-0 mt-5">                                
+                                <canvas id="myChart"></canvas>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-3 col-md-5 show-details">
+                    <div class="row px-lg-3">
+                        <div class="col-12">
+                            <p class="text-show mt-4 mb-4 ms-2">Balanço mensal</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-details mt-4 ms-2">Receitas</p>
+                            <p class="text-details text-success ms-2" id="bm_receita">R$15.000,00</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-success" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-details mt-4 ms-2">Despesas</p>
+                            <p class="text-details text-danger ms-2" id="bm_despesa">R$15.000,00</p>
+                            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p class="line-details text-details mt-5 ms-2 pt-4">Balanço</p>
+                            <p class="text-details text-primary ms-2" id="bm_balanco">R$15.000,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class=" d-flex justify-content-center mt-5 dashboard_container" id="line-footer">
+            <p class="text-body-secondary">PucMoney 2023 | Todos os direitos reservados</p>
+        </footer>
     </div>
 
 </body>
