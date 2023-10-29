@@ -2,11 +2,14 @@
 
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-[Apresente a estrutura padrão da sua aplicação.]
+> Tela de Login para entrada no sistema PucMoney.
+> ![Login](img/1login.jpg?raw=true)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+> Dashboard sendo a página Home do sistema, por ela temos uma prévia da situação financeira do usuário.
+> ![Dashboard](img/2dashboard.jpg?raw=true)
+
+> Tela de preparação para inclusão de lançamentos o usuário possui acesso também as últimas inclusões.
+> ![Tela Lançamentos](img/3lancamentos.jpg?raw=true)
+
+> Tela para relatórios diversos da movimentação financeira do usuário.
+> ![Relatórios](img/4relatorios.jpg?raw=true)
