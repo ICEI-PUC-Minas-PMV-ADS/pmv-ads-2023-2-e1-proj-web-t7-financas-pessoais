@@ -89,6 +89,15 @@ Foi orientado aos membros do grupo que escolhessem uma tela que se sentissem mai
     <figcaption>Figura 3 - Sprint 3</figcaption>
 </figure>
 
+Nesta Sprint pudemos verificar a participação pelo link no repositório:
+<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/graphs/contributors" target="_blank">Insights</a>
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-4.jpeg"
+    <figcaption>Figura 4 - Sprint 3</figcaption>
+</figure>
+
+
 ### Ferramentas
 
 Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abaixo, juntamente com seus respectivos propósitos:
