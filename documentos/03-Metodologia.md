@@ -93,7 +93,7 @@ Nesta Sprint pudemos verificar a participação pelo link no repositório:
 <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/graphs/contributors" target="_blank">Insights</a>
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-4.jpeg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint3-4.jpg"
     <figcaption>Figura 4 - Sprint 3</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
   <tr>
     <td>Hospedagem</td>
     <td>GitHub Pages</td>
-    <td> - </td>
+    <td><a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/codigo-fonte/src/login.html">PucMoney</a></td>
   </tr>
   <tr>
     <td>Ambiente de desenvolvimento</td>
