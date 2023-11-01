@@ -95,43 +95,5 @@
                 </div>
             </div>
         </div>
-
-        <script defer>
-            function abrirModalConfiguracoes() {
-                var settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
-                settingsModal.show();
-
-                let email = document.getElementById('emailSettings');
-                let password = document.getElementById('passwordSettings');
-                let userName = document.getElementById("userNameSettings");
-
-                let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || {};
-
-                userName.value = usuarioAtivo.name;
-                email.value = usuarioAtivo.email;
-                password.value = usuarioAtivo.password;                
-            }
-
-            document.getElementById('openSettingsModalLink').addEventListener('click', function () {
-                var settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
-                settingsModal.show();
-            });
-
-            function salvarConfiguracoes() {
-                let userName = document.getElementById('userNameSettings').value;
-                let email = document.getElementById('emailSettings').value;
-                let password = document.getElementById('passwordSettings').value;
-                
-                let usuarioAtivo = {
-                    name: userName,
-                    email: email,
-                    password: password,
-                };
-                localStorage.setItem('usuarioAtivo', JSON.stringify(usuarioAtivo));
-            }
-
-            document.getElementById('saveSettings').addEventListener('click', salvarConfiguracoes);
-
-        </script>
     </body>
 </html>
