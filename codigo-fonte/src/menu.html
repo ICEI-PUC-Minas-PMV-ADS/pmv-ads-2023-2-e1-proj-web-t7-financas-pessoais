@@ -11,12 +11,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">   
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
         <!-- scripts -->    
         <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
         <script defer src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -54,8 +58,8 @@
                             <i class="fa fa-user"></i><span class="ms-2" id="userName"></span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
-                            <a class="dropdown-item" id="openSettingsModalLink">
-                                <i class="fa fa-cog"></i><span class="ms-2">Configurações</span>
+                            <a class="dropdown-item" href="#" id="openModalBtn">
+                                <i class="fa fa-cog"></i><span class="ms-2" data-bs-toggle="modal" data-bs-target="#settingsModal">Configurações</span>
                             </a>
                             <a class="dropdown-item" href="login.html">
                                 <i class="fa fa-sign-out"></i><span class="ms-2">Sair</span>
@@ -63,7 +67,6 @@
                         </div>
                     </div>
                 </section>
-            </div>
             <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -71,15 +74,15 @@
                             <h1 class="modal-title fs-5" id="settingsModalLabel">
                                 Configurações do Usuário
                             </h1>
-                            <button class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1" class="dadoslogin">Nome</span><br />
-                                <input type="text" class="form-control" aria-label="Nome" aria-describedby="basic-addon1"  id="userNameSettings"/>
+                                <input type="text" class="form-control" aria-label="Nome" aria-describedby="basic-addon1" id="userNameSettings"/>
                             </div>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1" class="dadoslogin">E-mail</span><br />
+                                <span class="input-group-text" id="basic-addon1" class="dadoslogin">e-mail</span><br />
                                 <input type="email" class="form-control" aria-label="e-mail" aria-describedby="basic-addon1" id="emailSettings"/>
                             </div>
                             <div class="input-group mb-3">
@@ -89,7 +92,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="saveSettings"> Salvar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="saveSettings"> Salvar e Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +115,7 @@
                 password.value = usuarioAtivo.password;                
             }
 
-            document.getElementById('openSettingsModalLink').addEventListener('click', function () {
+            document.getElementById('openModalBtn').addEventListener('click', function () {
                 var settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
                 settingsModal.show();
             });
