@@ -24,7 +24,6 @@ body {
 }
 
 .content {
-    flex: 1;
     padding: 20px;
     margin-left: 210px;
     width: calc(100% - 220px);
@@ -33,12 +32,12 @@ body {
 
 .sidebar-menu {
     background-color: rgb(51, 51, 102);
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 220px;
-    padding-top: 20px; */
+    padding-top: 20px;
 }
 
 fieldset {
