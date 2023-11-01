@@ -13,7 +13,7 @@ O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jo
 
 * Álvaro Henrique Orfus Tavares
 * Eros Rodrigues Valois Alvaia
-* Gustavo Felix Braga
+* Gustavo Felix Braga!!!
 * Janaina Esteves de Faria
 * Larissa Cardoso de Miranda Araujo
 * Leonardo Aquim de Queiroz
@@ -39,7 +39,7 @@ O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jo
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/codigo-fonte/src/login.html">PucMoney</a> 
 
 # Código-Fonte
 

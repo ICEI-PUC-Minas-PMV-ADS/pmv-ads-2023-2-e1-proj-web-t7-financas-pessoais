@@ -1,24 +1,97 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Relatórios</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- stylesheets -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- scripts --> 
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
+    <script defer src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script defer src="reports.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
-<body>
+  <body>
     <div class="container-fluid d-flex">
-        <div id="menu-container"></div>
-        <div class="content">
-           <!-- Todo o código da sua tela vem aqui -->
-        </div>
+        <nav id="menu-container"></nav>
+        <section class="content">
+            <h3>Relatórios</h3>
+            <fieldset>
+                <legend><h4>Filtros</h4></legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Período</h5>                                                 
+                        <input type="date" class="inputDate inputDate-right-margin" id="startDate" name="startDate">
+                        <input type="date" class="inputDate" id="endDate" name="endDate">                            
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Categoria</h5>
+                        <select name="selectCategories" id="selectCategories">
+                            <option value="all">Todas</option>                            
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Tipo de lançamento</h5>
+                        <input class="marginRight" type="radio" id="allCategories" name="category" value="all" checked="checked">
+                        <label class="radio-right-margin" for="allCategories">Todos</label>
+                        <input class="marginRight" type="radio" id="entries" name="category" value="entries">
+                        <label class="radio-right-margin" for="entries">Receitas</label>
+                        <input class="marginRight" type="radio" id="exits" name="category" value="exits">
+                        <label class="radio-right-margin" for="exits">Despesas</label>
+                    </div>                    
+                </div>
+                <div class="row">                    
+                    <div class="col-md-12">
+                        <button class="btn btn-primary pull-right" type="button" onclick="generateReport()"><i class="fa fa-file-pdf"></i>  PDF</button>
+                        <button class="btn btn-secondary pull-right marginRight" type="button" onclick="generateXLS()"><i class="fa fa-file-excel"></i>  XLS</button>
+                    </div>
+                </div>
+            </fieldset>
+           <div class="reportData" style="display: none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="reportHeader">Relatório financeiro</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">                   
+                    </div>
+                    <div class="col-md-4">
+                        <canvas id="categoryChart" width="50" height="50"></canvas>
+                    </div>
+                    <div class="col-md-4">                    
+                    </div>
+                </div>   
+           </div>         
+            <div id="reportContent">
+                <div class="row">                
+                    <table class="table table-striped table-hover" id="launchTable">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="date-col">Data</th>
+                                <th scope="col" class="description-col">Descrição</th>
+                                <th scope="col" class="category-col">Categoria</th>
+                                <th scope="col" class="launch-col">Tipo de lançamento</th>
+                                <th scope="col" class="valor-col">Valor</th>
+                            </tr>
+                          </thead>
+                          <tbody>                                              
+                          </tbody>
+                    </table>
+                </div>             
+            </div>      
+        </section>
     </div>
 
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
-
-</html>
