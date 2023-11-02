@@ -28,16 +28,18 @@ populateTable(savedData);
 
 function clearLaunchModalFields() {
     document.getElementById('value').value = '';
-    document.getElementById('launchDate').value = '';
     document.getElementById('selectCategories').value = '';
     document.getElementById('description').value = '';
     document.getElementById('revenues').checked = true;
     document.getElementById('expenses').checked = false;
-    document.getElementById('flexSwitchCheckDefault').checked = false;
+
+    let currentDate = new Date();
+    let launchDate = document.getElementById('launchDate');
+    launchDate.value = currentDate.toISOString().substr(0, 10);
 }
 
 function showLaunchModal() {
-    clearLaunchModalFields();
+    clearLaunchModalFields();  
     $("#launchModal").modal('show');
 }
 
@@ -68,21 +70,38 @@ function saveData() {
     const description = document.getElementById('description').value;
     const revenues = document.getElementById('revenues').checked;
     const expenses = document.getElementById('expenses').checked;
-    
-    const data = {
-        category,
-        icon,
-        value,
-        launchDate,
-        description,
-        isRevenues: revenues,
-        isExpenses: expenses
-    };
-    
-    let savedData = JSON.parse(localStorage.getItem('savedData')) || [];
-    savedData.push(data);
-    localStorage.setItem('savedData', JSON.stringify(savedData));
-    populateTable(savedData);
+
+    if (category == '' || value == '' || launchDate == '' || description == '') {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Atenção',
+            text: 'Preencha todos os dados do lançamento para salvá-lo!',
+        }).then(() => {            
+            $("#launchModal").modal('show');
+        });
+    }
+    else {
+        const data = {
+            category,
+            icon,
+            value,
+            launchDate,
+            description,
+            isRevenues: revenues,
+            isExpenses: expenses
+        };
+        
+        let savedData = JSON.parse(localStorage.getItem('savedData')) || [];
+        savedData.push(data);
+        localStorage.setItem('savedData', JSON.stringify(savedData));
+        Swal.fire({
+            icon: 'success',
+            title: 'Sucesso!',
+            text: 'Lançamento salvo com sucesso!'
+        }).then(() => {
+            populateTable(savedData);
+        });
+    }
 }
 
 function getIconForCategory(categoryName) {
@@ -138,7 +157,8 @@ function getSelectedLaunchType() {
 
 function formatDate(date) {
     const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-    return new Date(date).toLocaleDateString(undefined, options);
+    const localDate = new Date(date + 'T00:00:00');
+    return localDate.toLocaleDateString('pt-BR', options);
 }
 
 function populateTable(data) {
@@ -149,7 +169,7 @@ function populateTable(data) {
     if (data.length === 0) {
         const emptyRow = tableBody.insertRow();
         const cell = emptyRow.insertCell(0);
-        cell.colSpan = 5;
+        cell.colSpan = 6;
         cell.textContent = 'Não há lançamentos no período';
     } else {
         data.forEach(item => {
@@ -162,7 +182,11 @@ function populateTable(data) {
                 <td><i class="fas ${item.icon}"></i> ${item.category}</td>
                 <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
                 <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
-            `;
+                <td class="align-right">
+                    <button class="btn" onclick="showCategoryModal()"><i class="fas fa-pen-to-square"></i></button>
+                    <button class="btn" onclick="deleteLaunch(this)"><i class="fas fa-trash-can"></i></button>
+                </td>
+            `;            
         });
     }
 }
@@ -171,6 +195,46 @@ function formatCurrency(item) {
     return parseFloat(item.value).toLocaleString('pt-BR', {
         style: 'currency',
         currency: 'BRL',
+    });
+}
+
+function deleteLaunch(button) {
+    const row = button.closest('tr');
+    const savedData = JSON.parse(localStorage.getItem('savedData')) || [];
+
+    Swal.fire({
+        icon: 'warning',
+        title: 'Tem certeza que deseja excluir esse lançamento?',
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar',
+        cancelButtonText: 'Cancelar',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const rowData = row.querySelectorAll('td');
+            const dataToMatch = {
+                launchDate: rowData[0].textContent,
+                description: rowData[1].textContent,
+                category: rowData[2].textContent,
+                value: rowData[4].textContent,
+            };
+
+            const newData = savedData.filter(item =>
+                formatDate(item.launchDate) !== dataToMatch.launchDate &&
+                item.description !== dataToMatch.description &&
+                item.category !== dataToMatch.category &&
+                formatCurrency(item) !== dataToMatch.value
+            );
+
+            localStorage.setItem('savedData', JSON.stringify(newData));
+            
+            Swal.fire({
+                icon: 'success',
+                title: 'Sucesso!',
+                text: 'Lançamento excluído com sucesso!'
+            }).then(() => {
+                location.reload();
+            });
+        }
     });
 }
 
