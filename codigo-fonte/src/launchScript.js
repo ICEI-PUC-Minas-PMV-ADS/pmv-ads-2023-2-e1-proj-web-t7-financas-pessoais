@@ -183,7 +183,6 @@ function populateTable(data) {
                 <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
                 <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
                 <td class="align-right">
-                    <button class="btn" onclick="showCategoryModal()"><i class="fas fa-pen-to-square"></i></button>
                     <button class="btn" onclick="deleteLaunch(this)"><i class="fas fa-trash-can"></i></button>
                 </td>
             `;            
