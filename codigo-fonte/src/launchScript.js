@@ -17,7 +17,11 @@ const iconsList = {
     'Dinheiro': 'fa-dollar-sign',
     'Cartão': 'fa-wallet',
     'Pets': 'fa-paw',
-    'Moto': 'fa-motorcycle'
+    'Moto': 'fa-motorcycle',
+    'Cesta de compras': 'fa-basket-shopping',
+    'Carrinho de compras': 'fa-cart-shopping',
+    'Economias': 'fa-hand-holding-dollar',
+    'Presentes': 'fa-gift'
 };
 
 populateCategoryTable(categories);
