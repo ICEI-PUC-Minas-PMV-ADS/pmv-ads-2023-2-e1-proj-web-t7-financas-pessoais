@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitar endividamento.</td>
+<td>Uma ferramenta para monitorar suas finanças, compreender onde estão gastando e evitarem endividamento.</td>
 </tr>
 </tbody>
 </table>

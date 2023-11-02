@@ -37,3 +37,18 @@ verificarTamanhoDaTela();
 document.addEventListener('DOMContentLoaded', function () {
   new bootstrap.Dropdown(document.querySelector('.menu-mobile-container .navbar-toggler'));
 });
+
+function salvarConfiguracoes() {
+  let userName = document.getElementById('userNameSettings').value;
+  let email = document.getElementById('emailSettings').value;
+  let password = document.getElementById('passwordSettings').value;
+  
+  let usuarioAtivo = {
+      name: userName,
+      email: email,
+      password: password,
+  };
+  localStorage.setItem('usuarioAtivo', JSON.stringify(usuarioAtivo));
+
+  location.reload();
+}

@@ -50,7 +50,7 @@ fieldset {
 }
 
 #menu-container {
-    position: fixed;
+    position: absolute;
 }
 
 .menu-container {
@@ -267,7 +267,15 @@ legend {
 }
 
 .category-col {
-    width: 25%;
+    width: 20%;
+}
+
+.action-col {
+    width: 5%;
+}
+
+.fa-trash-can {
+    color: red;
 }
 
 /* DASHBOARD */
