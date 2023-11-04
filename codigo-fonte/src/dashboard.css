@@ -19,6 +19,38 @@
     font-size: 20px; 
 }
 
+#progress-receita {
+    height: 25px;
+}
+
+#progress-despesa {
+    height: 25px;
+    font-size: 18px;
+}
+
+#btn-dashboard {
+    font-size: 18px;   
+    background-color: #333366;
+    border-color: #333366;
+    height: 45px;
+    color: white;
+}
+
+#btn-dashboard:hover {
+    background-color: #6522bd;
+    border-color: #6522bd;
+}
+
+#month {
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+#year {
+    font-size: 18px;
+    font-weight: bold;    
+}
+
 #i_saldo {
     font-size: 20px;
     font-weight: bold;    

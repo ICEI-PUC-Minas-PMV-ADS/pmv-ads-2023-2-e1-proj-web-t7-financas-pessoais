@@ -32,7 +32,15 @@
             </div>
         </div> 
         <div class="container card_container">
-            <div class="row mt-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-3 col-lg-2 col-6">
+                    <select class="form-select text-center text-secondary py-2" id="month"></select>
+                </div>
+                <div class="col-md-3 col-lg-2 col-6">
+                    <select class="form-select text-center text-secondary py-2" id="year"></select>
+                </div>                
+            </div>    
+            <div class="row mt-4">
                 <p id="text-p-dashboard">Dashboard</p>
             </div>
         </div>
@@ -76,7 +84,7 @@
                         <div class="col-6">
                             <p class="text-details mt-4 ms-2">Receitas</p>
                             <p class="text-details text-success ms-2" id="bm_receita">R$15.000,00</p>
-                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            <div class="progress" id="progress-receita" role="progressbar" aria-label="Success example" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar bg-success" style="width: 100%"></div>
                             </div>
@@ -84,7 +92,7 @@
                         <div class="col-6">
                             <p class="text-details mt-4 ms-2">Despesas</p>
                             <p class="text-details text-danger ms-2" id="bm_despesa">R$15.000,00</p>
-                            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                            <div class="progress" id="progress-despesa" role="progressbar" aria-label="Danger example" aria-valuenow="100"
                                 aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar bg-danger" style="width: 50%">50%</div>
                             </div>
