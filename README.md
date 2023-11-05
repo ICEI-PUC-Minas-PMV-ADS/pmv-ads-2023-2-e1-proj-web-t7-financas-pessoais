@@ -5,13 +5,13 @@
 
 `Desenvolvimento de Aplicação Web Front-End`
 
-`1º semestre/2023 - Eixo 1`
+`2º semestre/2023 - Eixo 1`
 
-O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jovens adultos a gerenciarem suas finanças.
+O objetivo geral deste projeto é desenvolver uma aplicação web que auxilie jovens adultos a gerenciarem suas finanças.
 
 ## Integrantes
 
-* Álvaro Henrique Orfus Tavares
+* <a href="https://github.com/alvimpl">Álvaro Henrique Orfus Tavares</a>
 * Eros Rodrigues Valois Alvaia
 * Gustavo Felix Braga
 * Janaina Esteves de Faria
@@ -39,7 +39,7 @@ O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jo
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/codigo-fonte/src/login.html">PucMoney</a> 
 
 # Código-Fonte
 

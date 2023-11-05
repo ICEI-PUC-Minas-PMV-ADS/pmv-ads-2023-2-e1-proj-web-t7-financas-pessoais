@@ -1,76 +1,386 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e2e4e0;
+    color: #212529;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo {
     margin-top: 20px;
-    height: 5rem;
+    height: 7rem;
     width: auto;
     display: block;
     margin-left: 30px;
     margin-bottom: 20px;
 }
 
-body {
-    margin: 0;
-}
-
 .container-fluid {
-    margin-left: -6px;
-    width: auto;    
+  margin-left: -6px;
+  width: auto;
 }
 
 .content {
-    flex: 1;
     padding: 20px;
+    margin-left: 210px;
+    width: calc(100% - 220px);
+    background-color: rgb(256, 256, 256);
+}
+
+.sidebar-menu {
+    background-color: rgb(51, 51, 102);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
 }
 
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    min-height: 150px;
+}
+
+#menu-container {
+    position: absolute;
 }
 
 .menu-container {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
 .menu-container .nav-link:hover {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .menu-container .fa {
-    color: white;
+    color: rgb(256, 256, 256);
 }
 
-.menu-container .nav-pills .nav-item a span {    
-    font-size: 20px;
-    font-weight: 400;    
+.menu-container .nav-pills .nav-item a span {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .nav-item {
-    padding-top: 0.06rem;
-    padding-bottom: 0.06rem;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
 }
 
 .nav-pills li a:hover {
-    background-color: rgba(245, 245, 245, 0.582);
-}
-
-.sidebar-menu {
-    background-color: #212529;
+  background-color: rgba(245, 245, 245, 0.582);
 }
 
 .user-dropdown-menu {
-    position: relative;
+  position: relative;
 }
 
 .user-dropdown-menu button {
-    background-color: transparent;
-    color: white;
-    transition: background-color 0.3s ease;
+    background-color: rgb(51, 50, 102);
+    color: rgb(256, 256, 256);
+    background-color: rgb(51, 50, 102);
 }
 
 .user-dropdown-menu button:hover {
-    background-color: rgba(245, 245, 245, 0.582);
+  background-color: rgba(245, 245, 245, 0.582);
+}
+
+.col-md-6 {
+    width: 33%;
+}
+
+.pull-right {
+    margin-top: 20px;
+    width: 8%;
+    float: right;
+}
+
+.radio-right-margin {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.radio-left-margin {
+    margin-left: 30px;
+}
+
+.inputDate {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 40px;
+}
+
+.inputDate-right-margin {
+    margin-right: 10px;
+}
+
+select, textarea {
+    text-align: center;
+    font-size: 19px;
+    width: 50%;
+    height: 40px;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    margin-bottom: 20px;
+    background-color: #715C8C;
+}
+
+.btn-primary {
+    margin-bottom: 20px;
+    background-color: rgb(51, 50, 102);
+}
+
+.btn-primary:hover {
+    background-color: rgb(89, 85, 158);
+}
+
+.btn-secondary:hover {
+    background-color: #838BC2;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.switches {
+    display: inline-block;
+    float: right;
+}
+
+.launchDate {
+    display: inline-block;
+    float: right;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+input[type="number" i] {
+    margin-left: 10px;
+    width: 35%;
+}
+
+.input-left-margin {
+    margin-left: 100px;
+}
+
+.launchDateClass {
+    float: right;
+}
+
+#launchDate {
+    width: auto;
+}
+
+label {
+    display: inline-block; 
+}
+
+.modal-header {
+    background-color: rgb(51, 51, 102);
+    color: rgb(256, 256, 256); 
+}
+
+footer {    
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.table>thead {
+    background-color: rgb(51, 51, 102);
+    color: rgb(256, 256, 256); 
+}
+
+.green-text {
+    color: rgb(22, 187, 22) !important;
+    font-weight: 500;
+}
+
+.red-text {
+    color: rgb(204, 5, 5) !important;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 19px
+}
+
+h3 {
+    font-weight: 500;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#categoryChart {
+    margin-bottom: 20px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.valor-col {
+    width: 10%;
+}
+
+.date-col {
+    width: 10%;
+}
+
+.description-col {
+    width: 35%;
+}
+
+.launch-col {
+    width: 20%;
+}
+
+.category-col {
+    width: 20%;
+}
+
+.action-col {
+    width: 5%;
+}
+
+.fa-trash-can {
+    color: red;
+}
+
+#categoryChart {
+    width: 400px !important;
+    height: 400px !important;
+}
+
+#openSettingsModalLink {
+    cursor: pointer;
+}
+
+#menuMobile {
+    display: none;
+}
+
+.menu-mobile-container {
+    background-color: #333366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-mobile-container .mobileLogo {
+    display: block;
+    text-align: left;
+}
+
+.menu-mobile-container .mobileLogo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.menu-mobile-container .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    color: #333366;
+    font-size: 24px;
+}
+
+.menu-mobile-container .navbar-toggler-dropdown .dropdown-menu {
+    background-color: #333366;
+}
+
+.menu-mobile-container .navbar-toggler-dropdown .dropdown-menu a {
+    color: #ffffff;
+}
+
+.menu-mobile-container .offcanvas-title {
+    color: #333366;
+}
+
+.menu-mobile-container .nav-link {
+    color: #333366;
+}
+
+.menu-mobile-container .btn-close {
+    color: #333366;
+    font-size: 24px;
+}
+
+.menu-mobile-container .nav-item {
+    padding: 0.2rem 0;
+    color: #333366;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .sidebar-menu {
+        display: none;
+    } 
+
+    .btn-primary,
+    .btn-secondary {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .dataTable {
+        font-size: 16px;
+    }
+
+    .radio-right-margin {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .marginRight {
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu {
+      display: none;
+    }
+  
+    #menuMobile {
+      display: block;
+    }
 }
