@@ -24,15 +24,62 @@ function setDefaultDateValues() {
 
     let currentDate = new Date();
     let startDate = new Date(currentDate);
-    startDate.setDate(currentDate.getDate() - 45);
+    startDate.setDate(currentDate.getDate() - 30);
 
     endDateInput.value = currentDate.toISOString().substr(0, 10);
     startDateInput.value = startDate.toISOString().substr(0, 10);
 }
 
+function clearFilters() {
+    location.reload();
+}
+
+function filterLaunchs() {
+    const startDate = new Date(document.getElementById('startDate').value);
+    const endDate = new Date(document.getElementById('endDate').value);
+    const category = document.getElementById('selectCategories').value;
+    const launchType = getSelectedLaunchType();
+
+    const allLaunchs = JSON.parse(localStorage.getItem('savedData')) || [];
+
+    const filteredLaunchs = allLaunchs.filter(data => {
+        const launchDate = new Date(data.launchDate);
+        const isRevenues = data.isRevenues;
+        const isExpenses = data.isExpenses;
+
+        const isDateInRange = launchDate >= startDate && launchDate <= endDate;
+        const isCategoryMatch = category === '' || data.category === category;
+
+        if (launchType === 'allCategories') {
+            return isDateInRange && isCategoryMatch;
+        } else if (launchType === 'entries') {
+            return isDateInRange && isCategoryMatch && isRevenues;
+        } else if (launchType === 'exits') {
+            return isDateInRange && isCategoryMatch && isExpenses;
+        }
+    });
+
+    populateTable(filteredLaunchs);
+}
+
+function getSelectedLaunchType() {
+    let allCategoriesRadio = document.getElementById('allCategories');
+    let entriesRadio = document.getElementById('entries');
+    let exitsRadio = document.getElementById('exits');
+
+    if (allCategoriesRadio.checked) {
+        return 'allCategories';
+    } else if (entriesRadio.checked) {
+        return 'entries';
+    } else if (exitsRadio.checked) {
+        return 'exits';
+    }
+}
+
 function formatDate(date) {
     const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-    return new Date(date).toLocaleDateString(undefined, options);
+    const localDate = new Date(date + 'T00:00:00');
+    return localDate.toLocaleDateString('pt-BR', options);
 }
 
 function formatCurrency(item) {
@@ -46,19 +93,26 @@ function populateTable(data) {
     data.sort((a, b) => new Date(b.launchDate) - new Date(a.launchDate));
     const tableBody = document.querySelector('#launchTable tbody');
     tableBody.innerHTML = '';
-
-    data.forEach(item => {
-        const formattedValue = formatCurrency(item);
-        const row = tableBody.insertRow();
-
-        row.innerHTML = `
-            <td>${formatDate(item.launchDate)}</td>
-            <td>${item.description}</td>
-            <td><i class="fas ${item.icon}"></i> ${item.category}</td>
-            <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
-            <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
-        `;
-    });
+    if(data.length === 0){
+        const emptyRow = tableBody.insertRow();
+        const cell = emptyRow.insertCell(0);
+        cell.colSpan = 5;
+        cell.textContent = 'Não há lançamentos no período!';
+    }
+    else {
+        data.forEach(item => {
+            const formattedValue = formatCurrency(item);
+            const row = tableBody.insertRow();
+    
+            row.innerHTML = `
+                <td>${formatDate(item.launchDate)}</td>
+                <td>${item.description}</td>
+                <td><i class="fas ${item.icon}"></i> ${item.category}</td>
+                <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
+                <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
+            `;
+        });
+    }
 }
 
 async function generateReport() {  
@@ -68,17 +122,36 @@ async function generateReport() {
     const categoryFilter = document.getElementById('selectCategories').value;
 
     const categoryData = getCategoryData(startDate, endDate, categoryFilter);
+    
+    let data = categoryData.data;
+    if(data.length === 0) {
+        Swal.fire({
+            title: 'Atenção',
+            text: 'Não há lançamentos no período informado!',
+            icon: 'warning',
+        })
+    }
+    else {
 
-    const reportHeader = `Relatório financeiro - ${formatDate(startDate)} a ${formatDate(endDate)}`;
-    document.getElementById('reportHeader').textContent = reportHeader;
+        const reportHeader = `Relatório financeiro - ${formatDate(startDate)} a ${formatDate(endDate)}`;
+        document.getElementById('reportHeader').textContent = reportHeader;
 
-    document.querySelector('.reportData').style.display = 'block';
-    
-    createChart('categoryChart', categoryData.labels, categoryData.data, 'Lançamentos do período', reportHeader);
-    
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    generatePDF(reportHeader, categoryData);
+        document.querySelector('.reportData').style.display = 'block';
+        
+        createChart('categoryChart', categoryData.labels, categoryData.data, 'Lançamentos do período', reportHeader);
+        
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        generatePDF(reportHeader, categoryData);
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Sucesso!',
+            text: 'Relatório gerado com sucesso!'
+        }).then(() => {
+            location.reload();
+        });
+    }
 }
 
 function getCategoryData(startDate, endDate, categoryFilter) {
@@ -205,32 +278,49 @@ function generateXLS() {
             return isDateInRange && isCategoryMatch && isExpenses;
         }
     });
+    
+    if (filteredLaunchs.length === 0) {
+        Swal.fire({
+            title: 'Atenção',
+            text: 'Não há lançamentos no período informado!',
+            icon: 'warning',})
+    }
+    else {
+        const data = [];
+        const headers = ["Data do lançamento", "Categoria", "Valor", "Tipo"];
 
-    const data = [];
-    const headers = ["Data do lançamento", "Categoria", "Valor", "Tipo"];
+        data.push(headers);
 
-    data.push(headers);
+        filteredLaunchs.forEach(item => {
+            let launchType = item.isRevenues ? "Receitas" : "Despesas";
+            let formattedValue = formatCurrency(item);
+            const rowData = [
+                formatDate(item.launchDate),
+                item.category,
+                formattedValue,
+                launchType
+            ];
+            data.push(rowData);
+        });
+        
+        const wb = XLSX.utils.book_new();    
+        
+        const ws = XLSX.utils.aoa_to_sheet(data);    
+        
+        XLSX.utils.book_append_sheet(wb, ws, "Relatório Financeiro");    
+        
+        XLSX.writeFile(wb, "Relatório Financeiro.xlsx");
 
-    filteredLaunchs.forEach(item => {
-        let launchType = item.isRevenues ? "Receitas" : "Despesas";
-        let formattedValue = formatCurrency(item);
-        const rowData = [
-            formatDate(item.launchDate),
-            item.category,
-            formattedValue,
-            launchType
-        ];
-        data.push(rowData);
-    });
-    
-    const wb = XLSX.utils.book_new();    
-    
-    const ws = XLSX.utils.aoa_to_sheet(data);    
-    
-    XLSX.utils.book_append_sheet(wb, ws, "Relatório Financeiro");    
-    
-    XLSX.writeFile(wb, "Relatório Financeiro.xlsx");
+        Swal.fire({
+            icon: 'success',
+            title: 'Sucesso!',
+            text: 'Relatório gerado com sucesso!'
+        }).then(() => {
+            location.reload();
+        });
+    }
 }
+
 
 function getSelectedLaunchType() {
     let allCategoriesRadio = document.getElementById('allCategories');
