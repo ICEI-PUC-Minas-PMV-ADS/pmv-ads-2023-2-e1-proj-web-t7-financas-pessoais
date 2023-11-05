@@ -37,7 +37,6 @@ body {
     left: 0;
     bottom: 0;
     width: 220px;
-    padding-top: 20px;
 }
 
 fieldset {
@@ -351,7 +350,7 @@ legend {
         margin-left: 0;
         width: 80%;
     }
-    
+
     .sidebar-menu {
         display: none;
     } 
