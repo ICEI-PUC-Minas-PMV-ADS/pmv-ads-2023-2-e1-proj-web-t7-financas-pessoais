@@ -5,15 +5,15 @@
 
 `Desenvolvimento de Aplicação Web Front-End`
 
-`1º semestre/2023 - Eixo 1`
+`2º semestre/2023 - Eixo 1`
 
-O objetivo geral deste projeto é desenvolver uma aplicação web que auxilia jovens adultos a gerenciarem suas finanças.
+O objetivo geral deste projeto é desenvolver uma aplicação web que auxilie jovens adultos a gerenciarem suas finanças.
 
 ## Integrantes
 
-* Álvaro Henrique Orfus Tavares
+* <a href="https://github.com/alvimpl">Álvaro Henrique Orfus Tavares</a>
 * Eros Rodrigues Valois Alvaia
-* Gustavo Felix Braga!!!
+* Gustavo Felix Braga
 * Janaina Esteves de Faria
 * Larissa Cardoso de Miranda Araujo
 * Leonardo Aquim de Queiroz
