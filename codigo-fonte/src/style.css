@@ -277,6 +277,11 @@ legend {
     color: red;
 }
 
+#categoryChart {
+    width: 400px !important;
+    height: 400px !important;
+}
+
 /* DASHBOARD */
 .dashboard {
     border: 1px solid #a0a0a0; 
