@@ -55,7 +55,7 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
                             <a class="dropdown-item" id="openSettingsModalLink">
-                                <i class="fa fa-cog"></i><span class="ms-2">Configurações</span>
+                                <i class="fa fa-cog"></i><span class="ms-2" data-bs-toggle="modal" data-bs-target="#settingsModal">Configurações</span>
                             </a>
                             <a class="dropdown-item" href="login.html">
                                 <i class="fa fa-sign-out"></i><span class="ms-2">Sair</span>
@@ -68,70 +68,32 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="settingsModalLabel">
-                                Configurações do Usuário
-                            </h1>
-                            <button class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                        <h1 class="modal-title fs-5" id="settingsModalLabel">
+                            Configurações do Usuário
+                        </h1>
+                        <button class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1" class="dadoslogin">Nome</span><br />
+                            <input type="text" class="form-control" aria-label="Nome" aria-describedby="basic-addon1"  id="userNameSettings"/>
                         </div>
-                        <div class="modal-body">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1" class="dadoslogin">Nome</span><br />
-                                <input type="text" class="form-control" aria-label="Nome" aria-describedby="basic-addon1"  id="userNameSettings"/>
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1" class="dadoslogin">E-mail</span><br />
-                                <input type="email" class="form-control" aria-label="e-mail" aria-describedby="basic-addon1" id="emailSettings"/>
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1" class="dadoslogin">Senha</span><br />
-                                <input type="password" class="form-control" aria-label="Senha" aria-describedby="basic-addon1" id="passwordSettings"/>
-                            </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1" class="dadoslogin">E-mail</span><br />
+                            <input type="email" class="form-control" aria-label="e-mail" aria-describedby="basic-addon1" id="emailSettings"/>
                         </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1" class="dadoslogin">Senha</span><br />
+                            <input type="password" class="form-control" aria-label="Senha" aria-describedby="basic-addon1" id="passwordSettings"/>
+                        </div>
+                    </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="saveSettings"> Salvar</button>
+                            <button type="button" class="btn btn-primary" id="saveSettings" onclick="salvarConfiguracoes()"> Salvar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script defer>
-            function abrirModalConfiguracoes() {
-                var settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
-                settingsModal.show();
-
-                let email = document.getElementById('emailSettings');
-                let password = document.getElementById('passwordSettings');
-                let userName = document.getElementById("userNameSettings");
-
-                let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || {};
-
-                userName.value = usuarioAtivo.name;
-                email.value = usuarioAtivo.email;
-                password.value = usuarioAtivo.password;                
-            }
-
-            document.getElementById('openSettingsModalLink').addEventListener('click', function () {
-                var settingsModal = new bootstrap.Modal(document.getElementById('settingsModal'));
-                settingsModal.show();
-            });
-
-            function salvarConfiguracoes() {
-                let userName = document.getElementById('userNameSettings').value;
-                let email = document.getElementById('emailSettings').value;
-                let password = document.getElementById('passwordSettings').value;
-                
-                let usuarioAtivo = {
-                    name: userName,
-                    email: email,
-                    password: password,
-                };
-                localStorage.setItem('usuarioAtivo', JSON.stringify(usuarioAtivo));
-            }
-
-            document.getElementById('saveSettings').addEventListener('click', salvarConfiguracoes);
-
-        </script>
     </body>
 </html>

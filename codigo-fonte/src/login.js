@@ -26,9 +26,21 @@ function entrar() {
         }
     });
 
-    if (!usuarioEncontrado && email !== '' && senha !== '') {
-        Swal.fire('Dados inválidos!');
-    }
+        if (email === '' || senha === '') {
+            Swal.fire({
+                title: 'Erro!',
+                text: 'Preencha todos os dados!',
+                icon: 'error',
+            })
+        }
+
+        if (!usuarioEncontrado) {
+            Swal.fire({
+                title: 'Erro!',
+                text: 'Verifique os dados de login!',
+                icon: 'error',
+            })
+        }
 }
 
 function togglePasswordVisibility(element) {
