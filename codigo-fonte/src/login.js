@@ -31,22 +31,16 @@ function entrar() {
                 title: 'Erro!',
                 text: 'Preencha todos os dados!',
                 icon: 'error',
-                confirmButtonText: 'Cool'
             })
         }
 
-        if (!usuarioEncontrado && email !== '' && senha !== '') {
+        if (!usuarioEncontrado) {
             Swal.fire({
                 title: 'Erro!',
                 text: 'Verifique os dados de login!',
                 icon: 'error',
-                confirmButtonText: 'Cool'
             })
         }
-
-    // if (!usuarioEncontrado && email !== '' && senha !== '') {
-    //     Swal.fire('Dados inválidos!');
-    // }
 }
 
 function togglePasswordVisibility(element) {
