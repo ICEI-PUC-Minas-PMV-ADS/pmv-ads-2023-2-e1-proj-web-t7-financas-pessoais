@@ -95,11 +95,6 @@
 </tr>
 <tr>
 <td><b>RF-05</b></td>
-<td>Os usuários devem ter a opção de definir metas financeiras e acompanhar o progresso.</td>
-<td>Média</td>
-</tr>
-<tr>
-<td><b>RF-06</b></td>
 <td>A aplicação deve permitir aos usuários gerarem relatórios personalizados sobre suas finanças.</td>
 <td>Média</td>
 </tr>
