@@ -1,41 +1,117 @@
-// DASHBOARD
-
 //Dados despesas por categorias
-function gerarCorAleatoria() {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
-}
+let dataLounch = JSON.parse(localStorage.getItem('savedData')) || [];
 
-let testeCategorias = {
-    Casa: {
-        valor: 40,
-        cor: gerarCorAleatoria()
-    },
-    Carro: {
-        valor: 35,
-        cor: gerarCorAleatoria()
-    },
-    Viagem: {
-        valor: 25,
-        cor: gerarCorAleatoria()
-    },
-    Faculdade: {
-        valor: 20,
-        cor: gerarCorAleatoria()
+let despesaMensal = 0;
+let receitaMensal = 0;
+let saldo = 0;
+let balanco = 0;
+let totalDespesa = 0;
+let totalReceita = 0;
+const somaPorCategoria = {};
+const dataAtual = new Date();
+const mesAtual = dataAtual.getMonth() + 1;
+let anoAtual = new Date().getFullYear(); 
+
+// Calendário
+// Mês
+let months = [
+    { value: "01", label: "Janeiro" },
+    { value: "02", label: "Fevereiro" },
+    { value: "03", label: "Março" },
+    { value: "04", label: "Abril" },
+    { value: "05", label: "Maio" },
+    { value: "06", label: "Junho" },
+    { value: "07", label: "Julho" },
+    { value: "08", label: "Agosto" },
+    { value: "09", label: "Setembro" },
+    { value: "10", label: "Outubro" },
+    { value: "11", label: "Novembro" },
+    { value: "12", label: "Dezembro" }
+];
+
+let selectMonth = document.getElementById("month");
+let filterSelectMonth = localStorage.getItem('selectMonth') || null;
+
+months.forEach(month => {
+    let optionMonth = document.createElement("option");
+    optionMonth.value = month.value;
+    optionMonth.text = month.label;    
+    if(!filterSelectMonth && month.value == mesAtual) {
+        optionMonth.selected = true;
     }
-};
+    if(filterSelectMonth == month.value) {
+        optionMonth.selected = true;
+    }
+    selectMonth.appendChild(optionMonth);
+});
 
-localStorage.setItem('categorias', JSON.stringify(testeCategorias));
+// Ano
+let ultimosCincoAnos = [];
+for (let i = 0; i < 5; i++) {
+    ultimosCincoAnos[i] = anoAtual - i;    
+}
+let selectYear = document.getElementById("year");
+let filterSelectYear = localStorage.getItem('selectYear') || null;
 
-let categorias = JSON.parse(localStorage.getItem('categorias')) || {};
+ultimosCincoAnos.forEach(ano => {
+    let optionYear = document.createElement("option");
+    optionYear.value = ano;
+    optionYear.text = ano;
+    if(!filterSelectYear && ano == anoAtual) {
+        optionYear.selected = true;
+    }
+    if(filterSelectYear == ano) {
+        optionYear.selected = true;
+    }
+    selectYear.appendChild(optionYear);
+});
 
-let chaves = Object.keys(categorias);
-let valores = Object.values(categorias).map(categoria => categoria.valor);
-let cores = Object.values(categorias).map(categoria => categoria.cor);
+// DASHBOARD
+dataLounch.forEach(element => {
+    const launchDate = new Date(element.launchDate);
+    const launchMonth = launchDate.getMonth() + 1;
+    const launchYear = launchDate.getFullYear();
+    
+    // Despesa Mensal
+    if (element.isExpenses && launchMonth == selectMonth.value && launchYear == selectYear.value) {        
+        despesaMensal += parseFloat(element.value); 
+
+        // Categorias    
+        const category = element.category;
+        const value = element.value;
+        somaPorCategoria[category] = (somaPorCategoria[category] || 0) + parseFloat(element.value);
+    }
+
+    // Receita Mensal
+    if (element.isRevenues && launchMonth == selectMonth.value && launchYear == selectYear.value) {
+        receitaMensal += parseFloat(element.value);        
+    }
+    
+    // Total despesa e receita
+    if (element.isExpenses && launchYear < selectYear.value) {
+        totalDespesa += parseFloat(element.value);        
+    }
+    if (element.isExpenses && launchYear == selectYear.value && launchMonth <= selectMonth.value) {
+        totalDespesa += parseFloat(element.value);        
+    }
+    if (element.isRevenues && launchYear < selectYear.value) {
+        totalReceita += parseFloat(element.value);
+    }
+    if (element.isRevenues && launchYear == selectYear.value && launchMonth <= selectMonth.value) {
+        totalReceita += parseFloat(element.value);
+    }       
+});
+
+// Saldo
+saldo = totalReceita - totalDespesa; 
+
+// Balanço
+balanco = receitaMensal - despesaMensal;
 
 // Gráfico
+let chaves = Object.keys(somaPorCategoria);
+let valores = Object.values(somaPorCategoria);
+
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -43,8 +119,7 @@ new Chart(ctx, {
     data: {
         labels: chaves,
         datasets: [{            
-            data: valores,
-            backgroundColor: cores,
+            data: valores,            
             hoverOffset: 4
         }]
     },
@@ -77,40 +152,26 @@ let usuarioAtivo = JSON.parse(localStorage.getItem('usuarioAtivo')) || [];
 welcome.textContent = "Bem-vindo, " + usuarioAtivo.name + "!";
 
 //Dados dashboard
-let teste = {
-    saldo: 21750,
-    receita: 10500,
-    despesa: 6846
-};
-
-localStorage.setItem('dashboard', JSON.stringify(teste));
-
-let dadosDashboard = JSON.parse(localStorage.getItem('dashboard')) || {};
-
 let dashSaldo = document.getElementById("i_saldo");
 let dashReceita = document.getElementById("i_receita");
 let dashDespesa = document.getElementById("i_despesa");
 
-let storageSaldo = dadosDashboard.saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-let storageReceita = dadosDashboard.receita.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-let storageDespesa = dadosDashboard.despesa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+let storageSaldo = saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+let storageReceita = receitaMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+let storageDespesa = despesaMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
 dashSaldo.textContent = storageSaldo;
 dashReceita.textContent = storageReceita;
 dashDespesa.textContent = storageDespesa;
 
 //Balanço mensal
-let calcTotal = dadosDashboard.saldo;
-let calcReceita = dadosDashboard.receita;
-let calcDespesa = dadosDashboard.despesa;
-
 let bmReceita = document.getElementById("bm_receita");
 let bmDespesa = document.getElementById("bm_despesa");
 let bmBalanco = document.getElementById("bm_balanco");
 
-bmBalanco.textContent = (calcReceita - calcDespesa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+bmBalanco.textContent = (balanco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-if((calcReceita - calcDespesa) < 0) {
+if((receitaMensal - despesaMensal) < 0) {
     let elemento = document.getElementsByClassName("text-primary")[1];
     elemento.classList.remove("text-primary");
     elemento.classList.add("text-danger");
@@ -119,9 +180,19 @@ if((calcReceita - calcDespesa) < 0) {
 bmReceita.textContent = storageReceita;
 bmDespesa.textContent = storageDespesa;
 
-let PorcentagemDespesa = Math.round(calcDespesa / calcReceita * 100) + "%";
+let PorcentagemDespesa = Math.round(despesaMensal / receitaMensal * 100) + "%";
 
 let progressBars = document.getElementsByClassName('progress-bar');
 
 progressBars[1].style.width = PorcentagemDespesa;
 progressBars[1].textContent = PorcentagemDespesa;
+
+//Filtro Mês e Ano
+function filterDashboard() {
+    localStorage.setItem('selectMonth', selectMonth.value);
+    localStorage.setItem('selectYear', selectYear.value);
+    location.reload()
+}
+
+selectMonth.addEventListener("change", filterDashboard);
+selectYear.addEventListener("change", filterDashboard);

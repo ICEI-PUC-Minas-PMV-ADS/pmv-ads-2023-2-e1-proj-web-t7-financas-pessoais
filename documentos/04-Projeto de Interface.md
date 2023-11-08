@@ -24,5 +24,3 @@
 ## User Flow
 
 ![Userflow](img/userflow-pucmoney.png)
-
-## Protótipo baixa fidelidade

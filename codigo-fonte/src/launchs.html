@@ -10,7 +10,8 @@
     <!-- stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" integrity="sha256-VJuwjrIWHWsPSEvQV4DiPfnZi7axOaiWwKfXaJnR5tA=" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="style.css" />
 
@@ -18,6 +19,7 @@
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js" integrity="sha256-kuoM7/Z00lbaqHRO9Vpa95aaMzlSTZiJIIvK46igrug=" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
     <script defer src="launchScript.js"></script>
 
@@ -74,6 +76,7 @@
                           <th scope="col" class="category-col">Categoria</th>
                           <th scope="col" class="launch-col">Tipo de lançamento</th>
                           <th scope="col" class="valor-col">Valor</th>
+                          <th scope="col" class="action-col">Ações</th>
                         </tr>
                       </thead>
                       <tbody>                                              
@@ -119,16 +122,11 @@
                          </div>
                          <div class="form-group">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12" aria-required="true">
                                     <input type="radio" id="revenues" name="category" value="revenues" checked="checked">
                                     <label class="radio-right-margin" for="revenues">Receitas</label>
                                     <input type="radio" id="expenses" name="category" value="expenses">
-                                    <label for="expenses">Despesas</label> 
-
-                                    <div class="form-check form-switch switches">
-                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Efetivado?</label>
-                                    </div>
+                                    <label for="expenses">Despesas</label>                                     
                                 </div>
                             </div>
                          </div>
