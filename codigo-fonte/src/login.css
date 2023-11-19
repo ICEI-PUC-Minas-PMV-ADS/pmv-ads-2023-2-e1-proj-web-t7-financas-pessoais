@@ -1,3 +1,22 @@
+@charset "UTF-8";
+
+/*CSS Larissa*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --cor1: #333F63;
+    --cor2: #715C8C;
+    --cor3: #838BC2;
+
+    --fonte-footer: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Poppins', cursive;
+    --fonte-secundaria: 'Roboto Mono', cursive;
+
+}
+
 body, h1{
     margin: 0;
     padding: 0;

@@ -1,12 +1,32 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+@charset "UTF-8";
+
+/*CSS Larissa*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --cor1: #333F63;
+    --cor2: #715C8C;
+    --cor3: #838BC2;
+
+    --fonte-footer: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Poppins', cursive;
+    --fonte-secundaria: 'Roboto Mono', cursive;
+
 }
 
 /* DASHBOARD */
+
+.dashboard_container{
+    font-family: var(--fonte-destaque);
+}
+
 .dashboard {
     border: 1px solid #a0a0a0; 
     height: 100px;   
-    border-radius: 20px;  
+    border-radius: 20px; 
 }
 
 #card-valor {
@@ -16,7 +36,8 @@
 
 #container-welcome {    
     background-color: #cfcfcf;
-    font-size: 20px; 
+    font-size: 20px;
+    font-family: var(--fonte-destaque); 
 }
 
 #progress-receita {
@@ -30,15 +51,15 @@
 
 #btn-dashboard {
     font-size: 18px;   
-    background-color: #333366;
-    border-color: #333366;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
     height: 45px;
     color: white;
 }
 
 #btn-dashboard:hover {
-    background-color: #6522bd;
-    border-color: #6522bd;
+    background-color: var(--cor3);
+    border-color: var(--cor3);
 }
 
 #month {
@@ -115,7 +136,7 @@
 
 @media (min-width: 900px) {
     .dashboard_container{
-        padding-left: 210px; 
+        padding-left: 230px; 
         padding-right: 0;
     }
 }
@@ -172,7 +193,8 @@ fieldset {
 
 .menu-container .nav-pills .nav-item a span {    
     font-size: 20px;
-    font-weight: 400;    
+    font-weight: 400; 
+    font-family: var(--fonte-secundaria);   
 }
 
 .nav-item {
@@ -185,7 +207,7 @@ fieldset {
 }
 
 .sidebar-menu {
-    background-color: #333366;
+    background-color: var(--cor1);
 }
 
 .user-dropdown-menu {
