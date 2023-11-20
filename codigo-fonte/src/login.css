@@ -119,7 +119,7 @@ input {
 
 .links a {
     text-decoration: none;
-    color: rgb(51, 50, 102);
+    color: var(--cor1);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
