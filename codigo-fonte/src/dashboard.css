@@ -11,10 +11,8 @@
     --cor2: #715C8C;
     --cor3: #838BC2;
 
-    --fonte-footer: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Poppins', cursive;
-    --fonte-secundaria: 'Roboto Mono', cursive;
-
+    --fonte-destaque: 'Poppins', Arial, Helvetica, sans-serif;
+    --fonte-secundaria: 'Roboto Mono','Courier New', Courier, monospace;
 }
 
 /* DASHBOARD */
@@ -121,7 +119,7 @@
 
 @media (max-width: 900px) {
     #container-welcome {
-        margin-top: 75px; 
+        margin-top: 75px;
     }
     
     .dashboard_container{
@@ -137,7 +135,7 @@
 @media (min-width: 900px) {
     .dashboard_container{
         padding-left: 230px; 
-        padding-right: 0;
+        padding-right: 0px;
     }
 }
 

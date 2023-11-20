@@ -11,10 +11,8 @@
     --cor2: #715C8C;
     --cor3: #838BC2;
 
-    --fonte-footer: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Poppins', cursive;
-    --fonte-secundaria: 'Roboto Mono', cursive;
-
+    --fonte-destaque: 'Poppins', Arial, Helvetica, sans-serif;
+    --fonte-secundaria: 'Roboto Mono','Courier New', Courier, monospace;
 }
 
 body, h1{
@@ -80,11 +78,11 @@ input {
 
 .btn-secondary {
     margin-bottom: 20px;
-    background-color: #715C8C;
+    background-color: var(--cor2);
 }
 
 .btn-primary {
-    background-color: rgb(51, 50, 102);
+    background-color: var(--cor1);
     color: #fff;
     border: none;
     border-radius: 5px;

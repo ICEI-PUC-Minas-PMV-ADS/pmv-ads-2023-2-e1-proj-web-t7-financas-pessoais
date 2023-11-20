@@ -1,6 +1,6 @@
-@charset "UTF-8";
-
 /*CSS Larissa*/
+
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -11,10 +11,8 @@
     --cor2: #715C8C;
     --cor3: #838BC2;
 
-    --fonte-footer: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Poppins', Arial, Helvetica, sans-serif;
     --fonte-secundaria: 'Roboto Mono','Courier New', Courier, monospace;
-
 }
 
 /* SIDEBAR Gustavo*/
@@ -115,9 +113,6 @@ body {
         }
     }
 
-
-
-
 .col-md-6 {
 width: 33%;
 }
@@ -175,9 +170,10 @@ background-color: var(--cor2);
 font-family: var(--fonte-secundaria);
 font-size: 16px;
 }
+
 .btn-primary {
 margin-bottom: 20px;
-background-color: var(--cor3);
+background-color: var(--cor1);
 font-family: var(--fonte-secundaria);
 font-size: 16px;
 }
@@ -237,7 +233,7 @@ color: #ffffff;
 }
 
 footer { 
-font-family: var(--fonte-footer);
+font-family: var(--fonte-destaque);
 font-size: 16px;
 color: #a0a0a0;
 width: 100%;
