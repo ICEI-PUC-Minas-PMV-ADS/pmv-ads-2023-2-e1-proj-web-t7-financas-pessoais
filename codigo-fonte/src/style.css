@@ -6,7 +6,10 @@ body {
     background-color: #e2e4e0;
     color: #212529;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 467px;
 }
 
 .logo {
@@ -26,7 +29,7 @@ body {
 .content {
     padding: 20px;
     margin-left: 210px;
-    width: calc(100% - 220px);
+    width: calc(100% - 200px);
     background-color: rgb(256, 256, 256);
 }
 
@@ -69,7 +72,7 @@ fieldset {
 }
 
 .menu-container .nav-pills .nav-item a span {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -96,19 +99,27 @@ fieldset {
   background-color: rgba(245, 245, 245, 0.582);
 }
 
-.col-md-6 {
-    width: 33%;
+.col-md-6 #dataFilter {
+    width: 35%;
+}
+
+.col-md-6 #categoryFilter {
+    width: 20%;
+}
+
+.col-md-6 #radioFilter {
+    width: 20%;
 }
 
 .pull-right {
-    margin-top: 20px;
+    margin-top: 16px;
     width: 8%;
     float: right;
 }
 
 .radio-right-margin {
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .radio-left-margin {
@@ -119,7 +130,7 @@ fieldset {
     align-items: center;
     text-align: center;
     display: inline-block;
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 20px;
     width: 35%;
     height: 40px;
@@ -131,7 +142,7 @@ fieldset {
 
 select, textarea {
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
     width: 50%;
     height: 40px;
 }
@@ -141,11 +152,15 @@ select, textarea {
 }
 
 .btn-secondary {
+    width: 120px;
+    font-size: 14px;
     margin-bottom: 20px;
     background-color: #715C8C;
 }
 
 .btn-primary {
+    width: 120px;
+    font-size: 14px;
     margin-bottom: 20px;
     background-color: rgb(51, 50, 102);
 }
@@ -199,6 +214,10 @@ label {
     display: inline-block; 
 }
 
+#launchTable {
+    font-size: 14px;
+}
+
 .modal-header {
     background-color: rgb(51, 51, 102);
     color: rgb(256, 256, 256); 
@@ -225,18 +244,12 @@ footer {
     font-weight: 500;
 }
 
-body {
-    font-family: 'Inconsolata', monospace;
-    font-weight: 400;
-    font-size: 19px
-}
-
 h3 {
     font-weight: 500;
 }
 
 legend {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -316,7 +329,7 @@ legend {
     background-color: transparent;
     border: none;
     color: #333366;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .menu-mobile-container .navbar-toggler-dropdown .dropdown-menu {
@@ -337,7 +350,7 @@ legend {
 
 .menu-mobile-container .btn-close {
     color: #333366;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .menu-mobile-container .nav-item {
@@ -345,42 +358,104 @@ legend {
     color: #333366;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
+
+    body {
+        font-family: 'Inconsolata', monospace;
+        font-weight: 400;
+        font-size: 16px
+    }
+
+    .container-fluid {
+      margin-left: -6px;
+      width: auto;
+    }
+    
     .content {
-        margin-left: 0;
-        width: 80%;
+        padding: 20px;
+        margin-left: 100px;
+        width: calc(100% - 110px);
+        background-color: rgb(256, 256, 256);
     }
-
+    
     .sidebar-menu {
-        display: none;
-    } 
-
-    .btn-primary,
-    .btn-secondary {
-        width: auto;
-        margin-bottom: 10px;
+        width: 110px;
     }
-
-    .dataTable {
-        font-size: 16px;
+    
+    .menu-container .nav-pills .nav-item a span {
+      font-size: 16px;
     }
-
+    
+    .pull-right {
+        margin-top: 14px;
+    }
+    
     .radio-right-margin {
-        margin-right: 10px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    
+    .radio-left-margin {
+        margin-left: 20px;
+    }
+    
+    .inputDate {
+        font-size: 14px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 30px;
+    }
+    
+    select, textarea {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    #launchTable {
+        font-size: 12px;
+    }
+    
+    h3 {
+        font-weight: 400;
+    }
+    
+    legend {
         font-size: 16px;
+        font-weight: 400;
+    }
+    
+}    
+
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px
     }
 
-    .marginRight {
-        margin-right: 2px;
+    .menu-container .nav-pills .nav-item a span {
+      font-size: 12px;
     }
-}
+    
+    .radio-right-margin {
+        font-size: 10px;
+    }
+    
+    .inputDate {
+        width: 135px;
+    }
 
-@media (max-width: 900px) {
-    #menu {
-      display: none;
+    #launchTable {
+        font-size: 10px;
     }
-  
-    #menuMobile {
-      display: block;
+    
+    h3 {
+        font-weight: 300;
     }
-}
+    
+    legend {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+}    
