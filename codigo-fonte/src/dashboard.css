@@ -34,7 +34,7 @@
 
 #container-welcome {    
     background-color: #cfcfcf;
-    font-size: 20px;
+    font-size: 24px;
     font-family: var(--fonte-destaque); 
 }
 
@@ -90,7 +90,7 @@
 }
 
 #text-p-dashboard {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .text-show {
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .text-details {
@@ -114,7 +114,19 @@
 
 #line-footer {
     border-top: 1px solid #a0a0a0;
-    padding-top: 25px;    
+    padding-top: 25px;  
+}
+
+footer {
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+.text-body-secondary {
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+    color: #a0a0a0; 
 }
 
 @media (max-width: 900px) {
@@ -134,7 +146,7 @@
 
 @media (min-width: 900px) {
     .dashboard_container{
-        padding-left: 230px; 
+        padding-left: 210px; 
         padding-right: 0px;
     }
 }

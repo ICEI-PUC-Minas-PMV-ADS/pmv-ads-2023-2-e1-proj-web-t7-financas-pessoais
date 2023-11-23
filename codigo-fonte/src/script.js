@@ -23,7 +23,7 @@ function carregarMenu(menuUrl) {
 function verificarTamanhoDaTela() {
   const larguraDaJanela = window.innerWidth;
 
-  if (larguraDaJanela <= 900) {
+  if (larguraDaJanela <= 992) {
     carregarMenu('menuMobile.html');
   } else {
     carregarMenu('menu.html');

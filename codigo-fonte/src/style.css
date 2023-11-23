@@ -15,8 +15,7 @@
     --fonte-secundaria: 'Roboto Mono','Courier New', Courier, monospace;
 }
 
-/* SIDEBAR Gustavo*/
-
+/* SIDEBAR */
 .logo {
     margin-top: 20px;
     height: 7rem;
@@ -33,17 +32,6 @@ body {
 .container-fluid {
     margin-left: -6px;
     width: auto;    
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
 }
 
 #menu-container {
@@ -67,9 +55,9 @@ fieldset {
 }
 
 .menu-container .nav-pills .nav-item a span {    
-    font-size: 20px;
-    font-weight: 400;
-    font-family: var(--fonte-secundaria);    
+    font-size: 18px;
+    font-weight: 400; 
+    font-family: var(--fonte-secundaria);   
 }
 
 .nav-item {
@@ -104,22 +92,44 @@ fieldset {
 body {
     background-color: #ffffff;
     color: #212529;
+    margin: 0;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 467px;
     }
 
-    @media (min-width: 900px) {
-        .launchrep_container{
-            padding-left: 230px; 
-            padding-right: 0px;
-        }
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 210px;
+    width: calc(100% - 200px);
+    background-color: white
+    
+    }
+    
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
     }
 
-.col-md-6 {
-width: 33%;
+.col-md-6 #dataFilter {
+    width: 35%;
 }
+
+.col-md-6 #categoryFilter {
+    width: 20%;
+    }
+
+.col-md-6 #radioFilter {
+    width: 20%;
+        }
 
 #selectCategories{
 font-size: 16px;
-font-family: var(--fonte-secundaria)
+font-family: var(--fonte-secundaria);
+cursor: pointer;
 }
 
 .pull-right {
@@ -147,17 +157,34 @@ font-size: 16px;
 margin-bottom: 20px;
 width: 35%;
 height: 40px;
+cursor: text;
+}
+
+.inputDate {
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    cursor: text;
 }
 
 .inputDate-right-margin {
 margin-right: 10px;
 }
 
+input.marginRight {
+    cursor: pointer;
+}
+
 select, textarea {
 text-align: center;
-font-size: 19px;
+font-size: 16px;
 width: 50%;
 height: 40px;
+}
+
+select {
+    cursor: pointer; 
 }
 
 .marginRight {
@@ -168,14 +195,16 @@ margin-right: 10px;
 margin-bottom: 20px;
 background-color: var(--cor2);
 font-family: var(--fonte-secundaria);
-font-size: 16px;
+font-size: 14px;
+cursor: pointer;
 }
 
 .btn-primary {
 margin-bottom: 20px;
 background-color: var(--cor1);
 font-family: var(--fonte-secundaria);
-font-size: 16px;
+font-size: 14px;
+cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -194,12 +223,12 @@ width: 100%;
 }
 
 .switches {
-display: inline-block;
+display: block;
 float: right;
 }
 
 .launchDate {
-display: inline-block;
+display: block;
 float: right;
 }
 
@@ -219,8 +248,22 @@ margin-left: 100px;
 .launchDateClass {
 float: right;
 }
+
 #launchDate {
 width: auto;
+}
+
+#launchModal {
+    margin: auto;
+}
+
+.modal-dialog {
+    width: 100vw;
+    height: 100vh;
+}
+
+#categoryModal {
+    margin: auto;
 }
 
 label {
@@ -229,7 +272,7 @@ display: inline-block;
 
 .modal-header {
 background-color: var(--cor1);
-color: #ffffff; 
+color: white; 
 }
 
 footer { 
@@ -241,9 +284,32 @@ text-align: center;
 padding: 10px;
 }
 
-.table>thead {
+table {
+    padding: 15px;
+}
+
+thead {
 background-color: var(--cor1);
-color: #ffffff; 
+font-family: var(--fonte-destaque);
+font-size: 18px;
+color: white; 
+}
+
+tbody {
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+}
+
+thead#categoryTableHead {
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+    color: white;    
+}
+
+tbody#categoryTableBody {
+    font-family: var(--fonte-destaque);
+    font-size: 14px;
 }
 
 .green-text {
@@ -256,19 +322,13 @@ color: rgb(204, 5, 5) !important;
 font-weight: 500;
 }
 
-body {
-font-family: var(--fonte-destaque);
-font-weight: 300;
-font-size: 18px
-}
-
 h3 {
 font-family: var(--fonte-destaque);
 font-weight: 500;
 font-size: 24px
 }
 
-h4 {
+h4 { /* Substitui o seletor 'legend' */
 font-family: var(--fonte-destaque);
 font-weight: 400;
 font-size: 20px
@@ -280,16 +340,396 @@ font-weight: 300;
 font-size: 18px
 }
 
-legend {
-font-size: 22px;
-font-weight: 500;
+.align-right {
+    text-align: right;
 }
 
-#categoryChart {
-margin-bottom: 20px;
+.valor-col {
+    width: 10%;
+}
+
+.date-col {
+    width: 10%;
+}
+
+.description-col {
+    width: 35%;
+}
+
+.launch-col {
+    width: 20%;
+}
+
+.category-col {
+    width: 20%;
+}
+
+.action-col {
+    width: 5%;
+}
+
+.fa-trash-can {
+    color: red;
 }
 
 #categoriesFilter{
 font-family: var(--fonte-secundaria);
 font-size: 16px;
+}
+
+#openSettingsModalLink {
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+
+    .content {
+        padding-top: 90px;
+        margin: 0;
+    }
+
+    body {
+        font-size: 14px;
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        }
+    
+    #categoriesFilter {
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .pull-right {
+        margin-top: 14px;
+    }
+    
+    .radio-right-margin {
+        margin-right: 20px;
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .radio-left-margin {
+        margin-left: 20px;
+    }
+    
+    .inputDate {
+        width: 135px;
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+    }
+    
+    select, textarea {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    h3 {
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+        font-size: 22px
+        }
+        
+    h4 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 18px
+        }
+        
+    h5 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 16px
+        }
+    
+    footer { 
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: #a0a0a0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        }
+
+    table {
+        padding: 15px;
+    }
+            
+    thead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        color: white; 
+        }
+            
+    tbody {
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        }
+    
+    #launchModal {
+        margin: auto;
+    }
+    
+    #categoryModal {
+        margin: auto;
+    }
+
+    .modal-dialog {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .btn-secondary {
+        margin-bottom: 20px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 12px;
+        }
+        
+    .btn-primary {
+        margin-bottom: 20px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 12px;
+        }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .content {
+        padding-top: 90px;
+        margin: 0;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        }
+
+    #categoriesFilter {
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        }
+    
+    .radio-right-margin {
+        margin-right: 15px;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .radio-left-margin {
+        margin-left: 15px;
+    }
+    
+    .inputDate {
+        width: 130px;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+    }
+    
+    select, textarea {
+        font-size: 12px;
+        height: 25px;
+    }
+
+    h3 {
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+        font-size: 22px
+        }
+        
+    h4 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 18px
+        }
+        
+    h5 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 16px
+        }
+    
+    h5.col-md-6 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    footer { 
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: #a0a0a0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        }
+    
+    table {
+        padding: 15px;
+        }
+
+    thead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: white; 
+        }
+            
+    tbody {
+        font-family: var(--fonte-destaque);
+        font-size: 12px;
+        }
+    
+    #launchModal {
+        margin: auto;
+    }
+    
+    #categoryModal {
+        margin: auto;
+    }
+
+    .modal-dialog {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .btn-secondary {
+        margin-bottom: 20px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 10px;
+        }
+        
+    .btn-primary {
+        margin-bottom: 20px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 10px;
+        }
+
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding-top: 90px;
+        margin: 0;
+    }
+
+    body {
+        font-size: 14px;
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        }
+    
+    .radio-right-margin {
+        font-size: 10px;
+    }
+    
+    .inputDate {
+        width: 135px;
+    }
+    
+    h3 {
+        font-weight: 300;
+    }
+    
+    select, textarea {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    h3 {
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+        font-size: 22px
+        }
+        
+    h4 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 18px
+        }
+        
+    h5 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 16px
+        }
+    
+    h5.col-md-6 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    footer { 
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: #a0a0a0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        }
+    
+    table {
+        padding: 15px;
+        }
+
+    thead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: white; 
+        }
+            
+    tbody {
+        font-family: var(--fonte-destaque);
+        font-size: 12px;
+        }
+    
+    #launchModal {
+        margin: auto;
+    }
+    
+    #categoryModal {
+        margin: auto;
+    }
+
+    .modal-dialog {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .btn-secondary {
+        margin-bottom: 20px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 10px;
+        }
+        
+    .btn-primary {
+        margin-bottom: 20px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 10px;
+        }
 }

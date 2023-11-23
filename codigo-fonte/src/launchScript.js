@@ -184,7 +184,7 @@ function populateTable(data) {
                 <td>${formatDate(item.launchDate)}</td>
                 <td>${item.description}</td>
                 <td><i class="fas ${item.icon}"></i> ${item.category}</td>
-                <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
+                <td>${item.isRevenues ? 'Receita' : 'Despesa'}</td>
                 <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
                 <td class="align-right">
                     <button class="btn" onclick="deleteLaunch(this)"><i class="fas fa-trash-can"></i></button>

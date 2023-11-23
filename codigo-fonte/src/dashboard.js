@@ -117,9 +117,10 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: chaves,
+        labels: chaves, //['Casa', 'Carro', 'Viagem', 'Faculdade'],
         datasets: [{            
-            data: valores,            
+            data: valores, //[40, 35, 25, 20]
+            backgroundColor: cores,//['rgb(51, 63, 99)','rgb(69, 93, 140)', 'rgb(96, 93, 140)', 'rgb(113, 92, 140)', 'rgb(131, 139, 194)',],            
             hoverOffset: 4
         }]
     },

@@ -26,30 +26,26 @@
 </head>
 
 <body>
-    
-    <!--Importa a sidebar-->
-    <div class="container-fluid" id="menu-container"></div>
-    <!--Seu código da dashboard fica aqui-->
-    
-    <div class="container-fluid launchrep_container">
+    <div class="container-fluid d-flex">
+        <nav id="menu-container"></nav>
         <section class="content">
             <h3>Lançamentos</h3>
             <fieldset>
                 <legend><h4>Filtros</h4></legend>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="dataFilter">
                         <h5>Período</h5>                                                 
                         <input type="date" class="inputDate inputDate-right-margin" id="startDate" name="startDate">
                         <input type="date" class="inputDate" id="endDate" name="endDate">                            
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="categoryFilter">
                         <h5>Categoria</h5>
                         <select name="categories" id="categoriesFilter">
                             <option value="all">Todas</option>                            
                         </select>
                     </div>
-                    <div class="col-md-6">
-                        <h5>Tipo de lançamento</h5>
+                    <div class="col-md-6" id="radiofilter">
+                        <h5 class="col-md-6">Tipo de Lançamento</h5>
                         <input class="marginRight" type="radio" id="allCategories" name="category" value="all" checked="checked">
                         <label class="radio-right-margin" for="allCategories">Todos</label>
                         <input class="marginRight" type="radio" id="entries" name="category" value="entries">
@@ -78,7 +74,7 @@
                           <th scope="col" class="date-col">Data</th>
                           <th scope="col" class="description-col">Descrição</th>
                           <th scope="col" class="category-col">Categoria</th>
-                          <th scope="col" class="launch-col">Tipo de lançamento</th>
+                          <th scope="col" class="launch-col">Tipo</th>
                           <th scope="col" class="valor-col">Valor</th>
                           <th scope="col" class="action-col">Ações</th>
                         </tr>
@@ -160,7 +156,7 @@
                             </button>
     
                             <table class="table mt-3">
-                                <thead>
+                                <thead id="categoryTableHead">
                                     <tr>
                                         <th>Ícone</th>
                                         <th>Nome</th>
