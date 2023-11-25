@@ -25,7 +25,7 @@ body {
 
 .content {
     padding: 20px;
-    margin-left: 210px;
+    margin-left: 217px;
     width: calc(100% - 220px);
     background-color: rgb(256, 256, 256);
 }
@@ -69,7 +69,7 @@ fieldset {
 }
 
 .menu-container .nav-pills .nav-item a span {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -90,6 +90,7 @@ fieldset {
     background-color: rgb(51, 50, 102);
     color: rgb(256, 256, 256);
     background-color: rgb(51, 50, 102);
+    width: fit-content;
 }
 
 .user-dropdown-menu button:hover {
@@ -108,7 +109,7 @@ fieldset {
 
 .radio-right-margin {
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .radio-left-margin {
@@ -119,7 +120,7 @@ fieldset {
     align-items: center;
     text-align: center;
     display: inline-block;
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 20px;
     width: 35%;
     height: 40px;
@@ -131,7 +132,7 @@ fieldset {
 
 select, textarea {
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
     width: 50%;
     height: 40px;
 }
@@ -228,7 +229,7 @@ footer {
 body {
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    font-size: 19px
+    font-size: 16px
 }
 
 h3 {
@@ -236,7 +237,7 @@ h3 {
 }
 
 legend {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -316,7 +317,7 @@ legend {
     background-color: transparent;
     border: none;
     color: #333366;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .menu-mobile-container .navbar-toggler-dropdown .dropdown-menu {
@@ -337,7 +338,7 @@ legend {
 
 .menu-mobile-container .btn-close {
     color: #333366;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .menu-mobile-container .nav-item {
@@ -362,12 +363,12 @@ legend {
     }
 
     .dataTable {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .radio-right-margin {
         margin-right: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .marginRight {
