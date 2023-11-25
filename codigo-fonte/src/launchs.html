@@ -58,7 +58,7 @@
                 <div class="row">                    
                     <div class="col-md-12">
                         <button class="btn btn-primary pull-right"  onclick="filterLaunchs()"><i class="fa fa-search"></i>  Buscar</button>
-                        <button class="btn btn-secondary pull-right marginRight"  onclick="clearFilters()"><i class="fa fa-eraser"></i>  Limpar</button>
+                        <button id="eraser" class="btn btn-secondary pull-right marginRight"  onclick="clearFilters()"><i class="fa fa-eraser"></i>  Limpar</button>
                     </div>
                 </div>
             </fieldset>
@@ -102,7 +102,8 @@
                        <form id="modalForm">
                         <div class="form-group">
                             <div class="col-md-12">
-                                <label for="value">Valor</label>
+                                <label
+                                for="value">Valor</label>
                                 <input type="number" class="form-control" id="value" required>
 
                                 <div class="launchDateClass">
@@ -134,8 +135,8 @@
                        </form>
                      </div>
                      <div class="modal-footer">
-                       <button  class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa fa-close"></i>  Fechar</button>
-                       <button  class="btn btn-primary" id="submit"><i class="fa fa-save"></i>  Salvar</button>
+                       <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa fa-close"></i>  Fechar</button>
+                       <button class="btn btn-primary" id="submit"><i class="fa fa-save"></i>  Salvar</button>
                      </div>
                    </div>
                 </div>

@@ -15,15 +15,17 @@
     --fonte-secundaria: 'Roboto Mono','Courier New', Courier, monospace;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width: 992px) {
 
     .content {
         padding-top: 90px;
-        margin: 0;
+        padding-right: 0px;
+        padding-left: 2px;
+        margin: auto;
     }
 
     body {
-        font-size: 14px;
+        font-size: 16px;
         font-family: var(--fonte-destaque);
         font-weight: 400;
     }
@@ -34,30 +36,267 @@
         border-radius: 5px;
         }
     
-    #categoriesFilter {
-        font-size: 14px;
-        font-family: var(--fonte-secundaria);
-    }
-
-    .pull-right {
-        margin-top: 14px;
-    }
-    
     .radio-right-margin {
-        margin-right: 20px;
-        font-size: 14px;
-        font-family: var(--fonte-secundaria);
-    }
-
-    .radio-left-margin {
-        margin-left: 20px;
+        font-size: 16px;
     }
     
     .inputDate {
-        width: 135px;
+        width: 150px;
+    }
+
+    input#startDate {
+        font-size: 16px;
+    }
+
+    input#endDate {
+        font-size: 16px;
+    }
+
+    #categoriesFilter {
+        font-size: 16px;
+        font-family: var(--fonte-secundaria);
+        }
+
+    select, textarea {
+        font-size: 16px;
+        height: 30px;
+    }
+
+    h3 {
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+        font-size: 22px
+        }
+        
+    h4 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 20px
+        }
+        
+    h5 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 18px
+        }
+    
+    h5.col-md-6 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    h5#reports {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    h5#modalLabel { 
+        font-size: 20px;
+    }
+
+    h5#categoryModalLabel {
+        font-size: 20px;
+    }
+
+    footer { 
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        color: #a0a0a0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        }
+    
+    table {
+        padding: 15px;
+        }
+    
+    div#reports {
+        padding: 15px;
+        }
+
+    thead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 18px;
+        color: white; 
+        }
+            
+    tbody {
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        }
+
+    thead#categoryTableHead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 18px;
+        color: white;
+        }
+        
+    tbody#categoryTableBody {
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        }
+    
+    #launchModal {
+        margin: auto;
+    }
+    
+    #categoryModal {
+        margin: auto;
+    }
+
+    .modal {
+        text-align: center;
+    }
+
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 50vh;
+    }
+
+    .modal-dialog {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .form-group {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 48vw;
+        }
+
+    .form-control {
+        display: list-item;
+        }
+
+    input[type="number" i] {
+            margin-left: 10px;
+            width: 35%;
+        }
+            
+    .input-left-margin {
+            margin-left: 100px;
+        }
+            
+    .launchDateClass {
+            margin-top: 20px;
+            float: left;
+        }
+            
+    input#launchDate {
+            width: 48vw;
+            font-size: 17px;
+        }
+    
+    select#selectCategories.form-control {
+        font-size: 17px;
+        font-family: var(--fonte-secundaria);
+            }
+    
+    input#value {
+        width: 48vw;
+        margin-left: 1px;
+        }
+
+    .btn-secondary {
+        margin-bottom: 20px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 14px;
+        }
+    
+    .btn-secondary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 90px;
+        padding-left: 10px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 14px;
+        }
+            
+    .btn-primary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 10px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 14px;
+        }
+
+        button#NewLaunch {
+            padding-right: 20px;
+            padding-left: 20px;
+            }
+        
+        button#eraser {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
+        
+        button#pdf {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
+        
+        button#xls {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
+
+}
+    
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .content {
+        padding-top: 90px;
+        padding-right: 0px;
+        padding-left: 2px;
+        margin: auto;
+    }
+
+    body {
+        font-size: 15px;
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        }
+    
+    .radio-right-margin {
+        font-size: 14px;
+    }
+    
+    .inputDate {
+        width: 120px;
+    }
+
+    input#startDate {
+        font-size: 14px;
+    }
+
+    input#endDate {
+        font-size: 14px;
+    }
+
+    #categoriesFilter {
         font-size: 14px;
         font-family: var(--fonte-secundaria);
-    }
+        }
     
     select, textarea {
         font-size: 14px;
@@ -66,31 +305,40 @@
 
     h3 {
         font-family: var(--fonte-destaque);
-        font-weight: 500;
-        font-size: 22px
+        font-weight: 400;
+        font-size: 20px
         }
         
     h4 {
         font-family: var(--fonte-destaque);
-        font-weight: 400;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 18px
         }
         
     h5 {
         font-family: var(--fonte-destaque);
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px
         }
     
     h5.col-md-6 {
-            padding-top: 20px;
-            padding-bottom: 5px;
-        }
-        
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
     h5#reports {
-            padding-top: 20px;
-            padding-bottom: 5px;
-        }
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    h5#modalLabel { 
+        font-size: 18px;
+    }
+
+    h5#categoryModalLabel {
+        font-size: 18px;
+    }
+
     footer { 
         font-family: var(--fonte-destaque);
         font-size: 14px;
@@ -99,11 +347,15 @@
         text-align: center;
         padding: 10px;
         }
-
+    
     table {
         padding: 15px;
-    }
-            
+        }
+    
+    div#reports {
+        padding: 15px;
+        }
+
     thead {
         background-color: var(--cor1);
         font-family: var(--fonte-destaque);
@@ -116,6 +368,18 @@
         font-size: 14px;
         }
     
+    thead#categoryTableHead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        color: white;
+        }
+    
+    tbody#categoryTableBody {
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        }
+    
     #launchModal {
         margin: auto;
     }
@@ -124,149 +388,106 @@
         margin: auto;
     }
 
-    .modal-dialog {
-        width: 60vw;
-        height: 60vh;
-    }
-
-    .btn-secondary {
-        margin-bottom: 20px;
-        background-color: var(--cor2);
-        font-family: var(--fonte-secundaria);
-        font-size: 12px;
-        }
-        
-    .btn-primary {
-        margin-bottom: 20px;
-        background-color: var(--cor1);
-        font-family: var(--fonte-secundaria);
-        font-size: 12px;
-        }
-}
-
-@media screen and (min-width: 600px) {
-
-    .content {
-        padding-top: 90px;
-        margin: 0;
-    }
-
-    body {
-        font-size: 12px;
-        font-family: var(--fonte-destaque);
-        font-weight: 400;
-    }
-
-    fieldset {
-        border: 1px solid #ccc;
-        padding: 15px;
-        border-radius: 5px;
-        }
-
-    #categoriesFilter {
-        font-size: 12px;
-        font-family: var(--fonte-secundaria);
-        }
-    
-    .radio-right-margin {
-        margin-right: 15px;
-        font-size: 12px;
-        font-family: var(--fonte-secundaria);
-    }
-
-    .radio-left-margin {
-        margin-left: 15px;
-    }
-    
-    .inputDate {
-        width: 130px;
-        font-size: 12px;
-        font-family: var(--fonte-secundaria);
-    }
-    
-    select, textarea {
-        font-size: 12px;
-        height: 25px;
-    }
-
-    h3 {
-        font-family: var(--fonte-destaque);
-        font-weight: 400;
-        font-size: 22px
-        }
-        
-    h4 {
-        font-family: var(--fonte-destaque);
-        font-weight: 300;
-        font-size: 18px
-        }
-        
-    h5 {
-        font-family: var(--fonte-destaque);
-        font-weight: 300;
-        font-size: 16px
-        }
-    
-    h5.col-md-6 {
-        padding-top: 20px;
-        padding-bottom: 5px;
-    }
-
-    h5#reports {
-        padding-top: 20px;
-        padding-bottom: 5px;
-    }
-    
-    footer { 
-        font-family: var(--fonte-destaque);
-        font-size: 14px;
-        color: #a0a0a0;
-        width: 100%;
+    .modal {
         text-align: center;
-        padding: 10px;
-        }
-    
-    table {
-        padding: 15px;
+    }
+
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 50vh;
+    }
+
+    .modal-dialog {
+        width: 55vw;
+        height: 55vh;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .form-group {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 50vw;
         }
 
-    thead {
-        background-color: var(--cor1);
-        font-family: var(--fonte-destaque);
-        font-size: 14px;
-        color: white; 
+    .form-control {
+        display: list-item;
+        }
+
+    input[type="number" i] {
+            margin-left: 10px;
+            width: 35%;
         }
             
-    tbody {
-        font-family: var(--fonte-destaque);
-        font-size: 12px;
+    .input-left-margin {
+            margin-left: 100px;
+        }
+            
+    .launchDateClass {
+            margin-top: 20px;
+            float: left;
+        }
+            
+    input#launchDate {
+            width: 50vw;
+            font-size: 14px;
         }
     
-    #launchModal {
-        margin: auto;
-    }
+    select#selectCategories.form-control {
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+            }
     
-    #categoryModal {
-        margin: auto;
-    }
-
-    .modal-dialog {
-        width: 60vw;
-        height: 60vh;
-    }
+    input#value {
+        width: 50vw;
+        margin-left: 1px;
+        }
 
     .btn-secondary {
         margin-bottom: 20px;
         background-color: var(--cor2);
         font-family: var(--fonte-secundaria);
-        font-size: 10px;
+        font-size: 12px;
         }
-        
-    .btn-primary {
+    
+    .btn-secondary.pull-right {
         margin-bottom: 20px;
+        padding-right: 80px;
+        padding-left: 10px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 12px;
+        }
+            
+    .btn-primary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 10px;
         background-color: var(--cor1);
         font-family: var(--fonte-secundaria);
-        font-size: 10px;
+        font-size: 12px;
+        }
+
+    button#NewLaunch {
+        padding-right: 35px;
+        }
+
+    button#eraser {
+        padding-right: 50px;
+        }
+    
+    button#pdf {
+        padding-right: 25px;
+        }
+    
+    button#xls {
+            padding-right: 25px;
         }
 
 }
@@ -274,11 +495,13 @@
 @media screen and (max-width: 600px) {
     .content {
         padding-top: 90px;
-        margin: 0;
+        padding-right: 15px;
+        padding-left: 2px;
+        margin: auto;
     }
 
     body {
-        font-size: 14px;
+        font-size: 13px;
         font-family: var(--fonte-destaque);
         font-weight: 400;
     }
@@ -290,38 +513,51 @@
         }
     
     .radio-right-margin {
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .inputDate {
-        width: 135px;
+        width: 100px;
     }
+
+    input#startDate {
+        font-size: 14px;
+    }
+
+    input#endDate {
+        font-size: 14px;
+    }
+
+    #categoriesFilter {
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        }
     
     h3 {
         font-weight: 300;
     }
     
     select, textarea {
-        font-size: 14px;
+        font-size: 12px;
         height: 30px;
     }
 
     h3 {
         font-family: var(--fonte-destaque);
         font-weight: 400;
-        font-size: 22px
+        font-size: 20px
         }
         
     h4 {
         font-family: var(--fonte-destaque);
         font-weight: 300;
-        font-size: 18px
+        font-size: 16px
         }
         
     h5 {
         font-family: var(--fonte-destaque);
         font-weight: 300;
-        font-size: 16px
+        font-size: 14px
         }
     
     h5.col-md-6 {
@@ -333,9 +569,18 @@
         padding-top: 20px;
         padding-bottom: 5px;
     }
+
+    h5#modalLabel { 
+        font-size: 16px;
+    }
+
+    h5#categoryModalLabel {
+        font-size: 16px;
+    }
+
     footer { 
         font-family: var(--fonte-destaque);
-        font-size: 14px;
+        font-size: 12px;
         color: #a0a0a0;
         width: 100%;
         text-align: center;
@@ -343,6 +588,10 @@
         }
     
     table {
+        padding: 15px;
+        }
+    
+    div#reports {
         padding: 15px;
         }
 
@@ -357,16 +606,25 @@
         font-family: var(--fonte-destaque);
         font-size: 12px;
         }
+
+    thead#categoryTableHead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 14px;
+        color: white;
+    }
+
+    tbody#categoryTableBody {
+        font-family: var(--fonte-destaque);
+        font-size: 12px;
+
+    }
     
     #launchModal {
-        padding-left: 80px;
-        padding-right: 80px;
         margin: auto;
     }
     
     #categoryModal {
-        padding-left: 80px;
-        padding-right: 80px;
         margin: auto;
     }
 
@@ -392,17 +650,84 @@
         vertical-align: middle;
     }
 
+    .form-group {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 50vw;
+        }
+
+    .form-control {
+        display: list-item;
+        }
+
+    input[type="number" i] {
+            margin-left: 10px;
+            width: 35%;
+        }
+            
+    .input-left-margin {
+            margin-left: 100px;
+        }
+            
+    .launchDateClass {
+            margin-top: 20px;
+            float: left;
+        }
+            
+    input#launchDate {
+            width: 50vw;
+            font-size: 13px;
+        }
+    
+    select#selectCategories.form-control {
+        font-size: 13px;
+        font-family: var(--fonte-secundaria);
+            }
+    
+    input#value {
+        width: 50vw;
+        margin-left: 1px;
+        }
+
     .btn-secondary {
         margin-bottom: 20px;
         background-color: var(--cor2);
         font-family: var(--fonte-secundaria);
         font-size: 10px;
         }
-        
-    .btn-primary {
+    
+    .btn-secondary.pull-right {
         margin-bottom: 20px;
+        padding-right: 70px;
+        padding-left: 10px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 10px;
+        }
+            
+    .btn-primary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 45px;
+        padding-left: 10px;
         background-color: var(--cor1);
         font-family: var(--fonte-secundaria);
         font-size: 10px;
         }
+
+    button#NewLaunch {
+        padding-right: 35px;
+        }
+
+    button#eraser {
+        padding-right: 45px;
+        }
+    
+    button#pdf {
+        padding-right: 25px;
+        }
+    
+    button#xls {
+            padding-right: 25px;
+        }
+
 }

@@ -168,4 +168,26 @@ footer {
     footer {
         font-size: 14px;
     }
+
+    .modal {
+        text-align: center;
+    }
+
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 50vh;
+    }
+
+    .modal-dialog {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
 }

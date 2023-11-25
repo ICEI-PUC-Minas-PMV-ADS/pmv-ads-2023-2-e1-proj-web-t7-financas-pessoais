@@ -42,9 +42,9 @@
                         <input type="date" class="inputDate inputDate-right-margin" id="startDate" name="startDate">
                         <input type="date" class="inputDate" id="endDate" name="endDate">                            
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="categoryFilter">
                         <h5>Categoria</h5>
-                        <select name="selectCategories" id="selectCategories">
+                        <select name="categories" id="categoriesFilter">
                             <option value="all">Todas</option>                            
                         </select>
                     </div>
@@ -61,14 +61,14 @@
                 <div class="row">                    
                     <div class="col-md-12">
                         <button class="btn btn-primary pull-right"  onclick="filterLaunchs()"><i class="fa fa-search"></i>  Buscar</button>
-                        <button class="btn btn-secondary pull-right marginRight"  onclick="clearFilters()"><i class="fa fa-eraser"></i>  Limpar</button>
+                        <button id="eraser" class="btn btn-secondary pull-right marginRight"  onclick="clearFilters()"><i class="fa fa-eraser"></i>  Limpar</button>
                     </div>
                 </div>                
             </fieldset>
             <div class="row">                    
                 <div class="col-md-12">
-                    <button class="btn btn-primary pull-right" type="button" onclick="generateReport()"><i class="fa fa-file-pdf"></i>  PDF</button>
-                    <button class="btn btn-secondary pull-right marginRight" type="button" onclick="generateXLS()"><i class="fa fa-file-excel"></i>  XLS</button>
+                    <button id="pdf" class="btn btn-primary pull-right" type="button" onclick="generateReport()"><i class="fa fa-file-pdf"></i>  PDF</button>
+                    <button id="xls" class="btn btn-secondary pull-right marginRight" type="button" onclick="generateXLS()"><i class="fa fa-file-excel"></i>  XLS</button>
                 </div>
             </div>
            <div class="reportData" style="display: none;">
@@ -88,7 +88,7 @@
                 </div>   
            </div>         
             <div id="reportContent">
-                <div class="row">                
+                <div id="reports" class="row">                
                     <table class="table table-striped table-hover" id="launchTable">
                         <thead>
                             <tr>

@@ -106,8 +106,7 @@ body {
     padding: 20px;
     margin-left: 210px;
     width: calc(100% - 200px);
-    background-color: white
-    
+    background-color: white;
     }
     
 fieldset {
@@ -197,7 +196,7 @@ margin-right: 10px;
 margin-bottom: 20px;
 background-color: var(--cor2);
 font-family: var(--fonte-secundaria);
-font-size: 14px;
+font-size: 16px;
 cursor: pointer;
 }
 
@@ -205,9 +204,47 @@ cursor: pointer;
 margin-bottom: 20px;
 background-color: var(--cor1);
 font-family: var(--fonte-secundaria);
-font-size: 14px;
+font-size: 16px;
 cursor: pointer;
 }
+
+.btn-secondary.pull-right {
+    margin-bottom: 20px;
+    padding-right: 105px;
+    padding-left: 15px;
+    background-color: var(--cor2);
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    }
+        
+.btn-primary.pull-right {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    }
+
+button#NewLaunch {
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+button#eraser {
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+
+button#pdf {
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+
+button#xls {
+    padding-right: 10px;
+    padding-left: 10px;
+    }
 
 .btn-primary:hover {
 background-color: rgb(89, 85, 158);
@@ -327,19 +364,19 @@ font-weight: 500;
 h3 {
 font-family: var(--fonte-destaque);
 font-weight: 500;
-font-size: 22px;
+font-size: 24px;
 }
 
 h4 { /* Substitui o seletor 'legend' */
 font-family: var(--fonte-destaque);
 font-weight: 400;
-font-size: 20px;
+font-size: 22px;
 }
 
 h5 {
 font-family: var(--fonte-destaque);
 font-weight: 300;
-font-size: 18px;
+font-size: 20px;
 }
 
 .align-right {
@@ -381,4 +418,205 @@ font-size: 16px;
 
 #openSettingsModalLink {
     cursor: pointer;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+body {
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 210px;
+    width: calc(100% - 200px);
+    background-color: white;
+}
+    
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#selectCategories {
+font-size: 18px;
+font-family: var(--fonte-secundaria);
+height: auto;
+}
+
+.pull-right {
+margin-top: 20px;
+}
+
+.radio-right-margin {
+margin-right: 30px;
+font-size: 18px;
+font-family: var(--fonte-secundaria)
+}
+
+.radio-left-margin {
+margin-left: 30px;
+}
+
+.inputDate {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+input#startDate {
+    font-size: 18px;
+}
+
+input#endDate {
+    font-size: 18px;
+}
+
+.inputDate-right-margin {
+margin-right: 10px;
+}
+
+select, textarea {
+font-size: 18px;
+width: 50%;
+height: 40px;
+}
+
+.marginRight {
+margin-right: 10px;
+}
+
+.btn-secondary {
+margin-bottom: 20px;
+background-color: var(--cor2);
+font-family: var(--fonte-secundaria);
+font-size: 14px;
+cursor: pointer;
+}
+
+.btn-primary {
+margin-bottom: 20px;
+background-color: var(--cor1);
+font-family: var(--fonte-secundaria);
+font-size: 14px;
+cursor: pointer;
+}
+
+.form-group {
+margin-top: 20px;
+margin-bottom: 20px;
+width: 100%;
+}
+
+.launchDate {
+display: block;
+float: right;
+}
+
+.form-control {
+display: inline-block;
+}
+
+input[type="number" i] {
+margin-left: 10px;
+width: 35%;
+}
+
+.input-left-margin {
+margin-left: 100px;
+}
+
+.launchDateClass {
+float: right;
+}
+
+#launchDate {
+width: auto;
+}
+
+#launchModal {
+    margin: auto;
+}
+
+.modal-dialog {
+    width: 100vw;
+    height: 100vh;
+}
+
+#categoryModal {
+    margin: auto;
+}
+
+footer { 
+font-family: var(--fonte-destaque);
+font-size: 16px;
+color: #a0a0a0;
+width: 100%;
+text-align: center;
+padding: 10px;
+}
+
+table {
+    padding: 15px;
+}
+
+thead {
+background-color: var(--cor1);
+font-family: var(--fonte-destaque);
+font-size: 18px;
+color: white; 
+}
+
+tbody {
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+}
+
+thead#categoryTableHead {
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 18px;
+    color: white;    
+}
+
+tbody#categoryTableBody {
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+}
+
+h3 {
+font-family: var(--fonte-destaque);
+font-weight: 500;
+font-size: 24px;
+}
+
+h4 { /* Substitui o seletor 'legend' */
+font-family: var(--fonte-destaque);
+font-weight: 400;
+font-size: 22px;
+}
+
+h5 {
+font-family: var(--fonte-destaque);
+font-weight: 300;
+font-size: 20px;
+}
+
+h5#modalLabel { 
+    font-size: 20px;
+}
+
+h5#categoryModalLabel {
+    font-size: 20px;
+}
+
+#categoriesFilter{
+font-family: var(--fonte-secundaria);
+font-size: 16px;
+}
+
 }
