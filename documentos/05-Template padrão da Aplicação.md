@@ -2,6 +2,7 @@
 
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
+
 > Tela de Login para entrada no sistema PucMoney.
 > ![Login](img/1login.jpg?raw=true)
 

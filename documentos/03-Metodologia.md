@@ -97,6 +97,44 @@ Nesta Sprint pudemos verificar a participação pelo link no repositório:
     <figcaption>Figura 4 - Sprint 3</figcaption>
 </figure>
 
+#### Sprint 4
+
+Na Sprint 4 trabalhamos para finalizar as pendências do projeto. Finalizando todas funcionalidades, responsividade, fontes e demais ajustes para conclusão do projeto.
+
+Infelizmente, como na etapa anterior, o grupo encontrou muitas dificuldades com relação à colaboração de todos membros, inclusive o grupo perdeu um membro na penúltima semana da etapa.
+
+Importante ressaltar que o trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo, Larissa e Luzianne.
+
+No dia 30/10/2023 foi agendada uma reunião que não aconteceu, com isso a aluna Luzianne levantou as pendências do projeto para que todos pudessem participar. Após distribuição das tarefas (Imagem Enquete após descrição da Sprint), ficou estabelecida a seguinte relação para a Etapa 4:
+
+- Desenvolver funcionalidades da Dashboard : Gustavo
+- Finalizar funcionalidades da tela de lançamentos: Luzianne
+- Finalizar funcionalidades da tela de relatórios: Alvaro
+- Finalizar implementação das fontes: Larissa
+- Finalizar as funcionalidades da tela de login: Alvaro
+- Criar funcionalidades do modal de configurações nas telas pendentes (Relatórios e Lançamentos): Alvaro
+- Ajustes responsividade das telas: Eros, Janaina e Larissa (Somente a Larissa executou esta tarefa, com alguns ajustes feitos por Alvaro e Luzianne)
+- Elaborar plano de testes: Leonardo e Janaina
+- Executar os testes: Leonardo e Janaina
+
+No entanto, conforme projeto final apresentado, algumas das tarefas não foram executadas, com isso até a data desta documentação (25/11/2023) não seria possível outra pessoa assumir e efetuar as tarefas não executadas, sendo elas: Plano de Testes, e Execução de testes.
+
+Durante o período da Etapa 4 algumas reuniões foram marcadas para resolvermos as pendências, mas não aconteceram por não comparecimento dos alunos com tarefas pendentes.
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-1.png"
+    <figcaption>Figura 1 - Enquete Whatsapp</figcaption>
+</figure>
+
+
+Nesta Sprint pudemos verificar a participação pelo link no repositório:
+<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/graphs/contributors" target="_blank">Insights</a>
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-2.jpg"
+    <figcaption>Figura 2 - Sprint 4</figcaption>
+</figure>
+
 
 ### Ferramentas
 
