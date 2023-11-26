@@ -93,6 +93,7 @@ fieldset {
     background-color: rgb(51, 50, 102);
     color: rgb(256, 256, 256);
     background-color: rgb(51, 50, 102);
+    width: fit-content;
 }
 
 .user-dropdown-menu button:hover {

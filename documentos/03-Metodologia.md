@@ -13,7 +13,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Analista de Requisitos: Gustavo Felix Braga
 - Design UI/UX: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
 - Desenvolvimento: Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
-- QA: Leonardo Aquim de Queiroz
+- QA - Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
 - Github: Álvaro Henrique Orfus Tavares
 
 ### Processo
@@ -119,7 +119,7 @@ No dia 30/10/2023 foi agendada uma reunião que não aconteceu, com isso a aluna
 
 No entanto, conforme projeto final apresentado, algumas das tarefas não foram executadas, com isso até a data desta documentação (25/11/2023) não seria possível outra pessoa assumir e efetuar as tarefas não executadas, sendo elas: Plano de Testes, e Execução de testes.
 
-Durante o período da Etapa 4 algumas reuniões foram marcadas para resolvermos as pendências, mas não aconteceram por não comparecimento dos alunos com tarefas pendentes.
+Durante o período da Etapa 4 algumas reuniões foram marcadas para resolvermos as pendências, mas não aconteceram por não comparecimento dos alunos com tarefas pendentes. Tivemos também a saída do aluno Leonardo, que era o QA do grupo, as responsabilidades dele serão repassadas aos alunos Álvaro e Luzianne.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-1.png"
@@ -131,7 +131,7 @@ Nesta Sprint pudemos verificar a participação pelo link no repositório:
 <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/graphs/contributors" target="_blank">Insights</a>
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-2.jpg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-2.png"
     <figcaption>Figura 2 - Sprint 4</figcaption>
 </figure>
 
