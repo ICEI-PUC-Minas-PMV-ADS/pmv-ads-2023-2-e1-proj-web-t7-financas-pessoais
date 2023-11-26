@@ -409,7 +409,6 @@
     .modal-dialog {
         width: 55vw;
         height: 55vh;
-        padding-left: 55px;
     }
 
     .modal-dialog {
@@ -443,7 +442,7 @@
         }
             
     input#launchDate {
-            width: 55vw;
+            width: 50vw;
             font-size: 14px;
         }
     
