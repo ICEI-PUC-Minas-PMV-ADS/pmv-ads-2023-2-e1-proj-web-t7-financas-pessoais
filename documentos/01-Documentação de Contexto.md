@@ -47,4 +47,3 @@ Já existem algumas aplicações que servem ao propósito do controle de finanç
 # Público-Alvo
 
 Jovens brasileiros entre 18 e 24 anos, que estão entrando no mercado de trabalho ou já estão inseridos nele. Mais especificamente, o projeto visa atender tanto jovens adultos que não possuem o costume de acompanhar suas finanças, quanto jovens que já monitoram suas finanças de forma manual e buscam migrar para uma solução digital prática e acessível, que torne ainda mais simples esse processo de controle.
-
