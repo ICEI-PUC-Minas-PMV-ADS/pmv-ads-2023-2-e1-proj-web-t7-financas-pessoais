@@ -111,6 +111,12 @@ balanco = receitaMensal - despesaMensal;
 // Gráfico
 let chaves = Object.keys(somaPorCategoria);
 let valores = Object.values(somaPorCategoria);
+if(chaves.length === 0) {
+    chaves = ['Categoria']
+}
+if(valores.length === 0) {
+    valores = [100]
+}
 
 const ctx = document.getElementById('myChart');
 
@@ -180,7 +186,8 @@ if((receitaMensal - despesaMensal) < 0) {
 bmReceita.textContent = storageReceita;
 bmDespesa.textContent = storageDespesa;
 
-let PorcentagemDespesa = Math.round(despesaMensal / receitaMensal * 100) + "%";
+let PorcentagemDespesa = Math.round(despesaMensal / receitaMensal * 100);
+PorcentagemDespesa = isNaN(PorcentagemDespesa) ? "0%" : PorcentagemDespesa + " %";
 
 let progressBars = document.getElementsByClassName('progress-bar');
 
