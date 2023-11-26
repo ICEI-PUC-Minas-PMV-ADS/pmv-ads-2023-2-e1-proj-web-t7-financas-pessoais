@@ -187,7 +187,8 @@ bmReceita.textContent = storageReceita;
 bmDespesa.textContent = storageDespesa;
 
 let PorcentagemDespesa = Math.round(despesaMensal / receitaMensal * 100);
-PorcentagemDespesa = isNaN(PorcentagemDespesa) ? "0%" : PorcentagemDespesa + " %";
+PorcentagemDespesa = isNaN(PorcentagemDespesa) ? "0%" : PorcentagemDespesa + "%";
+console.log(PorcentagemDespesa)
 
 let progressBars = document.getElementsByClassName('progress-bar');
 
