@@ -80,28 +80,18 @@
 </tr>
 <tr>
 <td><b>RF-02</b></td>
-<td>A aplicação deve apresentar um histórico detalhado de todas as transações realizadas.</td>
+<td>A aplicação deve apresentar um histórico / relatório detalhado de todas as transações realizadas.</td>
 <td>Alta</td>
 </tr>
 <tr>
 <td><b>RF-03</b></td>
-<td>Os usuários devem poder categorizar automaticamente as transações com base nos dados fornecidos.</td>
+<td>Os usuários devem poder categorizar as transações com base nos dados fornecidos.</td>
 <td>Média</td>
 </tr>
 <tr>
 <td><b>RF-04</b></td>
 <td>Deve ser possível visualizar um saldo atualizado com base nas transações registradas.</td>
 <td>Alta</td>
-</tr>
-<tr>
-<td><b>RF-05</b></td>
-<td>Os usuários devem ter a opção de definir metas financeiras e acompanhar o progresso.</td>
-<td>Média</td>
-</tr>
-<tr>
-<td><b>RF-06</b></td>
-<td>A aplicação deve permitir aos usuários gerarem relatórios personalizados sobre suas finanças.</td>
-<td>Média</td>
 </tr>
 </tbody>
 </table>

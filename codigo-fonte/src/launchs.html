@@ -33,18 +33,18 @@
             <fieldset>
                 <legend><h4>Filtros</h4></legend>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="dataFilter">
                         <h5>Período</h5>                                                 
                         <input type="date" class="inputDate inputDate-right-margin" id="startDate" name="startDate">
                         <input type="date" class="inputDate" id="endDate" name="endDate">                            
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="categoryFilter">
                         <h5>Categoria</h5>
                         <select name="categories" id="categoriesFilter">
                             <option value="all">Todas</option>                            
                         </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="radioFilter">
                         <h5>Tipo de lançamento</h5>
                         <input class="marginRight" type="radio" id="allCategories" name="category" value="all" checked="checked">
                         <label class="radio-right-margin" for="allCategories">Todos</label>
@@ -74,7 +74,7 @@
                           <th scope="col" class="date-col">Data</th>
                           <th scope="col" class="description-col">Descrição</th>
                           <th scope="col" class="category-col">Categoria</th>
-                          <th scope="col" class="launch-col">Tipo de lançamento</th>
+                          <th scope="col" class="launch-col">Tipo</th>
                           <th scope="col" class="valor-col">Valor</th>
                           <th scope="col" class="action-col">Ações</th>
                         </tr>

@@ -1,44 +1,132 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
+Implementação da aplicação descritas por meio dos requisitos codificados.
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### Inclusão de transações
 
-[Adicione imagem da funcionalidade/tela]
+![RF-1](img/funcionalidades-rf1tela.png?raw=true)
+![RF-1](img/funcionalidades-rf1tela2.png?raw=true)
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-1: Os usuários devem poder adicionar suas transações financeiras, especificando valor e categoria.
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+- launchs.html
+- launchScript.js
 
-
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
+![RF-1](img/funcionalidades-rf1codigo.png?raw=true)
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+- Acessar tela Lançamentos
+- Botão "Novo"
+- Preencher dados do lançamento (Valor, data, categoria, descrição, e tipo de lançamento sendo receita ou despesa)
+- Salvar
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Luzianne Fernandes Fialho
 
 
 
+### Histórico de transações
 
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+![RF-2](img/funcionalidades-rf2tela.png?raw=true)
 
+
+#### Requisito atendido
+
+RF-2: A aplicação deve apresentar um histórico / relatório detalhado de todas as transações realizadas.
+
+
+#### Artefatos da funcionalidade
+
+- reports.html
+- reports.js
+
+![RF-2](img/funcionalidades-rf2codigo.png?raw=true)
+
+
+#### Instruções de acesso
+
+- Acessar Relatórios no menu
+- Preencher filtros
+- Clicar em Buscar
+- Relatório será exibido
+
+
+#### Responsável
+
+Luzianne Fernandes Fialho e Alvaro Henrique Orfus Tavares
+
+
+
+### Categorias
+
+![RF-3](img/funcionalidades-rf3tela.png?raw=true)
+
+
+#### Requisito atendido
+
+RF-3: Os usuários devem poder categorizar as transações com base nos dados fornecidos.
+
+
+#### Artefatos da funcionalidade
+
+- launchs.html
+- launchScript.js
+
+![RF-3](img/funcionalidades-rf3codigo.png?raw=true)
+
+
+#### Instruções de acesso
+
+- Acessar tela Lançamentos
+- Botão "Categorias"
+- Botão "Novo"
+- Incluir categoria (Descrição e Ícone)
+- Salvar
+
+
+#### Responsável
+
+Luzianne Fernandes Fialho
+
+
+
+### Saldos
+
+![RF-4](img/funcionalidades-rf4tela.png?raw=true)
+
+
+#### Requisito atendido
+
+RF-4: Deve ser possível visualizar um saldo atualizado com base nas transações registradas.
+
+
+#### Artefatos da funcionalidade
+
+- dashboard.html
+- dashboard.css
+- dashboard.js
+
+![RF-4](img/funcionalidades-rf4codigo.png?raw=true)
+
+
+#### Instruções de acesso
+
+- Tela inicial (Dashboard)
+- Selecionar período de visualização
+- Dados são exibidos automaticamente
+
+
+#### Responsável
+
+Gustavo Felix Braga

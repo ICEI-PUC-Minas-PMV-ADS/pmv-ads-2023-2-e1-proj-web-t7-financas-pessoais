@@ -21,6 +21,7 @@
 > Modal para alteração de dados do usuário.
 > ![Configurações](img/07home-configuracoes.jpg?raw=true)
 
+
 ## User Flow
 
 ![Userflow](img/userflow-pucmoney.png)
