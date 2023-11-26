@@ -17,10 +17,6 @@
 
 /* DASHBOARD */
 
-.dashboard_container{
-    font-family: var(--fonte-destaque);
-}
-
 .dashboard {
     border: 1px solid #a0a0a0; 
     height: 100px;   
@@ -40,6 +36,7 @@
 
 #progress-receita {
     height: 25px;
+    font-size: 18px;
 }
 
 #progress-despesa {
@@ -62,36 +59,43 @@
 
 #month {
     font-size: 18px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: var(--fonte-destaque);    
 }
 
 #year {
     font-size: 18px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: var(--fonte-destaque);    
 }
 
 #i_saldo {
     font-size: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: var(--fonte-destaque);     
 }
 
 #i_receita {
     font-size: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: var(--fonte-destaque);      
 }
 
 #i_despesa {
     font-size: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: var(--fonte-destaque);     
 }
 
 .text-dashboard {
     font-weight: bold;
+    font-family: var(--fonte-destaque);
 }
 
 #text-p-dashboard {
     font-size: 24px;
     font-weight: bold;
+    font-family: var(--fonte-destaque);
 }
 
 .show-details {
@@ -101,7 +105,7 @@
 }
 
 .text-show {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .text-details {
@@ -121,12 +125,6 @@ footer {
     font-family: var(--fonte-destaque);
     font-size: 16px;
     color: #a0a0a0;
-}
-
-.text-body-secondary {
-    font-family: var(--fonte-destaque);
-    font-size: 16px;
-    color: #a0a0a0; 
 }
 
 @media (max-width: 900px) {
@@ -202,7 +200,7 @@ fieldset {
 }
 
 .menu-container .nav-pills .nav-item a span {    
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400; 
     font-family: var(--fonte-secundaria);   
 }
@@ -230,7 +228,12 @@ fieldset {
     transition: background-color 0.3s ease;
 }
 
+.user-dropdown-menu button {
+    background-color: var(--cor2);
+    color: rgb(256, 256, 256);
+    background-color: var(--cor2);
+}
+
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
 }
-

@@ -85,6 +85,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.user-dropdown-menu button {
+    background-color: var(--cor2);
+    color: rgb(256, 256, 256);
+    background-color: var(--cor2);
+}
+
 .user-dropdown-menu button:hover {
     background-color: rgba(245, 245, 245, 0.582);
 }
@@ -98,7 +104,6 @@ body {
     font-family: var(--fonte-destaque);
     font-weight: 400;
     font-size: 16px;
-    min-width: 467px;
     }
 
 .content {
@@ -126,12 +131,6 @@ fieldset {
 .col-md-6 #radioFilter {
     width: 20%;
         }
-
-#selectCategories{
-font-size: 16px;
-font-family: var(--fonte-secundaria);
-cursor: pointer;
-}
 
 .pull-right {
 margin-top: 20px;
@@ -215,6 +214,7 @@ cursor: pointer;
     background-color: var(--cor2);
     font-family: var(--fonte-secundaria);
     font-size: 16px;
+    cursor: pointer;
     }
         
 .btn-primary.pull-right {
@@ -224,26 +224,31 @@ cursor: pointer;
     background-color: var(--cor1);
     font-family: var(--fonte-secundaria);
     font-size: 16px;
+    cursor: pointer;
     }
 
 button#NewLaunch {
     padding-right: 20px;
     padding-left: 20px;
+    cursor: pointer;
     }
 
 button#eraser {
     padding-right: 10px;
     padding-left: 10px;
+    cursor: pointer;
     }
 
 button#pdf {
     padding-right: 10px;
     padding-left: 10px;
+    cursor: pointer;
     }
 
 button#xls {
     padding-right: 10px;
     padding-left: 10px;
+    cursor: pointer;
     }
 
 .btn-primary:hover {
@@ -379,6 +384,11 @@ font-weight: 300;
 font-size: 20px;
 }
 
+#categoriesFilter{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    }
+
 .align-right {
     text-align: right;
 }
@@ -411,212 +421,254 @@ font-size: 20px;
     color: red;
 }
 
-#categoriesFilter{
-font-family: var(--fonte-secundaria);
-font-size: 16px;
-}
-
 #openSettingsModalLink {
     cursor: pointer;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     
-body {
-    font-family: var(--fonte-destaque);
-    font-weight: 400;
-    font-size: 18px;
-}
+    .content {
+        flex: 1;
+        padding: 20px;
+        margin-left: 210px;
+        width: calc(100% - 200px);
+        background-color: white;
+    }
 
-.content {
-    flex: 1;
-    padding: 20px;
-    margin-left: 210px;
-    width: calc(100% - 200px);
-    background-color: white;
-}
+    body {
+        font-size: 18px;
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        }
     
-fieldset {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-}
+    .radio-right-margin {
+        font-size: 18px;
+    }
+    
+    .inputDate {
+        width: 150px;
+    }
 
-#selectCategories {
-font-size: 18px;
-font-family: var(--fonte-secundaria);
-height: auto;
-}
+    input#startDate {
+        font-size: 18px;
+    }
 
-.pull-right {
-margin-top: 20px;
-}
+    input#endDate {
+        font-size: 18px;
+    }
 
-.radio-right-margin {
-margin-right: 30px;
-font-size: 18px;
-font-family: var(--fonte-secundaria)
-}
+    #categoriesFilter {
+        font-size: 16px;
+        font-family: var(--fonte-secundaria);
+        }
 
-.radio-left-margin {
-margin-left: 30px;
-}
+    select, textarea {
+        font-size: 18px;
+        width: 50%;
+        height: 30px;
+    }
 
-.inputDate {
-    width: 150px;
-    height: 30px;
-    margin-bottom: 20px;
-}
+    h3 {
+        font-family: var(--fonte-destaque);
+        font-weight: 500;
+        font-size: 24px
+        }
+        
+    h4 {
+        font-family: var(--fonte-destaque);
+        font-weight: 400;
+        font-size: 20px
+        }
+        
+    h5 {
+        font-family: var(--fonte-destaque);
+        font-weight: 300;
+        font-size: 18px
+        }
+    
+    #categoriesFilter{
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        }
+    
+    h5.col-md-6 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
 
-input#startDate {
-    font-size: 18px;
-}
+    h5#report {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
 
-input#endDate {
-    font-size: 18px;
-}
+    h5#modalLabel { 
+        font-size: 20px;
+    }
 
-.inputDate-right-margin {
-margin-right: 10px;
-}
+    h5#categoryModalLabel {
+        font-size: 20px;
+    }
 
-select, textarea {
-font-size: 18px;
-width: 50%;
-height: 40px;
-}
+    footer { 
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        color: #a0a0a0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        }
+    
+    table {
+        padding: 15px;
+        }
+    
+    div.reports {
+        padding: 15px;
+        }
 
-.marginRight {
-margin-right: 10px;
-}
+    thead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 18px;
+        color: white; 
+        }
+            
+    tbody {
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        }
 
-.btn-secondary {
-margin-bottom: 20px;
-background-color: var(--cor2);
-font-family: var(--fonte-secundaria);
-font-size: 14px;
-cursor: pointer;
-}
+    thead#categoryTableHead {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-size: 18px;
+        color: white;
+        }
+        
+    tbody#categoryTableBody {
+        font-family: var(--fonte-destaque);
+        font-size: 16px;
+        }
+    
+    #launchModal {
+        margin: auto;
+    }
+    
+    #categoryModal {
+        margin: auto;
+    }
 
-.btn-primary {
-margin-bottom: 20px;
-background-color: var(--cor1);
-font-family: var(--fonte-secundaria);
-font-size: 14px;
-cursor: pointer;
-}
+    .modal {
+        text-align: center;
+    }
 
-.form-group {
-margin-top: 20px;
-margin-bottom: 20px;
-width: 100%;
-}
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 50vh;
+    }
 
-.launchDate {
-display: block;
-float: right;
-}
+    .modal-dialog {
+        width: 100vw;
+        height: 100vh;
+    }
 
-.form-control {
-display: inline-block;
-}
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
 
-input[type="number" i] {
-margin-left: 10px;
-width: 35%;
-}
+    .form-group {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
-.input-left-margin {
-margin-left: 100px;
-}
+    .form-control {
+        display: inline-block;
+        }
 
-.launchDateClass {
-float: right;
-}
+    input[type="number" i] {
+            margin-left: 10px;
+            width: 35%;
+        }
+            
+    .input-left-margin {
+            margin-left: 100px;
+        }
+            
+    .launchDateClass {
+           float: right;
+        }
+            
+    input#launchDate {
+            width: 48vw;
+            font-size: 18px;
+        }
+    
+    select#selectCategories.form-control {
+        font-size: 17px;
+        font-family: var(--fonte-secundaria);
+        }
+    
+    .btn-primary {
+        margin-bottom: 20px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        }
 
-#launchDate {
-width: auto;
-}
+    .btn-secondary {
+        margin-bottom: 20px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        }
+    
+    .btn-secondary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 105px;
+        padding-left: 15px;
+        background-color: var(--cor2);
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        }
+            
+    .btn-primary.pull-right {
+        margin-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: var(--cor1);
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        }
 
-#launchModal {
-    margin: auto;
-}
-
-.modal-dialog {
-    width: 100vw;
-    height: 100vh;
-}
-
-#categoryModal {
-    margin: auto;
-}
-
-footer { 
-font-family: var(--fonte-destaque);
-font-size: 16px;
-color: #a0a0a0;
-width: 100%;
-text-align: center;
-padding: 10px;
-}
-
-table {
-    padding: 15px;
-}
-
-thead {
-background-color: var(--cor1);
-font-family: var(--fonte-destaque);
-font-size: 18px;
-color: white; 
-}
-
-tbody {
-    font-family: var(--fonte-destaque);
-    font-size: 16px;
-}
-
-thead#categoryTableHead {
-    background-color: var(--cor1);
-    font-family: var(--fonte-destaque);
-    font-size: 18px;
-    color: white;    
-}
-
-tbody#categoryTableBody {
-    font-family: var(--fonte-destaque);
-    font-size: 16px;
-}
-
-h3 {
-font-family: var(--fonte-destaque);
-font-weight: 500;
-font-size: 24px;
-}
-
-h4 { /* Substitui o seletor 'legend' */
-font-family: var(--fonte-destaque);
-font-weight: 400;
-font-size: 22px;
-}
-
-h5 {
-font-family: var(--fonte-destaque);
-font-weight: 300;
-font-size: 20px;
-}
-
-h5#modalLabel { 
-    font-size: 20px;
-}
-
-h5#categoryModalLabel {
-    font-size: 20px;
-}
-
-#categoriesFilter{
-font-family: var(--fonte-secundaria);
-font-size: 16px;
-}
+        button#NewLaunch {
+            padding-right: 20px;
+            padding-left: 20px;
+            }
+        
+        button#eraser {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
+        
+        button#pdf {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
+        
+        button#xls {
+            padding-right: 10px;
+            padding-left: 10px;
+            }
 
 }
