@@ -190,7 +190,7 @@ let PorcentagemDespesa = Math.round(despesaMensal / receitaMensal * 100);
 if (receitaMensal === 0){
     PorcentagemDespesa = 100;
 }
-PorcentagemDespesa = isNaN(PorcentagemDespesa) ? "0%" : PorcentagemDespesa + " %";
+PorcentagemDespesa = isNaN(PorcentagemDespesa) ? "0%" : PorcentagemDespesa + "%";
 
 let progressBars = document.getElementsByClassName('progress-bar');
 
