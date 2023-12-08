@@ -1,20 +1,88 @@
-# Plano de Testes de Software
+## Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
-
-Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+<table>
+<tbody>
+<tr align=center>
+<td width="400px"><b>Caso de Teste</b></td>
+<td width="400px"><b>CT-1</b></td>
+</tr>
+<tr>
+<td>Requisitos Associados</td>
+<td>RF-1</td>
+</tr>
+<tr>
+<td>Objetivo do Teste</td>
+<td>Os usuários devem poder adicionar suas transações financeiras, especificando valor e categoria</td>
+</tr>
+<tr>
+<td>Passos</td>
+<td>Tela Lançamentos - Botão Novo - Incluir informações do Lançamento (Valor, data, categoria, descrição, tipo de lançamento) - Botão Salvar</td>
+</tr>
+<tr>
+<td>Critérios de êxito</td>
+<td>Para que a inclusão seja efetuada com sucesso, o usuário deverá preencher todos os campos solicitados</td>
+</tr>
+<tr>
+<td>Responsável por elaborar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
+</br>
+<table>
+<tbody>
+<tr align=center>
+<td width="400px"><b>Caso de Teste</b></td>
+<td width="400px"><b>CT-2</b></td>
+</tr>
+<tr>
+<td>Requisitos Associados</td>
+<td>RF-2</td>
+</tr>
+<tr>
+<td>Objetivo do Teste</td>
+<td>A aplicação deve apresentar um histórico / relatório detalhado de todas as transações realizadas</td>
+</tr>
+<tr>
+<td>Passos</td>
+<td>Tela Relatórios - Informar período e demais opções para filtro - Botão Buscar - Relatório será exibido na parte inferior da tela</td>
+</tr>
+<tr>
+<td>Critérios de êxito</td>
+<td>Preenchimento correto dos campos de filtro, se não houver lançamentos conforme filtro, o sistema manterá a tela sem alterações</td>
+</tr>
+<tr>
+<td>Responsável por elaborar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
+</br>
+<table>
+<tbody>
+<tr align=center>
+<td width="400px"><b>Caso de Teste</b></td>
+<td width="400px"><b>CT-3</b></td>
+</tr>
+<tr>
+<td>Requisitos Associados</td>
+<td>RF-3</td>
+</tr>
+<tr>
+<td>Objetivo do Teste</td>
+<td>Os usuários devem poder categorizar as transações com base nos dados fornecidos</td>
+</tr>
+<tr>
+<td>Passos</td>
+<td>Tela Lançamentos - Botão Categorias - Botão Novo - Preencher campo Nome e selecionar Ícone - Salvar</td>
+</tr>
+<tr>
+<td>Critérios de êxito</td>
+<td>Selecionar todas opções necessárias, como ícone e descrição da categoria</td>
+</tr>
+<tr>
+<td>Responsável por elaborar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
