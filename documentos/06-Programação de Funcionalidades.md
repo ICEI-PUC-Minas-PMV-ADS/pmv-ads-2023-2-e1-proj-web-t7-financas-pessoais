@@ -30,6 +30,12 @@ RF-1: Os usuários devem poder adicionar suas transações financeiras, especifi
 - Salvar
 
 
+#### Armazenamento de Dados
+
+![RF-1](img/localstorage.png?raw=true)
+![RF-1](img/localstoragecode.png?raw=true)
+
+
 #### Responsável
 
 Luzianne Fernandes Fialho
@@ -60,6 +66,12 @@ RF-2: A aplicação deve apresentar um histórico / relatório detalhado de toda
 - Preencher filtros
 - Clicar em Buscar
 - Relatório será exibido
+
+
+#### Armazenamento de Dados
+
+![RF-2](img/localstorage.png?raw=true)
+![RF-2](img/localstoragecode.png?raw=true)
 
 
 #### Responsável
