@@ -22,19 +22,16 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 </table>
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct1a.png"
-    <figcaption>Figura 1 - Tela com lançamento sendo incluído</figcaption>
 </figure> 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct1b.png"
-    <figcaption>Figura 2 - Tela com lançamento salvo com sucesso</figcaption>
 </figure> 
-
 </br>
 <table>
 <tbody>
 <tr align=center>
-<td width="400px"><b>Caso de Teste</b></td>
-<td width="400px"><b>CT-2</b></td>
+<td width="200px"><b>Caso de Teste</b></td>
+<td width="600px"><b>CT-2</b></td>
 </tr>
 <tr>
 <td>Resultados Obtidos</td>
@@ -48,14 +45,13 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 </table>
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct2.png"
-    <figcaption>Figura 1 - Tela com relatório filtrado no período da última semana, com todos lançamentos exibidos conforme proposto</figcaption>
 </figure> 
 </br>
 <table>
 <tbody>
 <tr align=center>
-<td width="400px"><b>Caso de Teste</b></td>
-<td width="400px"><b>CT-3</b></td>
+<td width="200px"><b>Caso de Teste</b></td>
+<td width="600px"><b>CT-3</b></td>
 </tr>
 <tr>
 <td>Resultados Obtidos</td>
@@ -69,5 +65,4 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 </table>
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct3.png"
-    <figcaption>Figura 1 - Tela com a listagem de categorias cadastradas no teste</figcaption>
 </figure> 
