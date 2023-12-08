@@ -3,8 +3,8 @@
 <table>
 <tbody>
 <tr align=center>
-<td width="400px"><b>Caso de Teste</b></td>
-<td width="400px"><b>CT-1</b></td>
+<td width="300px"><b>Caso de Teste</b></td>
+<td width="500px"><b>CT-1</b></td>
 </tr>
 <tr>
 <td>Requisitos Associados</td>
@@ -32,8 +32,8 @@
 <table>
 <tbody>
 <tr align=center>
-<td width="400px"><b>Caso de Teste</b></td>
-<td width="400px"><b>CT-2</b></td>
+<td width="300px"><b>Caso de Teste</b></td>
+<td width="500px"><b>CT-2</b></td>
 </tr>
 <tr>
 <td>Requisitos Associados</td>
@@ -61,8 +61,8 @@
 <table>
 <tbody>
 <tr align=center>
-<td width="400px"><b>Caso de Teste</b></td>
-<td width="400px"><b>CT-3</b></td>
+<td width="300px"><b>Caso de Teste</b></td>
+<td width="500px"><b>CT-3</b></td>
 </tr>
 <tr>
 <td>Requisitos Associados</td>
