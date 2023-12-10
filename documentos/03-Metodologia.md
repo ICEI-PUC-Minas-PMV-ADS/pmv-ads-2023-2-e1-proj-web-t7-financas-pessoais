@@ -135,6 +135,15 @@ Nesta Sprint pudemos verificar a participação pelo link no repositório:
     <figcaption>Figura 2 - Sprint 4</figcaption>
 </figure>
 
+#### Sprint 5
+
+Na Sprint 5 fizemos duas reuniões, a primeira participaram Alvaro, Gustavo, Larissa e Luzianne para definir como faríamos o vídeo de apresentação do projeto, e da aplicação web.
+Definido que Larissa gravaria a apresentação do projeto, e Luzianne apresentaria a aplicação em vídeo. Contando com a edição e idealização em conjunto com Alvaro e Gustavo.
+
+Na segunda reunião os responsáveis designados anteriormente fizeram a gravação ao vivo, enquanto os demais acompanhavam. Gravações que foram editadas e postadas na aba apresentação deste projeto.
+Nesta reunião contamos com a presença também do aluno Eros, no entanto não houve colaboração no desenvolvimento e realização desta Sprint.
+
+Infelizmente, como nas etapas 3 e 4, o grupo encontrou muitas dificuldades com relação à colaboração de todos membros, e novamente o trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo, Larissa e Luzianne.
 
 ### Ferramentas
 
@@ -182,8 +191,3 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
     <td> - </td>
   </tr>
 </table>
-
-### Estratégia de Organização de Codificação 
-
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
-
