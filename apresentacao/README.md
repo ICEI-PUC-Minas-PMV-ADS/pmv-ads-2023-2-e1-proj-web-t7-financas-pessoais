@@ -2,17 +2,9 @@
 
 ## Vídeo de apresentação
 
-Apresentação do Projeto
+[[Clique aqui para assistir a Apresentação do Projeto]](https://vimeo.com/manage/videos/893033277)
 
-<video controls>
-  <source src="./midia/apresentacao.mp4" type="video/mp4">
-</video>
-
-Utilização do Aplicativo
-
-<video controls>
-  <source src="./midia/aplicativo.mp4" type="video/mp4">
-</video>
+[[Clique aqui para assistir a Apresentação de Utilização do Aplicativo]](https://vimeo.com/manage/videos/893033265)
 
 
 ## Conjunto de Slides
