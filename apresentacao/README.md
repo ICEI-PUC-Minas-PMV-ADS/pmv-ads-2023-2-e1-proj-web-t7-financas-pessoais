@@ -2,9 +2,9 @@
 
 ## Vídeo de apresentação
 
-[[Clique aqui para assistir a Apresentção do Projeto]](https://vimeo.com/manage/videos/893033277)
+[[Clique aqui para assistir a Apresentação do Projeto]](https://vimeo.com/manage/videos/893033277)
 
-[[Clique aqui para assistir a Apresentção de Utilização do Aplicativo]](https://vimeo.com/manage/videos/893033265)
+[[Clique aqui para assistir a Apresentação de Utilização do Aplicativo]](https://vimeo.com/manage/videos/893033265)
 
 
 ## Conjunto de Slides
