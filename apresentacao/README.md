@@ -5,13 +5,13 @@
 Apresentação do Projeto
 
 <video controls>
-  <source src="./midia/apresentacao.mp4" type="video/mp4">
+  <source src="midia/apresentacao.mp4" type="video/mp4">
 </video>
 
 Utilização do Aplicativo
 
 <video controls>
-  <source src="./midia/aplicativo.mp4" type="video/mp4">
+  <source src="midia/aplicativo.mp4" type="video/mp4">
 </video>
 
 
