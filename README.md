@@ -16,7 +16,6 @@ O objetivo geral deste projeto é desenvolver uma aplicação web que auxilie jo
 * Gustavo Felix Braga
 * Janaina Esteves de Faria
 * Larissa Cardoso de Miranda Araujo
-* Leonardo Aquim de Queiroz
 * Luzianne Fernandes Fialho
 
 ## Orientador

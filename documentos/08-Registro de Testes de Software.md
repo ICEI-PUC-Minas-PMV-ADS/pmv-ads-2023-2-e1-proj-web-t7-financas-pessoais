@@ -2,11 +2,67 @@
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
-
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+<table>
+<tbody>
+<tr align=center>
+<td width="200px"><b>Caso de Teste</b></td>
+<td width="600px"><b>CT-1</b></td>
+</tr>
+<tr>
+<td>Resultados Obtidos</td>
+<td>O teste foi concluído com sucesso e o usuário poderá fazer seus lançamentos, inclusive excluir se o lançamento estiver errado, duplicado, etc.</td>
+</tr>
+<tr>
+<td>Responsável por executar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct1a.png"
+</figure> 
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct1b.png"
+</figure> 
+</br>
+<table>
+<tbody>
+<tr align=center>
+<td width="200px"><b>Caso de Teste</b></td>
+<td width="600px"><b>CT-2</b></td>
+</tr>
+<tr>
+<td>Resultados Obtidos</td>
+<td>Objetivemos sucesso no teste de relatórios, atendendo à todas expectativas e necessidades do requisito, onde o usuário pode emitir relatórios, salvar em xls e pdf para manuseio do relatório e envio para terceiros, caso deseje.</td>
+</tr>
+<tr>
+<td>Responsável por executar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct2.png"
+</figure> 
+</br>
+<table>
+<tbody>
+<tr align=center>
+<td width="200px"><b>Caso de Teste</b></td>
+<td width="600px"><b>CT-3</b></td>
+</tr>
+<tr>
+<td>Resultados Obtidos</td>
+<td>O teste de cadastro e categorização foi concluído sem erros, o usuário poderá incluir as categorias que forem de seu gosto, e utilizar nos lançamentos financeiros.</td>
+</tr>
+<tr>
+<td>Responsável por executar o caso de teste</td>
+<td>Alvaro Henrique</td>
+</tr>
+</tbody>
+</table>
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/ct3.png"
+</figure> 

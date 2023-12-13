@@ -7,7 +7,7 @@ const iconDropdown = document.getElementById('iconDropdown');
 
 const iconsList = {
     'Casa': 'fa-home',
-    'Utensílios': 'fa-utensils',
+    'Alimentação': 'fa-utensils',
     'Carro': 'fa-car',
     'Livro': 'fa-book',
     'Chave inglesa': 'fa-wrench',
@@ -184,7 +184,7 @@ function populateTable(data) {
                 <td>${formatDate(item.launchDate)}</td>
                 <td>${item.description}</td>
                 <td><i class="fas ${item.icon}"></i> ${item.category}</td>
-                <td>${item.isRevenues ? 'Receitas' : 'Despesas'}</td>
+                <td>${item.isRevenues ? 'Receita' : 'Despesa'}</td>
                 <td class="${item.isRevenues ? 'green-text' : 'red-text'} align-right"> ${formattedValue}</td>
                 <td class="align-right">
                     <button class="btn" onclick="deleteLaunch(this)"><i class="fas fa-trash-can"></i></button>
@@ -203,6 +203,7 @@ function formatCurrency(item) {
 
 function deleteLaunch(button) {
     const row = button.closest('tr');
+    const rowIndex = row.rowIndex - 1;
     const savedData = JSON.parse(localStorage.getItem('savedData')) || [];
 
     Swal.fire({
@@ -213,33 +214,24 @@ function deleteLaunch(button) {
         cancelButtonText: 'Cancelar',
     }).then((result) => {
         if (result.isConfirmed) {
-            const rowData = row.querySelectorAll('td');
-            const dataToMatch = {
-                launchDate: rowData[0].textContent,
-                description: rowData[1].textContent,
-                category: rowData[2].textContent,
-                value: rowData[4].textContent,
-            };
+            if (rowIndex >= 0 && rowIndex < savedData.length) {
+                savedData.splice(rowIndex, 1);
+                localStorage.setItem('savedData', JSON.stringify(savedData));
 
-            const newData = savedData.filter(item =>
-                formatDate(item.launchDate) !== dataToMatch.launchDate &&
-                item.description !== dataToMatch.description &&
-                item.category !== dataToMatch.category &&
-                formatCurrency(item) !== dataToMatch.value
-            );
-
-            localStorage.setItem('savedData', JSON.stringify(newData));
-            
-            Swal.fire({
-                icon: 'success',
-                title: 'Sucesso!',
-                text: 'Lançamento excluído com sucesso!'
-            }).then(() => {
-                location.reload();
-            });
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sucesso!',
+                    text: 'Lançamento excluído com sucesso!'
+                }).then(() => {
+                    location.reload();
+                });
+            } else {
+                console.error('Índice da linha inválido:', rowIndex);
+            }
         }
     });
 }
+
 
 function populateIconDropdown() {
     for (const [iconName, iconValue] of Object.entries(iconsList)) {

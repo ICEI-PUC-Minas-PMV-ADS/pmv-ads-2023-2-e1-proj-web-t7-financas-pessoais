@@ -13,7 +13,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Analista de Requisitos: Gustavo Felix Braga
 - Design UI/UX: Larissa Cardoso de Miranda Araujo e Eros Rodrigues Valois Alvaia
 - Desenvolvimento: Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
-- QA: Leonardo Aquim de Queiroz
+- QA - Álvaro Henrique Orfus Tavares e Luzianne Fernandes Fialho
 - Github: Álvaro Henrique Orfus Tavares
 
 ### Processo
@@ -97,6 +97,53 @@ Nesta Sprint pudemos verificar a participação pelo link no repositório:
     <figcaption>Figura 4 - Sprint 3</figcaption>
 </figure>
 
+#### Sprint 4
+
+Na Sprint 4 trabalhamos para finalizar as pendências do projeto. Finalizando todas funcionalidades, responsividade, fontes e demais ajustes para conclusão do projeto.
+
+Infelizmente, como na etapa anterior, o grupo encontrou muitas dificuldades com relação à colaboração de todos membros, inclusive o grupo perdeu um membro na penúltima semana da etapa.
+
+Importante ressaltar que o trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo, Larissa e Luzianne.
+
+No dia 30/10/2023 foi agendada uma reunião que não aconteceu, com isso a aluna Luzianne levantou as pendências do projeto para que todos pudessem participar. Após distribuição das tarefas (Imagem Enquete após descrição da Sprint), ficou estabelecida a seguinte relação para a Etapa 4:
+
+- Desenvolver funcionalidades da Dashboard : Gustavo
+- Finalizar funcionalidades da tela de lançamentos: Luzianne
+- Finalizar funcionalidades da tela de relatórios: Alvaro
+- Finalizar implementação das fontes: Larissa
+- Finalizar as funcionalidades da tela de login: Alvaro
+- Criar funcionalidades do modal de configurações nas telas pendentes (Relatórios e Lançamentos): Alvaro
+- Ajustes responsividade das telas: Eros, Janaina e Larissa (Somente a Larissa executou esta tarefa, com alguns ajustes feitos por Alvaro e Luzianne)
+- Elaborar plano de testes: Leonardo e Janaina
+- Executar os testes: Leonardo e Janaina
+
+No entanto, conforme projeto final apresentado, algumas das tarefas não foram executadas, com isso até a data desta documentação (25/11/2023) não seria possível outra pessoa assumir e efetuar as tarefas não executadas, sendo elas: Plano de Testes, e Execução de testes.
+
+Durante o período da Etapa 4 algumas reuniões foram marcadas para resolvermos as pendências, mas não aconteceram por não comparecimento dos alunos com tarefas pendentes. Tivemos também a saída do aluno Leonardo, que era o QA do grupo, as responsabilidades dele serão repassadas aos alunos Álvaro e Luzianne.
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-1.png"
+    <figcaption>Figura 1 - Enquete Whatsapp</figcaption>
+</figure>
+
+
+Nesta Sprint pudemos verificar a participação pelo link no repositório:
+<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/graphs/contributors" target="_blank">Insights</a>
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-financas-pessoais/blob/main/documentos/img/sprint4-2.png"
+    <figcaption>Figura 2 - Sprint 4</figcaption>
+</figure>
+
+#### Sprint 5
+
+Na Sprint 5 fizemos duas reuniões, a primeira participaram Alvaro, Gustavo, Larissa e Luzianne para definir como faríamos o vídeo de apresentação do projeto, e da aplicação web.
+Definido que Larissa gravaria a apresentação do projeto, e Luzianne apresentaria a aplicação em vídeo. Contando com a edição e idealização em conjunto com Alvaro e Gustavo.
+
+Na segunda reunião os responsáveis designados anteriormente fizeram a gravação ao vivo, enquanto os demais acompanhavam. Gravações que foram editadas e postadas na aba apresentação deste projeto.
+Nesta reunião contamos com a presença também do aluno Eros, no entanto não houve colaboração no desenvolvimento e realização desta Sprint.
+
+Infelizmente, como nas etapas 3 e 4, o grupo encontrou muitas dificuldades com relação à colaboração de todos membros, e novamente o trabalho desta etapa foi realizado pelos alunos Alvaro, Gustavo, Larissa e Luzianne.
 
 ### Ferramentas
 
@@ -144,8 +191,3 @@ Os ambientes e ferramentas utilizados no projeto estão descritos na tabela abai
     <td> - </td>
   </tr>
 </table>
-
-### Estratégia de Organização de Codificação 
-
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
-
